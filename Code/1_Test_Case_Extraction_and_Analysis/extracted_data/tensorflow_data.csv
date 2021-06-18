@@ -2,15 +2,13 @@ File_Path,Line_Number,Found_in_Function,Function_Definition_Line_Number,Assert_S
 kernel_tests\aggregate_ops_test.py,69,testAddN,59,assertAllClose,1,66,np.sum
 kernel_tests\aggregate_ops_test.py,83,testUnknownShapes,72,assertAllClose,1,80,np.sum
 kernel_tests\aggregate_ops_test.py,83,testUnknownShapes,72,assertAllClose,2,79,sess.run
-kernel_tests\array_ops_test.py,172,CheckVersusNumpy,150,assertAllClose,1,159,
-kernel_tests\array_ops_test.py,172,CheckVersusNumpy,150,assertAllClose,1,161,
-kernel_tests\array_ops_test.py,172,CheckVersusNumpy,150,assertAllClose,1,163,
+kernel_tests\array_ops_test.py,172,CheckVersusNumpy,150,assertAllClose,1,154,np.random.rand
 kernel_tests\array_ops_test.py,172,CheckVersusNumpy,150,assertAllClose,2,164,array_ops.boolean_mask
-kernel_tests\array_ops_test.py,217,testEmptyInput2D,210,assertAllClose,1,213,
+kernel_tests\array_ops_test.py,217,testEmptyInput2D,210,assertAllClose,1,212,astype
 kernel_tests\array_ops_test.py,217,testEmptyInput2D,210,assertAllClose,2,214,array_ops.boolean_mask
-kernel_tests\array_ops_test.py,226,testEmptyInput1D,219,assertAllClose,1,222,
+kernel_tests\array_ops_test.py,226,testEmptyInput1D,219,assertAllClose,1,221,astype
 kernel_tests\array_ops_test.py,226,testEmptyInput1D,219,assertAllClose,2,223,array_ops.boolean_mask
-kernel_tests\array_ops_test.py,1664,testAxis,1635,assertAllClose,2,1645,self._scale_per_slice
+kernel_tests\array_ops_test.py,1666,testAxis,1637,assertAllClose,2,1647,self._scale_per_slice
 kernel_tests\atrous_conv2d_test.py,84,testAtrousConv2DForward,63,assertAllClose,1,81,nn_ops.atrous_conv2d
 kernel_tests\atrous_conv2d_test.py,84,testAtrousConv2DForward,63,assertAllClose,2,82,nn_ops.conv2d
 kernel_tests\atrous_conv2d_test.py,137,testAtrousSequence,87,assertAllClose,1,125,nn_ops.atrous_conv2d
@@ -109,6 +107,7 @@ kernel_tests\clip_ops_test.py,510,testClipByAverageNormZero,500,assertAllClose,1
 kernel_tests\collective_ops_test.py,167,testReduce,124,assertAllClose,1,167,UNSUPPORTED Name (named variable or defined function: run_all_reduce_1device)
 kernel_tests\collective_ops_test.py,214,testGather,171,assertAllClose,1,214,UNSUPPORTED Name (named variable or defined function: run_all_gather_1device)
 kernel_tests\collective_ops_test.py,454,testReduce,401,assertAllClose,1,454,UNSUPPORTED Name (named variable or defined function: run_all_reduce_1device)
+kernel_tests\composite_tensor_ops_test.py,115,testGradient,99,assertAllClose,1,111,t.gradient
 kernel_tests\concat_op_test.py,422,testTensorConcatDim0Grad,410,assertLess,1,420,gradient_checker.compute_gradient_error
 kernel_tests\concat_op_test.py,437,testTensorConcatDim1Grad,425,assertLess,1,435,gradient_checker.compute_gradient_error
 kernel_tests\concat_op_test.py,453,testIndexedSlicesConcatDim0Grad,440,assertLess,1,451,gradient_checker.compute_gradient_error
@@ -165,18 +164,14 @@ kernel_tests\constant_op_test.py,1026,testGradient,1021,assertLess,1,1025,gradie
 kernel_tests\control_flow_ops_py_test.py,1849,testNestedWhileLoopWithMaxItersFromOuterContextInXLAContext,1766,assertAllClose,1,1821,sess.run
 kernel_tests\control_flow_ops_py_test.py,1849,testNestedWhileLoopWithMaxItersFromOuterContextInXLAContext,1766,assertAllClose,2,1815,sess.run
 kernel_tests\control_flow_ops_py_test.py,1964,testBufferForwarding,1944,assertLess,1,1964,UNSUPPORTED Name (named variable or defined function: len)
-kernel_tests\control_flow_ops_py_test.py,2724,testWhileUpdateVariable_3,2705,assertAllClose,2,2723,
+kernel_tests\control_flow_ops_py_test.py,2724,testWhileUpdateVariable_3,2705,assertAllClose,2,2718,control_flow_ops.while_loop
 kernel_tests\control_flow_ops_py_test.py,2951,testWhileGrad_Shape,2936,assertAllClose,2,2943,control_flow_ops.while_loop
-kernel_tests\control_flow_ops_py_test.py,2951,testWhileGrad_Shape,2936,assertAllClose,2,2949,
-kernel_tests\control_flow_ops_py_test.py,2975,testWhileGradAfterSessionRun,2968,assertAllClose,1,2974,
-kernel_tests\control_flow_ops_py_test.py,2992,testNestedWhileGradAfterSessionRun,2979,assertAllClose,1,2991,
 kernel_tests\control_flow_ops_py_test.py,3333,testWhileGradInCond,3319,assertAllClose,2,3332,control_flow_ops.cond
 kernel_tests\control_flow_ops_py_test.py,3333,testWhileGradInCond,3319,assertAllClose,2,3328,control_flow_ops.while_loop
 kernel_tests\control_flow_ops_py_test.py,3369,testWhileGradInWhile,3355,assertAllClose,2,3367,control_flow_ops.while_loop
 kernel_tests\control_flow_ops_py_test.py,3369,testWhileGradInWhile,3355,assertAllClose,2,3363,control_flow_ops.while_loop
 kernel_tests\control_flow_ops_py_test.py,3744,testNestedWhileGrad_ParallelIterations,3724,assertAllClose,2,3737,variables.Variable
 kernel_tests\control_flow_ops_py_test.py,3783,testWhileCondGrad_UnknownShape,3768,assertAllClose,2,3780,control_flow_ops.while_loop
-kernel_tests\control_flow_ops_py_test.py,3783,testWhileCondGrad_UnknownShape,3768,assertAllClose,2,3781,
 kernel_tests\control_flow_ops_py_test.py,3783,testWhileCondGrad_UnknownShape,3768,assertAllClose,2,3782,sess.run
 kernel_tests\control_flow_ops_py_test.py,4196,testExampleCond,4183,assertAllClose,2,4195,control_flow_ops.cond
 kernel_tests\control_flow_ops_py_test.py,4197,testExampleCond,4183,assertAllClose,2,4195,control_flow_ops.cond
@@ -227,7 +222,14 @@ kernel_tests\conv_ops_test.py,1948,ConstructAndTestGradient,1859,assertLess,1,19
 kernel_tests\conv_ops_test.py,1948,ConstructAndTestGradient,1859,assertLess,1,1945,max
 kernel_tests\critical_section_test.py,61,testCreateCriticalSection,46,assertAllClose,2,62,UNSUPPORTED Name (named variable or defined function: sorted)
 kernel_tests\critical_section_test.py,102,testCriticalSectionWithControlFlow,69,assertAllClose,2,103,UNSUPPORTED Name (named variable or defined function: sorted)
-kernel_tests\ctc_decoder_ops_test.py,93,_testCTCDecoder,48,assertAllClose,1,74,
+kernel_tests\ctc_decoder_ops_test.py,93,_testCTCDecoder,48,assertAllClose,1,69,sess.run
+kernel_tests\ctc_loss_op_test.py,754,testSumStates,742,assertAllClose,2,753,math_ops.exp
+kernel_tests\ctc_loss_op_test.py,782,testStateToOlabel,761,assertAllClose,1,779,ctc_ops._state_to_olabel
+kernel_tests\ctc_loss_op_test.py,782,testStateToOlabel,761,assertAllClose,1,780,math_ops.exp
+kernel_tests\ctc_loss_op_test.py,821,testStateToOlabelUnique,799,assertAllClose,1,817,ctc_ops._state_to_olabel_unique
+kernel_tests\ctc_loss_op_test.py,821,testStateToOlabelUnique,799,assertAllClose,1,819,math_ops.exp
+kernel_tests\ctc_loss_op_test.py,861,testStateToOlabelUniqueSinglePath,837,assertAllClose,1,856,ctc_ops._state_to_olabel_unique
+kernel_tests\ctc_loss_op_test.py,861,testStateToOlabelUniqueSinglePath,837,assertAllClose,1,858,math_ops.exp
 kernel_tests\cwise_ops_binary_test.py,100,_compareCpu,79,assertAllClose,1,80,np_func
 kernel_tests\cwise_ops_binary_test.py,101,_compareCpu,79,assertAllClose,1,80,np_func
 kernel_tests\cwise_ops_binary_test.py,102,_compareCpu,79,assertAllClose,1,80,np_func
@@ -249,9 +251,11 @@ kernel_tests\cwise_ops_test.py,670,_compareGradientX,648,assertAllClose,2,664,ja
 kernel_tests\cwise_ops_test.py,690,_compareGradientY,672,assertAllClose,2,688,jacob_n.astype
 kernel_tests\cwise_ops_test.py,692,_compareGradientY,672,assertAllClose,2,688,jacob_n.astype
 kernel_tests\cwise_ops_test.py,694,_compareGradientY,672,assertAllClose,2,688,jacob_n.astype
-kernel_tests\cwise_ops_test.py,854,_compareBinary,849,assertAllClose,1,851,astype
-kernel_tests\cwise_ops_test.py,857,_compareBinary,849,assertAllClose,1,851,astype
-kernel_tests\cwise_ops_test.py,864,_compareUnary,861,assertAllClose,1,862,astype
+kernel_tests\cwise_ops_test.py,857,_compareBinary,849,assertAllClose,1,851,np_func
+kernel_tests\cwise_ops_test.py,857,_compareBinary,849,assertAllClose,1,854,np_ans.astype
+kernel_tests\cwise_ops_test.py,860,_compareBinary,849,assertAllClose,1,851,np_func
+kernel_tests\cwise_ops_test.py,860,_compareBinary,849,assertAllClose,1,854,np_ans.astype
+kernel_tests\cwise_ops_test.py,867,_compareUnary,864,assertAllClose,1,865,astype
 kernel_tests\cwise_ops_test.py,1014,testSqrt,996,assertAllCloseAccordingToType,1,1006,np.sqrt
 kernel_tests\cwise_ops_test.py,1134,_compareAngle,1126,assertAllClose,1,1127,np.angle
 kernel_tests\cwise_ops_test.py,1288,_runtest,1282,assertAllClose,1,1285,np.polyval
@@ -264,13 +268,12 @@ kernel_tests\cwise_ops_unary_test.py,109,_compareCpu,78,assertAllClose,2,108,jac
 kernel_tests\cwise_ops_unary_test.py,114,_compareCpu,78,assertAllClose,2,108,jacob_n.astype
 kernel_tests\cwise_ops_unary_test.py,119,_compareCpu,78,assertAllClose,2,108,jacob_n.astype
 kernel_tests\cwise_ops_unary_test.py,145,_compareGpu,137,assertAllCloseAccordingToType,1,138,np_func
-kernel_tests\cwise_ops_unary_test.py,599,testComplexAbsGradGrad,584,assertLess,1,597,gradient_checker_v2.max_error
+kernel_tests\cwise_ops_unary_test.py,630,testComplexAbsGradGrad,615,assertLess,1,628,gradient_checker_v2.max_error
 kernel_tests\decode_image_op_test.py,76,testGif,48,assertAllClose,2,66,np.zeros
 kernel_tests\depthwise_conv_op_test.py,373,_VerifyValues,270,assertAllClose,2,310,_DepthwiseConv2dNumpy
 kernel_tests\depthwise_conv_op_test.py,374,_VerifyValues,270,assertAllClose,2,310,_DepthwiseConv2dNumpy
 kernel_tests\depthwise_conv_op_test.py,675,_ConstructAndTestGradient,586,assertLess,1,658,gradient_checker.compute_gradient_error
 kernel_tests\depthwise_conv_op_test.py,675,_ConstructAndTestGradient,586,assertLess,1,661,gradient_checker.compute_gradient_error
-kernel_tests\depthwise_conv_op_test.py,675,_ConstructAndTestGradient,586,assertLess,2,611,
 kernel_tests\depthwise_conv_op_test.py,920,_CompareBackpropInput,900,assertAllClose,1,919,_GetVal
 kernel_tests\depthwise_conv_op_test.py,920,_CompareBackpropInput,900,assertAllClose,2,918,_GetVal
 kernel_tests\depthwise_conv_op_test.py,978,_CompareBackpropFilter,958,assertAllClose,1,977,_GetVal
@@ -287,7 +290,7 @@ kernel_tests\diag_op_test.py,910,testGrad,900,assertLess,1,906,gradient_checker.
 kernel_tests\diag_op_test.py,910,testGrad,900,assertLess,1,921,gradient_checker.compute_gradient_error
 kernel_tests\diag_op_test.py,925,testGrad,900,assertLess,1,906,gradient_checker.compute_gradient_error
 kernel_tests\diag_op_test.py,925,testGrad,900,assertLess,1,921,gradient_checker.compute_gradient_error
-kernel_tests\diag_op_test.py,1107,testRankFourFloatTensorUnknownShape,1097,assertAllClose,2,1100,
+kernel_tests\diag_op_test.py,1107,testRankFourFloatTensorUnknownShape,1097,assertAllClose,2,1098,np.random.rand
 kernel_tests\diag_op_test.py,1172,testDiagGrad,1157,assertLess,1,1167,gradient_checker.compute_gradient_error
 kernel_tests\diag_op_test.py,1193,testDiagPartGrad,1178,assertLess,1,1188,gradient_checker.compute_gradient_error
 kernel_tests\division_future_test.py,50,testDivision,34,assertAllClose,1,45,ops.convert_to_tensor
@@ -346,6 +349,47 @@ kernel_tests\fractional_max_pool_op_test.py,599,testWhenRepeatedMaxValueInPoolin
 kernel_tests\functional_ops_test.py,913,_testForMLP,903,assertAllClose,1,911,self._npMLP
 kernel_tests\functional_ops_test.py,913,_testForMLP,903,assertAllClose,2,912,self._tfMLP
 kernel_tests\gradient_correctness_test.py,46,testMultipleOutputChainedGradients,35,assertAllClose,2,44,astype
+kernel_tests\init_ops_test.py,62,identicaltest,43,allclose,1,59,eval
+kernel_tests\init_ops_test.py,62,identicaltest,43,allclose,2,61,eval
+kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,1,59,eval
+kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,2,61,eval
+kernel_tests\init_ops_test.py,408,testTruncatedNormalDistribution,394,assertNear,2,396,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,409,testTruncatedNormalDistribution,394,assertNear,2,397,UNSUPPORTED Binary Operation
+kernel_tests\init_ops_test.py,425,testNormalDistribution,412,assertNear,2,414,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,426,testNormalDistribution,412,assertNear,2,415,UNSUPPORTED Binary Operation
+kernel_tests\init_ops_test.py,443,testUntruncatedNormalDistribution,429,assertNear,2,431,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,444,testUntruncatedNormalDistribution,429,assertNear,2,432,UNSUPPORTED Binary Operation
+kernel_tests\init_ops_test.py,456,testUniformDistribution,447,assertNear,2,449,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,457,testUniformDistribution,447,assertNear,2,450,UNSUPPORTED Binary Operation
+kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,1,706,np.linspace
+kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,2,705,self._LinSpace
+kernel_tests\init_ops_test.py,742,testNumConstant,738,assertArrayNear,1,741,np.linspace
+kernel_tests\init_ops_test.py,742,testNumConstant,738,assertArrayNear,2,740,self._LinSpaceNumConstant
+kernel_tests\init_ops_test.py,816,testGain,808,assertAllClose,1,814,eval
+kernel_tests\init_ops_test.py,880,testGain,871,assertAllClose,1,878,eval
+kernel_tests\init_ops_test.py,919,testShapesValues,883,assertAllClose,2,884,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,941,testNonuniformity,922,assertLess,1,923,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,942,testNonuniformity,922,assertLess,2,923,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,945,testNonuniformity,922,assertAllClose,1,924,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,945,testNonuniformity,922,assertAllClose,2,926,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,990,testGain,981,assertAllClose,1,988,eval
+kernel_tests\init_ops_test.py,1012,testNonuniformity,993,assertLess,1,994,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1013,testNonuniformity,993,assertLess,2,994,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1016,testNonuniformity,993,assertAllClose,1,995,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1016,testNonuniformity,993,assertAllClose,2,997,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1072,testShapesValues,1019,assertAllClose,2,1048,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1115,testGain,1106,assertAllClose,1,1113,eval
+kernel_tests\init_ops_test.py,1176,testShapesValues,1118,assertAllClose,2,1152,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1221,testGain,1212,assertAllClose,1,1219,eval
+kernel_tests\init_ops_test.py,1243,testNonuniformity,1224,assertLess,1,1225,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1244,testNonuniformity,1224,assertLess,2,1225,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1247,testNonuniformity,1224,assertAllClose,1,1226,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1247,testNonuniformity,1224,assertAllClose,2,1228,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1311,testShapesValues,1250,assertAllClose,2,1287,UNSUPPORTED Constant
+kernel_tests\init_ops_test.py,1332,testNonSquare,1328,assertAllClose,1,1332,UNSUPPORTED Name (named variable or defined function: init)
+kernel_tests\init_ops_test.py,1341,testGain,1335,assertAllClose,1,1341,UNSUPPORTED Name (named variable or defined function: init_default)
+kernel_tests\init_ops_test.py,1343,testGain,1335,assertAllClose,1,1343,UNSUPPORTED Name (named variable or defined function: init_custom)
+kernel_tests\init_ops_test.py,1355,testPartitions,1346,assertAllClose,1,1353,array_ops.identity
 kernel_tests\inplace_ops_test.py,39,testBasicUpdate,34,assertAllClose,1,37,array_ops.ones
 kernel_tests\inplace_ops_test.py,39,testBasicUpdate,34,assertAllClose,1,40,inplace_ops.inplace_update
 kernel_tests\inplace_ops_test.py,39,testBasicUpdate,34,assertAllClose,1,43,inplace_ops.inplace_update
@@ -635,8 +679,6 @@ kernel_tests\pool_test.py,305,_test_gradient,294,assertLess,1,300,gradient_check
 kernel_tests\pool_test.py,305,_test_gradient,294,assertLess,2,304,UNSUPPORTED Constant
 kernel_tests\py_func_test.py,151,testComplexType,146,assertAllClose,2,151,UNSUPPORTED Name (named variable or defined function: np_func)
 kernel_tests\py_func_test.py,565,testRenamedDeviceInTestClusterCorrectlyIdentifiedAsLocalhost,553,assertAllClose,1,564,session.run
-kernel_tests\qr_op_test.py,106,CompareOrthogonal,87,assertAllClose,1,99,
-kernel_tests\qr_op_test.py,106,CompareOrthogonal,87,assertAllClose,2,100,
 kernel_tests\qr_op_test.py,115,CheckApproximation,108,assertAllClose,1,114,test_util.matmul_without_tf32
 kernel_tests\qr_op_test.py,125,CheckUnitary,117,assertAllClose,1,120,array_ops.matrix_band_part
 kernel_tests\qr_op_test.py,125,CheckUnitary,117,assertAllClose,2,119,test_util.matmul_without_tf32
@@ -725,8 +767,8 @@ kernel_tests\rnn_cell_test.py,1562,_testBidirectionalDynamicRNN,1505,assertAllCl
 kernel_tests\rnn_cell_test.py,1562,_testBidirectionalDynamicRNN,1505,assertAllClose,2,1520,
 kernel_tests\rnn_cell_test.py,1567,_testBidirectionalDynamicRNN,1505,assertAllClose,1,1519,
 kernel_tests\rnn_cell_test.py,1567,_testBidirectionalDynamicRNN,1505,assertAllClose,2,1520,
-kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,1,2152,
-kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,2,2153,
+kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,1,2139,sess.run
+kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,2,2145,sess.run
 kernel_tests\rnn_cell_test.py,2625,testBasicLSTMCell,2576,assertAllClose,2,2622,np.array
 kernel_tests\rnn_cell_test.py,2746,testBasicLSTMCellWithStateTuple,2716,assertAllClose,2,2742,np.array
 kernel_tests\rnn_cell_test.py,2747,testBasicLSTMCellWithStateTuple,2716,assertAllClose,2,2744,np.array
@@ -753,7 +795,7 @@ kernel_tests\segment_reduction_ops_test.py,500,testDropNegatives,481,assertAllCl
 kernel_tests\segment_reduction_ops_test.py,566,testValues,525,assertAllClose,1,558,self._sparseSegmentReduce
 kernel_tests\segment_reduction_ops_test.py,585,testSegmentIdsHole,573,assertAllClose,1,581,self._sparseSegmentReduce
 kernel_tests\segment_reduction_ops_test.py,610,testWithNumSegments,587,assertAllClose,1,597,self._sparseSegmentReduce
-kernel_tests\segment_reduction_ops_test.py,643,testSegmentIdsGreaterThanZero,631,assertAllClose,1,639,self._sparseSegmentReduce
+kernel_tests\segment_reduction_ops_test.py,657,testSegmentIdsGreaterThanZero,645,assertAllClose,1,653,self._sparseSegmentReduce
 kernel_tests\self_adjoint_eig_op_test.py,92,testMatrixThatFailsWhenFlushingDenormsToZero,78,assertAllClose,1,81,astype
 kernel_tests\self_adjoint_eig_op_test.py,127,CompareEigenVectors,125,assertAllClose,1,126,EquilibrateEigenVectorPhases
 kernel_tests\self_adjoint_eig_op_test.py,168,Test,142,assertAllClose,2,147,astype
@@ -852,18 +894,14 @@ kernel_tests\sparse_to_dense_op_py_test.py,83,test3d,77,assertAllClose,1,80,UNSU
 kernel_tests\sparse_to_dense_op_py_test.py,83,test3d,77,assertAllClose,2,78,sparse_ops.sparse_to_dense
 kernel_tests\sparse_xent_op_test.py,278,_testHighDim,261,assertAllCloseAccordingToType,1,264,np.reshape
 kernel_tests\sparse_xent_op_test.py,278,_testHighDim,261,assertAllCloseAccordingToType,2,265,nn_ops.sparse_softmax_cross_entropy_with_logits
-kernel_tests\sparse_xent_op_test.py,279,_testHighDim,261,assertAllCloseAccordingToType,2,268,
-kernel_tests\sparse_xent_op_test.py,279,_testHighDim,261,assertAllCloseAccordingToType,2,273,
 kernel_tests\sparse_xent_op_test.py,279,_testHighDim,261,assertAllCloseAccordingToType,2,276,array_ops.reshape
 kernel_tests\stack_ops_test.py,59,_testStackPushPopSwap,50,assertAllClose,1,52,np.arange
 kernel_tests\stack_ops_test.py,199,_testStackPushPopSwap,191,assertAllClose,1,193,np.arange
 kernel_tests\summary_v1_image_op_test.py,84,testImageSummary,54,assertAllClose,1,80,eval
-kernel_tests\svd_op_test.py,125,CompareSingularVectors,110,assertAllClose,1,118,
-kernel_tests\svd_op_test.py,125,CompareSingularVectors,110,assertAllClose,2,119,
-kernel_tests\svd_op_test.py,142,CheckApproximation,127,assertAllClose,1,140,math_ops.matmul
-kernel_tests\svd_op_test.py,142,CheckApproximation,127,assertAllClose,1,141,math_ops.matmul
-kernel_tests\svd_op_test.py,148,CheckUnitary,144,assertAllClose,1,147,array_ops.matrix_band_part
-kernel_tests\svd_op_test.py,148,CheckUnitary,144,assertAllClose,2,146,math_ops.matmul
+kernel_tests\svd_op_test.py,143,CheckApproximation,128,assertAllClose,1,141,math_ops.matmul
+kernel_tests\svd_op_test.py,143,CheckApproximation,128,assertAllClose,1,142,math_ops.matmul
+kernel_tests\svd_op_test.py,149,CheckUnitary,145,assertAllClose,1,148,array_ops.matrix_band_part
+kernel_tests\svd_op_test.py,149,CheckUnitary,145,assertAllClose,2,147,math_ops.matmul
 kernel_tests\template_test.py,152,test_end_to_end_eager,115,assertLess,1,149,test_loss
 kernel_tests\template_test.py,152,test_end_to_end_eager,115,assertLess,2,147,test_loss
 kernel_tests\tensordot_op_test.py,196,test_tensordot,169,assertAllClose,1,188,sess.run
@@ -878,10 +916,7 @@ kernel_tests\tensor_array_ops_test.py,732,testSkipEagerTensorArrayGradWithShapeU
 kernel_tests\tensor_array_ops_test.py,1056,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,
 kernel_tests\tensor_array_ops_test.py,1057,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,
 kernel_tests\topk_op_test.py,58,_validateTopK,42,assertAllClose,1,48,np.array
-kernel_tests\topk_op_test.py,72,_validateTopK,42,assertAllClose,1,71,
-kernel_tests\topk_op_test.py,72,_validateTopK,42,assertAllClose,2,70,
-kernel_tests\topk_op_test.py,80,_validateTopK,42,assert_almost_equal,1,78,
-kernel_tests\topk_op_test.py,80,_validateTopK,42,assert_almost_equal,2,79,
+kernel_tests\topk_op_test.py,80,_validateTopK,42,assert_almost_equal,2,74,np.array
 kernel_tests\trace_op_test.py,36,compare,32,assertAllClose,1,35,eval
 kernel_tests\trace_op_test.py,36,compare,32,assertAllClose,2,33,np.trace
 kernel_tests\transpose_op_test.py,65,_compareCpu,44,assertAllClose,1,60,UNSUPPORTED Constant
@@ -891,19 +926,20 @@ kernel_tests\transpose_op_test.py,99,_compareGpu,73,assertAllClose,1,90,UNSUPPOR
 kernel_tests\tridiagonal_matmul_op_test.py,90,_testAllFormats,41,assertAllClose,2,87,np.array
 kernel_tests\tridiagonal_matmul_op_test.py,92,_testAllFormats,41,assertAllClose,2,88,np.stack
 kernel_tests\tridiagonal_matmul_op_test.py,161,testBatch,141,assertAllClose,2,152,np.matmul
-kernel_tests\tridiagonal_solve_op_test.py,420,_gradientTest,388,assertAllClose,1,399,_tfconst
-kernel_tests\tridiagonal_solve_op_test.py,420,_gradientTest,388,assertAllClose,2,416,sess.run
-kernel_tests\tridiagonal_solve_op_test.py,421,_gradientTest,388,assertAllClose,1,400,_tfconst
-kernel_tests\tridiagonal_solve_op_test.py,421,_gradientTest,388,assertAllClose,2,418,sess.run
-kernel_tests\tridiagonal_solve_op_test.py,568,_testWithPlaceholders,550,assertAllClose,1,567,sess.run
-kernel_tests\tridiagonal_solve_op_test.py,660,testSequenceFormatWithUnknownDims,636,assertAllClose,1,652,sess.run
+kernel_tests\tridiagonal_solve_op_test.py,417,_gradientTest,385,assertAllClose,1,396,_tfconst
+kernel_tests\tridiagonal_solve_op_test.py,417,_gradientTest,385,assertAllClose,2,413,sess.run
+kernel_tests\tridiagonal_solve_op_test.py,418,_gradientTest,385,assertAllClose,1,397,_tfconst
+kernel_tests\tridiagonal_solve_op_test.py,418,_gradientTest,385,assertAllClose,2,415,sess.run
+kernel_tests\tridiagonal_solve_op_test.py,565,_testWithPlaceholders,547,assertAllClose,1,564,sess.run
+kernel_tests\tridiagonal_solve_op_test.py,657,testSequenceFormatWithUnknownDims,633,assertAllClose,1,649,sess.run
 kernel_tests\variables_test.py,467,testInitializerFunction,458,assertAllClose,1,459,
 kernel_tests\variable_scope_test.py,1645,testGetterThatCreatesTwoVariablesAndSumsThem,1625,assertAllClose,2,1645,UNSUPPORTED Name (named variable or defined function: sum)
 kernel_tests\where_op_test.py,258,testV2PredBroadcasting,251,assertAllClose,2,255,np.where
 kernel_tests\while_v2_test.py,294,testThreeNestWithLists,261,assertAllClose,2,290,_TapeFromGraphMode
-kernel_tests\xent_op_test.py,247,testGradient,221,assertLess,1,235,gradient_checker.compute_gradient_error
-kernel_tests\xent_op_test.py,266,testGradientLabelWithV2,250,assertLess,1,264,gradient_checker.compute_gradient_error
-kernel_tests\xent_op_test.py,300,testSecondGradient,269,assertLess,1,290,gradient_checker.compute_gradient_error
+kernel_tests\xent_op_test_base.py,90,_testXent2D,68,assertAllCloseAccordingToType,1,75,UNSUPPORTED Name (named variable or defined function: expected_gradient)
+kernel_tests\xent_op_test_base.py,218,testGradient,192,assertLess,1,206,gradient_checker.compute_gradient_error
+kernel_tests\xent_op_test_base.py,237,testGradientLabelWithV2,221,assertLess,1,235,gradient_checker.compute_gradient_error
+kernel_tests\xent_op_test_base.py,272,testSecondGradient,240,assertLess,1,260,gradient_checker.compute_gradient_error
 kernel_tests\array_ops\gather_op_test.py,170,testHigherRank,110,assertAllClose,1,159,astype
 kernel_tests\array_ops\gather_op_test.py,239,testHigherRankGradientTape,176,assertAllClose,1,228,astype
 kernel_tests\array_ops\scatter_nd_ops_test.py,158,_VariableRankTest,110,assertAllClose,1,150,ref.copy
@@ -1120,7 +1156,7 @@ kernel_tests\distributions\multinomial_test.py,65,testN,59,assertAllClose,1,61,
 kernel_tests\distributions\multinomial_test.py,74,testP,68,assertAllClose,1,69,
 kernel_tests\distributions\multinomial_test.py,84,testLogits,77,assertAllClose,1,78,np.array
 kernel_tests\distributions\multinomial_test.py,85,testLogits,77,assertAllClose,1,79,UNSUPPORTED Binary Operation
-kernel_tests\distributions\multinomial_test.py,93,testPmfUnderflow,88,assertAllClose,2,92,
+kernel_tests\distributions\multinomial_test.py,93,testPmfUnderflow,88,assertAllClose,2,91,multinomial.Multinomial
 kernel_tests\distributions\multinomial_test.py,175,testPmfCountsStretchedInBroadcastWhenSameRank,170,assertAllClose,1,174,prob
 kernel_tests\distributions\multinomial_test.py,184,testPmfCountsStretchedInBroadcastWhenLowerRank,179,assertAllClose,1,183,prob
 kernel_tests\distributions\multinomial_test.py,216,testMultinomialMean,209,assertAllClose,1,214,UNSUPPORTED Binary Operation
@@ -1157,6 +1193,12 @@ kernel_tests\distributions\normal_test.py,367,testNormalQuantile,344,assertAllCl
 kernel_tests\distributions\normal_test.py,431,testNormalSample,417,assertAllClose,2,420,UNSUPPORTED Constant
 kernel_tests\distributions\normal_test.py,432,testNormalSample,417,assertAllClose,2,421,np.sqrt
 kernel_tests\distributions\normal_test.py,548,testNormalNormalKL,531,assertAllClose,2,544,UNSUPPORTED Binary Operation
+kernel_tests\distributions\special_math_test.py,105,testNdtri,93,assertAllClose,1,103,special.ndtri
+kernel_tests\distributions\special_math_test.py,121,testNdtriDynamicShape,108,assertAllClose,1,120,special.ndtri
+kernel_tests\distributions\special_math_test.py,121,testNdtriDynamicShape,108,assertAllClose,2,118,sess.run
+kernel_tests\distributions\special_math_test.py,371,testErfInvValues,362,assertAllClose,1,369,special.erfinv
+kernel_tests\distributions\special_math_test.py,421,_test_grid_log,404,assertAllClose,1,420,scipy_dist.logcdf
+kernel_tests\distributions\special_math_test.py,421,_test_grid_log,404,assertAllClose,2,407,eval
 kernel_tests\distributions\student_t_test.py,75,testStudentPDFAndLogPDF,52,assertAllClose,1,73,stats.t.logpdf
 kernel_tests\distributions\student_t_test.py,77,testStudentPDFAndLogPDF,52,assertAllClose,1,74,stats.t.pdf
 kernel_tests\distributions\student_t_test.py,102,testStudentLogPDFMultidimensional,80,assertAllClose,1,100,stats.t.logpdf
@@ -1201,10 +1243,10 @@ kernel_tests\distributions\util_test.py,932,_testSoftplus,924,assertAllCloseAcco
 kernel_tests\distributions\util_test.py,937,_testSoftplus,924,assertAllCloseAccordingToType,1,925,np.asarray
 kernel_tests\distributions\util_test.py,937,_testSoftplus,924,assertAllCloseAccordingToType,2,930,sess.run
 kernel_tests\distributions\util_test.py,997,testGradient,983,assertLess,1,994,gradient_checker.compute_gradient_error
-kernel_tests\linalg\linear_operator_addition_test.py,84,test_two_diag_operators,74,assertAllClose,2,82,
-kernel_tests\linalg\linear_operator_addition_test.py,107,test_three_diag_operators,95,assertAllClose,2,105,
-kernel_tests\linalg\linear_operator_addition_test.py,131,test_diag_tril_diag,116,assertAllClose,2,129,
-kernel_tests\linalg\linear_operator_addition_test.py,154,test_matrix_diag_tril_diag_uses_custom_name,142,assertAllClose,2,152,
+kernel_tests\linalg\linear_operator_addition_test.py,84,test_two_diag_operators,74,assertAllClose,2,80,add_operators
+kernel_tests\linalg\linear_operator_addition_test.py,107,test_three_diag_operators,95,assertAllClose,2,103,add_operators
+kernel_tests\linalg\linear_operator_addition_test.py,131,test_diag_tril_diag,116,assertAllClose,2,127,add_operators
+kernel_tests\linalg\linear_operator_addition_test.py,154,test_matrix_diag_tril_diag_uses_custom_name,142,assertAllClose,2,150,add_operators
 kernel_tests\linalg\linear_operator_addition_test.py,282,test_identity_plus_identity,271,assertAllClose,2,278,self._adder.add
 kernel_tests\linalg\linear_operator_addition_test.py,300,test_identity_plus_scaled_identity,289,assertAllClose,2,296,self._adder.add
 kernel_tests\linalg\linear_operator_addition_test.py,319,test_scaled_identity_plus_scaled_identity,307,assertAllClose,2,315,self._adder.add
@@ -1233,29 +1275,29 @@ kernel_tests\linalg\sparse\conjugate_gradient_test.py,96,_test_conjugate_gradien
 kernel_tests\linalg\sparse\conjugate_gradient_test.py,101,_test_conjugate_gradient,43,assertLessEqual,1,100,np.linalg.norm
 kernel_tests\linalg\sparse\csr_sparse_matrix_grad_test.py,108,testLargeBatchSparseConversionGrad,87,assertAllClose,1,98,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_grad_test.py,108,testLargeBatchSparseConversionGrad,87,assertAllClose,2,107,sess.run
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,166,testSparseTensorConversion,141,assertAllClose,1,143,
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,174,testSparseTensorConversion,141,assertAllClose,1,143,
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,200,testCSRSparseMatrixResourceVariable,179,assertAllClose,1,185,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,203,testCSRSparseMatrixResourceVariable,179,assertAllClose,1,185,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,244,testBatchSparseTensorConversion,206,assertAllClose,1,208,
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,331,testDenseConversion,308,assertAllClose,1,310,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,468,testSparseMatrixAdd,434,assertAllClose,1,455,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,516,testSparseMatrixMatMul,498,assertAllClose,1,515,a_sparse_mat.dot
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,694,testSparseMatrixSparseMatMul,667,assertAllClose,1,693,todense
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,798,testLargeBatchRegisteredAddN,778,assertAllClose,1,797,np.sum
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,873,testTranspose,851,assertAllClose,1,862,np.transpose
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,873,testTranspose,851,assertAllClose,1,864,np.conj
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,898,testLargeBatchTranspose,876,assertAllClose,1,886,np.transpose
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,898,testLargeBatchTranspose,876,assertAllClose,1,889,np.conj
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,987,testSoftmaxGrad,965,assertAllClose,1,974,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1012,testLargeBatchSoftmaxGrad,990,assertAllClose,1,999,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1063,testLargeBatchConj,1043,assertAllClose,1,1057,np.conj
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1081,testLargeBatchSparseMatrixMulScalar,1066,assertAllClose,1,1074,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1099,testLargeBatchSparseMatrixMulVec,1084,assertAllClose,1,1092,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1140,testSparseCholesky,1102,assertAllClose,1,1138,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1191,testBatchSparseCholesky,1143,assertAllClose,1,1144,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1230,testLargeBatchSparseCholesky,1195,assertAllClose,1,1203,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1230,testLargeBatchSparseCholesky,1195,assertAllClose,1,1210,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,164,testSparseTensorConversion,140,assertAllClose,1,142,
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,172,testSparseTensorConversion,140,assertAllClose,1,142,
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,198,testCSRSparseMatrixResourceVariable,177,assertAllClose,1,183,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,201,testCSRSparseMatrixResourceVariable,177,assertAllClose,1,183,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,242,testBatchSparseTensorConversion,204,assertAllClose,1,206,
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,328,testDenseConversion,306,assertAllClose,1,308,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,460,testSparseMatrixAdd,428,assertAllClose,1,447,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,504,testSparseMatrixMatMul,487,assertAllClose,1,503,a_sparse_mat.dot
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,680,testSparseMatrixSparseMatMul,655,assertAllClose,1,679,todense
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,779,testLargeBatchRegisteredAddN,759,assertAllClose,1,778,np.sum
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,854,testTranspose,832,assertAllClose,1,843,np.transpose
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,854,testTranspose,832,assertAllClose,1,845,np.conj
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,879,testLargeBatchTranspose,857,assertAllClose,1,867,np.transpose
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,879,testLargeBatchTranspose,857,assertAllClose,1,870,np.conj
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,968,testSoftmaxGrad,946,assertAllClose,1,955,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,993,testLargeBatchSoftmaxGrad,971,assertAllClose,1,980,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1044,testLargeBatchConj,1024,assertAllClose,1,1038,np.conj
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1062,testLargeBatchSparseMatrixMulScalar,1047,assertAllClose,1,1055,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1080,testLargeBatchSparseMatrixMulVec,1065,assertAllClose,1,1073,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1121,testSparseCholesky,1083,assertAllClose,1,1119,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1172,testBatchSparseCholesky,1124,assertAllClose,1,1125,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1211,testLargeBatchSparseCholesky,1176,assertAllClose,1,1184,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1211,testLargeBatchSparseCholesky,1176,assertAllClose,1,1191,UNSUPPORTED Binary Operation
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,57,testConstructorFromSparseTensor,40,assertAllClose,1,45,
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,79,testConstructorFromDenseTensorNoIndices,61,assertAllClose,1,67,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,79,testConstructorFromDenseTensorNoIndices,61,assertAllClose,2,72,a_sm.to_dense
@@ -1337,7 +1379,6 @@ kernel_tests\signal\spectral_ops_test.py,117,_compare,87,assertAllClose,1,115,Sp
 kernel_tests\signal\spectral_ops_test.py,117,_compare,87,assertAllClose,2,94,spectral_ops.inverse_stft
 kernel_tests\signal\spectral_ops_test.py,253,test_inverse_stft_window_fn_special_case,242,assertAllClose,1,250,window_ops.hann_window
 kernel_tests\signal\spectral_ops_test.py,363,test_mdct_round_trip,332,assertAllClose,2,342,astype
-kernel_tests\signal\spectral_ops_test.py,363,test_mdct_round_trip,332,assertAllClose,2,359,
 kernel_tests\signal\window_ops_test.py,82,_check_mdct_window,73,assertAllClose,1,81,UNSUPPORTED Binary Operation
 kernel_tests\signal\window_ops_test.py,85,_check_mdct_window,73,assertAllClose,1,84,UNSUPPORTED Binary Operation
 kernel_tests\signal\window_ops_test.py,96,_compare_window_fns,88,assertAllClose,1,92,astype

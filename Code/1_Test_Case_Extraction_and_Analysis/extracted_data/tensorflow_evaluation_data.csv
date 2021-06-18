@@ -217,7 +217,7 @@ kernel_tests\conv3d_transpose_test.py,224,testGradient,207,assertLess,1,220,grad
 kernel_tests\conv3d_transpose_test.py,224,testGradient,207,assertLess,2,223,UNSUPPORTED Constant,TODO
 kernel_tests\conv_ops_3d_test.py,214,testConv3DExpandedBatch,201,assertAllClose,1,208,nn_ops.conv3d_v2,TODO
 kernel_tests\conv_ops_3d_test.py,240,testConvolutionClass3DExpandedBatch,217,assertAllClose,1,236,convolver1,TODO
-kernel_tests\conv_ops_3d_test.py,256,testConvolutionWith2SpatialDimensionsAndExpandedBatch,243,assertAllClose,1,250,nn_ops.convolution,TODO
+kernel_tests\conv_ops_3d_test.py,256,testConvolutionWith2SpatialDimensionsAndExpandedBatch,243,assertAllClose,1,250,nn_ops.convolution,"Same code under test, with different parameters"
 kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,1,547,max,TODO
 kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,1,551,max,TODO
 kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,2,506,UNSUPPORTED Constant,TODO

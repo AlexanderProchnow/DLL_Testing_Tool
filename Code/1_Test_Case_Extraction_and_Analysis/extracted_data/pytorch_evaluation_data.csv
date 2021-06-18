@@ -428,7 +428,7 @@ test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6496,pe
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6498,numpy,TODO
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6508,perm_fn,TODO
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6511,numpy,TODO
-test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6533,perm_fn,TODO
+test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6533,perm_fn,y
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6540,numpy,TODO
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6547,perm_fn,TODO
 test\test_nn.py,6513,test_transformerdecoderlayer,6455,assert_allclose,2,6554,numpy,TODO
@@ -524,7 +524,7 @@ test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6496,pe
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6498,numpy,TODO
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6508,perm_fn,TODO
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6511,numpy,TODO
-test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6533,perm_fn,TODO
+test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6533,perm_fn,y
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6540,numpy,TODO
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6547,perm_fn,TODO
 test\test_nn.py,6572,test_transformerdecoderlayer,6455,assert_allclose,2,6554,numpy,TODO
@@ -667,7 +667,7 @@ test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6740,to,TODO
 test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6763,to,TODO
 test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6780,to,TODO
 test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6796,to,TODO
-test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6815,to,TODO
+test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6815,to,n
 test\test_nn.py,6775,test_transformerencoder,6686,assert_allclose,2,6831,to,TODO
 test\test_nn.py,6792,test_transformerencoder,6686,assert_allclose,1,6739,model,TODO
 test\test_nn.py,6792,test_transformerencoder,6686,assert_allclose,1,6756,model,TODO
@@ -687,7 +687,7 @@ test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6756,model,T
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6762,model,TODO
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6779,model,TODO
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6795,model,TODO
-test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6814,model,TODO
+test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6814,model,n
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,1,6830,model,TODO
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,2,6740,to,TODO
 test\test_nn.py,6808,test_transformerencoder,6686,assert_allclose,2,6763,to,TODO

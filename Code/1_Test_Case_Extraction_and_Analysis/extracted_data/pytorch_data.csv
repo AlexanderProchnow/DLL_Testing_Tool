@@ -26,11 +26,20 @@ test\test_fx_experimental.py,809,forward,803,assert_allclose,1,809,UNSUPPORTED N
 test\test_fx_experimental.py,809,forward,803,assert_allclose,2,809,UNSUPPORTED Name (named variable or defined function: normalized)
 test\test_fx_experimental.py,822,forward,816,assert_allclose,1,822,UNSUPPORTED Name (named variable or defined function: traced)
 test\test_fx_experimental.py,822,forward,816,assert_allclose,2,822,UNSUPPORTED Name (named variable or defined function: normalized)
+test\test_fx_experimental.py,1275,forward,1266,assert_allclose,1,1275,UNSUPPORTED Name (named variable or defined function: model)
+test\test_fx_experimental.py,1275,forward,1266,assert_allclose,2,1275,UNSUPPORTED Name (named variable or defined function: optimized_model)
+test\test_fx_experimental.py,1279,forward,1266,assert_allclose,1,1279,UNSUPPORTED Name (named variable or defined function: model)
+test\test_fx_experimental.py,1279,forward,1266,assert_allclose,2,1279,UNSUPPORTED Name (named variable or defined function: optimized_model2)
+test\test_fx_experimental.py,1308,test_optimize_for_inference_cpu_torchvision,1284,assert_allclose,1,1306,model
+test\test_fx_experimental.py,1308,test_optimize_for_inference_cpu_torchvision,1284,assert_allclose,2,1307,optimized_model
 test\test_jit.py,8685,test_pack_unpack_state,8682,assert_allclose,1,8685,UNSUPPORTED Name (named variable or defined function: sm)
 test\test_jit.py,8700,test_pack_unpack_state,8682,assert_allclose,1,8700,UNSUPPORTED Name (named variable or defined function: imported)
 test\test_jit.py,8898,forward,8894,assert_allclose,1,8898,UNSUPPORTED Name (named variable or defined function: m)
 test\test_jit.py,8900,forward,8894,assert_allclose,1,8900,UNSUPPORTED Name (named variable or defined function: m)
 test\test_jit.py,8902,forward,8894,assert_allclose,1,8902,UNSUPPORTED Name (named variable or defined function: m)
+test\test_jit.py,12883,forward,12867,allclose,1,12883,UNSUPPORTED Name (named variable or defined function: weak_mod)
+test\test_jit.py,12887,forward,12867,allclose,1,12887,UNSUPPORTED Name (named variable or defined function: weak_mod)
+test\test_jit.py,14522,test_torchscript_multi_head_attn,14458,allclose,1,14500,UNSUPPORTED Name (named variable or defined function: jit_multihead_attn_forward)
 test\test_jit_cuda_fuser.py,567,_compare,564,allclose,1,565,numpy
 test\test_jit_cuda_fuser.py,567,_compare,564,allclose,2,566,numpy
 test\test_jit_fuser_te.py,1193,test_masked_fill,1171,assert_allclose,1,1190,fn
@@ -43,7 +52,6 @@ test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,1,1787,UNSU
 test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,2,1788,UNSUPPORTED Name (named variable or defined function: eager)
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,1,1819,fn
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,2,1823,script
-test\test_linalg.py,5601,_test_lobpcg_method,5582,assertLessEqual,2,5591,
 test\test_linalg.py,5712,test_lobpcg_torchscript,5700,assertLess,1,5711,UNSUPPORTED Binary Operation
 test\test_linalg.py,5761,test_lobpcg_scipy,5718,assertLess,1,5761,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_linalg.py,5767,test_lobpcg_scipy,5718,assertLess,1,5765,UNSUPPORTED Binary Operation
@@ -1233,17 +1241,8 @@ test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7115,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7124,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7135,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7160,to
-test\test_nn.py,8003,test_RNN_dropout,7970,assertLess,1,7996,
 test\test_nn.py,8005,test_RNN_dropout,7970,assertLess,1,8005,UNSUPPORTED Name (named variable or defined function: min)
 test\test_nn.py,8897,test_cosine_similarity,8871,assertLessEqual,1,8896,F.cosine_similarity
-test\test_nn.py,10716,test_layer_norm_grads_with_create_graph_flag,10704,allclose,1,10713,
-test\test_nn.py,10716,test_layer_norm_grads_with_create_graph_flag,10704,allclose,1,10722,
-test\test_nn.py,10716,test_layer_norm_grads_with_create_graph_flag,10704,allclose,2,10714,
-test\test_nn.py,10716,test_layer_norm_grads_with_create_graph_flag,10704,allclose,2,10723,
-test\test_nn.py,10725,test_layer_norm_grads_with_create_graph_flag,10704,allclose,1,10713,
-test\test_nn.py,10725,test_layer_norm_grads_with_create_graph_flag,10704,allclose,1,10722,
-test\test_nn.py,10725,test_layer_norm_grads_with_create_graph_flag,10704,allclose,2,10714,
-test\test_nn.py,10725,test_layer_norm_grads_with_create_graph_flag,10704,allclose,2,10723,
 test\test_nn.py,11233,test_add_relu,11222,allclose,1,11231,torch._VF._add_relu
 test\test_nn.py,11233,test_add_relu,11222,allclose,2,11230,torch.relu
 test\test_nn.py,11644,_test_dropout,11636,assertLess,1,11644,UNSUPPORTED Name (named variable or defined function: abs)
@@ -1260,31 +1259,30 @@ test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,2,16106,torch.
 test\test_optim.py,95,_test_rosenbrock_sparse,39,assertLessEqual,2,56,params.data.dist
 test\test_optim.py,127,_test_basic_cases_template,97,assertLess,1,127,UNSUPPORTED Name (named variable or defined function: fn)
 test\test_optim.py,127,_test_basic_cases_template,97,assertLess,2,118,item
-test\test_optim.py,1807,test_cosine_then_cyclic,1786,assertLessEqual,1,1805,
 test\test_optim.py,1807,test_cosine_then_cyclic,1786,assertLessEqual,2,1789,UNSUPPORTED Constant
 test\test_sparse.py,857,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_sparse.py,861,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_spectral_ops.py,530,test_fftshift_frequencies,522,allclose,1,529,torch.fft.fftshift
-test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,191,
-test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,201,
+test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,191,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
+test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,201,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
 test\test_static_runtime.py,192,test_mlp,177,assert_allclose,2,190,bot_l
 test\test_static_runtime.py,192,test_mlp,177,assert_allclose,2,200,bot_l
-test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,194,
-test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,204,
+test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,194,UNSUPPORTED Name (named variable or defined function: top_l_acc)
+test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,204,UNSUPPORTED Name (named variable or defined function: top_l_acc)
 test\test_static_runtime.py,195,test_mlp,177,assert_allclose,2,193,top_l
 test\test_static_runtime.py,195,test_mlp,177,assert_allclose,2,203,top_l
-test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,191,
-test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,201,
+test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,191,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
+test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,201,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
 test\test_static_runtime.py,202,test_mlp,177,assert_allclose,2,190,bot_l
 test\test_static_runtime.py,202,test_mlp,177,assert_allclose,2,200,bot_l
-test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,194,
-test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,204,
+test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,194,UNSUPPORTED Name (named variable or defined function: top_l_acc)
+test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,204,UNSUPPORTED Name (named variable or defined function: top_l_acc)
 test\test_static_runtime.py,205,test_mlp,177,assert_allclose,2,193,top_l
 test\test_static_runtime.py,205,test_mlp,177,assert_allclose,2,203,top_l
 test\test_static_runtime.py,213,test_trivial_graph,207,assert_allclose,1,210,tg
-test\test_static_runtime.py,213,test_trivial_graph,207,assert_allclose,2,212,
+test\test_static_runtime.py,213,test_trivial_graph,207,assert_allclose,2,212,UNSUPPORTED Name (named variable or defined function: tg_a)
 test\test_static_runtime.py,221,test_leaky_relu,215,assert_allclose,1,218,tg
-test\test_static_runtime.py,221,test_leaky_relu,215,assert_allclose,2,220,
+test\test_static_runtime.py,221,test_leaky_relu,215,assert_allclose,2,220,UNSUPPORTED Name (named variable or defined function: tg_a)
 test\test_static_runtime.py,231,test_fusion_trivial_graph,224,assert_allclose,1,227,tg
 test\test_static_runtime.py,231,test_fusion_trivial_graph,224,assert_allclose,2,230,tg
 test\test_static_runtime.py,268,test_fusion_loop,259,assert_allclose,1,264,lg
@@ -1379,8 +1377,9 @@ test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,1,1125,
 test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,2,1115,warmup_and_run_forward
 test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,2,1123,warmup_and_run_forward
 test\test_tensorexpr.py,1145,test_scalar,1128,assert_allclose,1,1143,test
-test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1178,
 test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1179,UNSUPPORTED Binary Operation
+test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1176,torch.ones
+test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1177,traced
 test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,2,1177,traced
 test\test_tensorexpr.py,1199,test_unsqueeze,1184,assert_allclose,1,1197,np.expand_dims
 test\test_tensorexpr.py,1199,test_unsqueeze,1184,assert_allclose,1,1198,UNSUPPORTED Binary Operation
@@ -1476,6 +1475,7 @@ test\test_xnnpack_integration.py,983,validate_transform_conv1d_to_conv2d,937,ass
 test\benchmark_utils\test_benchmark_utils.py,587,test_manipulate_callgrind_stats,579,assertLessEqual,1,587,UNSUPPORTED Name (named variable or defined function: len)
 test\custom_operator\test_custom_ops.py,21,test_calling_custom_op_string,19,assertLess,1,20,ops.custom.op2
 test\custom_operator\test_custom_ops.py,21,test_calling_custom_op_string,19,assertLess,1,22,ops.custom.op2
+test\custom_operator\test_custom_ops.py,61,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,119,test_ddp_comm_hook_allreduce_hook,106,assert_allclose,1,117,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,119,test_ddp_comm_hook_allreduce_hook,106,assert_allclose,2,115,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,136,test_ddp_comm_hook_fp16compress_hook,123,assert_allclose,1,134,self._get_grads
@@ -1488,6 +1488,14 @@ test\distributed\elastic\multiprocessing\api_test.py,781,test_function_exit,743,
 test\distributed\elastic\rendezvous\dynamic_rendezvous_test.py,158,test_encoded_size_is_within_expected_limit,125,assertLessEqual,1,158,UNSUPPORTED Name (named variable or defined function: len)
 test\distributed\elastic\timer\local_timer_test.py,179,test_get_less_than_size,161,assertLessEqual,2,179,UNSUPPORTED Name (named variable or defined function: len)
 test\distributed\elastic\timer\local_timer_test.py,206,test_watchdog_call_count,193,assertLessEqual,1,204,
+test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,1,529,cast
+test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,2,530,cast
+test\distributed\pipeline\sync\test_deferred_batch_norm.py,111,tilt_dist,19,allclose,1,111,UNSUPPORTED Name (named variable or defined function: bn)
+test\distributed\pipeline\sync\test_deferred_batch_norm.py,111,tilt_dist,19,allclose,2,111,UNSUPPORTED Name (named variable or defined function: dbn)
+test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allclose,1,140,UNSUPPORTED Name (named variable or defined function: bn)
+test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allclose,2,140,UNSUPPORTED Name (named variable or defined function: dbn)
+test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,1,40,sum_grad
+test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,2,29,sum_grad
 test\distributed\pipeline\sync\skip\test_gpipe.py,67,forward,50,allclose,1,52,UNSUPPORTED Binary Operation
 test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,789,UNSUPPORTED Binary Operation
 test\distributions\test_distributions.py,1496,test_vonmises_logprob,1490,assertLess,1,1496,UNSUPPORTED Name (named variable or defined function: abs)
@@ -1501,6 +1509,14 @@ test\distributions\test_distributions.py,2671,test_cdf_icdf_inverse,2659,assertL
 test\distributions\test_distributions.py,3801,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3800,max
 test\distributions\test_distributions.py,3808,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3807,max
 test\distributions\test_distributions.py,3815,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3814,max
+test\distributions\test_transforms.py,291,get_transforms,17,allclose,1,291,UNSUPPORTED Name (named variable or defined function: f)
+test\distributions\test_transforms.py,291,get_transforms,17,allclose,2,291,UNSUPPORTED Name (named variable or defined function: traced_f)
+test\distributions\test_transforms.py,308,get_transforms,17,allclose,1,308,UNSUPPORTED Name (named variable or defined function: f)
+test\distributions\test_transforms.py,308,get_transforms,17,allclose,2,308,UNSUPPORTED Name (named variable or defined function: traced_f)
+test\distributions\test_transforms.py,326,get_transforms,17,allclose,1,326,UNSUPPORTED Name (named variable or defined function: f)
+test\distributions\test_transforms.py,326,get_transforms,17,allclose,2,326,UNSUPPORTED Name (named variable or defined function: traced_f)
+test\distributions\test_utils.py,20,test_tril_matrix_to_vec,13,allclose,1,19,vec_to_tril_matrix
+test\distributions\test_utils.py,20,test_tril_matrix_to_vec,13,allclose,2,17,mat.tril
 test\jit\test_freezing.py,1880,forward,1869,allclose,1,1880,UNSUPPORTED Name (named variable or defined function: model)
 test\jit\test_freezing.py,1880,forward,1869,allclose,2,1880,UNSUPPORTED Name (named variable or defined function: mod)
 test\jit\test_freezing.py,1904,test_pool2d_batchnorm,1883,allclose,1,1904,UNSUPPORTED Name (named variable or defined function: sub_model)
@@ -1517,13 +1533,15 @@ test\mobile\test_bytecode.py,271,test_backport_bytecode_from_file_to_file,239,as
 test\mobile\test_bytecode.py,297,test_backport_bytecode_from_file_to_buffer,275,assert_allclose,1,295,mobile_module
 test\mobile\test_bytecode.py,297,test_backport_bytecode_from_file_to_buffer,275,assert_allclose,2,296,UNSUPPORTED Binary Operation
 test\onnx\test_pytorch_onnx_caffe2_quantized.py,48,generic_test,14,assert_almost_equal,1,28,q_model
-test\onnx\test_pytorch_onnx_caffe2_quantized.py,48,generic_test,14,assert_almost_equal,2,35,
 test\package\test_model.py,59,test_resnet,34,allclose,1,59,UNSUPPORTED Name (named variable or defined function: r2)
 test\package\test_model.py,59,test_resnet,34,allclose,2,58,resnet
 test\package\test_model.py,91,test_resnet,34,allclose,1,91,UNSUPPORTED Name (named variable or defined function: r3)
 test\package\test_model.py,91,test_resnet,34,allclose,2,58,resnet
 test\package\test_model.py,102,test_resnet,34,allclose,1,102,UNSUPPORTED Name (named variable or defined function: r4)
 test\package\test_model.py,102,test_resnet,34,allclose,2,58,resnet
+test\package\test_model.py,180,test_model_save,105,allclose,1,172,
+test\package\test_model.py,209,test_script_resnet,183,allclose,1,209,UNSUPPORTED Name (named variable or defined function: loaded)
+test\package\test_model.py,209,test_script_resnet,183,allclose,2,209,UNSUPPORTED Name (named variable or defined function: resnet)
 test\package\test_package_fx.py,39,forward,25,allclose,1,39,UNSUPPORTED Name (named variable or defined function: loaded_traced)
 test\package\test_package_fx.py,39,forward,25,allclose,2,39,UNSUPPORTED Name (named variable or defined function: traced)
 test\package\test_package_fx.py,55,test_package_then_fx,41,allclose,1,55,UNSUPPORTED Name (named variable or defined function: loaded)
