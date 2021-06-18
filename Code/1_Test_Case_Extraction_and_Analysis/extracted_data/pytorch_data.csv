@@ -9,6 +9,10 @@ test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,asser
 test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1339,coro.throw
 test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,1,2788,UNSUPPORTED Binary Operation
 test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,2,2789,UNSUPPORTED Binary Operation
+test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8967,torch.randn
+test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8966,torch.rand
+test\test_autograd.py,8973,test_cat_r_to_c,8965,gradcheck,2,8966,torch.rand
+test\test_autograd.py,8973,test_cat_r_to_c,8965,gradcheck,2,8967,torch.randn
 test\test_cuda.py,179,_test_memory_stats_generator,151,assertLess,1,174,torch.cuda.memory_allocated
 test\test_cuda.py,182,_test_memory_stats_generator,151,assertLessEqual,1,174,torch.cuda.memory_allocated
 test\test_cuda.py,182,_test_memory_stats_generator,151,assertLessEqual,2,175,torch.cuda.max_memory_allocated
@@ -1539,7 +1543,6 @@ test\package\test_model.py,91,test_resnet,34,allclose,1,91,UNSUPPORTED Name (nam
 test\package\test_model.py,91,test_resnet,34,allclose,2,58,resnet
 test\package\test_model.py,102,test_resnet,34,allclose,1,102,UNSUPPORTED Name (named variable or defined function: r4)
 test\package\test_model.py,102,test_resnet,34,allclose,2,58,resnet
-test\package\test_model.py,180,test_model_save,105,allclose,1,172,
 test\package\test_model.py,209,test_script_resnet,183,allclose,1,209,UNSUPPORTED Name (named variable or defined function: loaded)
 test\package\test_model.py,209,test_script_resnet,183,allclose,2,209,UNSUPPORTED Name (named variable or defined function: resnet)
 test\package\test_package_fx.py,39,forward,25,allclose,1,39,UNSUPPORTED Name (named variable or defined function: loaded_traced)
