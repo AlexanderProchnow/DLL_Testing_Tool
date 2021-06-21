@@ -64,7 +64,7 @@ test\test_linalg.py,5767,test_lobpcg_scipy,5718,assertLess,1,5844,UNSUPPORTED Bi
 test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5766,UNSUPPORTED Binary Operation
 test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5786,UNSUPPORTED Binary Operation
 test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5849,UNSUPPORTED Binary Operation
-test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5853,
+test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
 test\test_linalg.py,5783,test_lobpcg_scipy,5718,assertLess,1,5783,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5765,UNSUPPORTED Binary Operation
 test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5785,UNSUPPORTED Binary Operation
@@ -72,7 +72,7 @@ test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5844,UNSUPPORTED Bi
 test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5766,UNSUPPORTED Binary Operation
 test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5786,UNSUPPORTED Binary Operation
 test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5849,UNSUPPORTED Binary Operation
-test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5853,
+test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
 test\test_mobile_optimizer.py,160,forward,95,assert_allclose,1,160,UNSUPPORTED Name (named variable or defined function: bn_scripted_module)
 test\test_mobile_optimizer.py,160,forward,95,assert_allclose,2,160,UNSUPPORTED Name (named variable or defined function: bn_fold_scripted_module)
 test\test_mobile_optimizer.py,167,forward,95,assert_allclose,1,167,UNSUPPORTED Name (named variable or defined function: bn_scripted_module)
@@ -112,6 +112,12 @@ test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4618,np.squ
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,1,4625,numpy
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4411,UNSUPPORTED Name (named variable or defined function: reference)
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4412,UNSUPPORTED Binary Operation
+test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5192,torch.randn
+test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5193,torch.randn
+test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5194,torch.randn
+test\test_nn.py,5204,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5192,torch.randn
+test\test_nn.py,5204,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5193,torch.randn
+test\test_nn.py,5204,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5194,torch.randn
 test\test_nn.py,6300,test_transformerencoderlayer,6270,assert_allclose,1,6295,model
 test\test_nn.py,6300,test_transformerencoderlayer,6270,assert_allclose,1,6297,numpy
 test\test_nn.py,6300,test_transformerencoderlayer,6270,assert_allclose,1,6303,model

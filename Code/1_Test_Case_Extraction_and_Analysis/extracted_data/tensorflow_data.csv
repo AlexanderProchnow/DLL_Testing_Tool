@@ -20,7 +20,6 @@ kernel_tests\atrous_conv2d_test.py,137,testAtrousSequence,87,assertAllClose,2,13
 kernel_tests\atrous_conv2d_test.py,137,testAtrousSequence,87,assertAllClose,2,135,nn_ops.conv2d
 kernel_tests\atrous_conv2d_test.py,137,testAtrousSequence,87,assertAllClose,2,136,array_ops.batch_to_space
 kernel_tests\atrous_conv2d_test.py,162,testGradient,140,assertLess,1,157,gradient_checker.compute_gradient_error
-kernel_tests\atrous_conv2d_test.py,162,testGradient,140,assertLess,2,161,
 kernel_tests\atrous_conv2d_test.py,201,testAtrousConv2DTransposeForward,168,assertAllClose,1,197,nn_ops.atrous_conv2d_transpose
 kernel_tests\atrous_conv2d_test.py,201,testAtrousConv2DTransposeForward,168,assertAllClose,2,199,nn_ops.conv2d_transpose
 kernel_tests\atrous_conv2d_test.py,229,testAtrousDepthwiseConv2DForward,207,assertAllClose,1,226,nn_impl.depthwise_conv2d
@@ -157,7 +156,6 @@ kernel_tests\conv1d_transpose_test.py,182,testConv1DTransposeSingleStrideNCW,153
 kernel_tests\conv1d_transpose_test.py,214,testConv1DTransposeSameNCW,184,assertAllClose,1,209,UNSUPPORTED Constant
 kernel_tests\conv1d_transpose_test.py,256,testConv1DTransposeValidNCW,216,assertAllClose,1,237,np.zeros
 kernel_tests\conv2d_backprop_filter_grad_test.py,72,testGradient,36,assertLess,1,67,gradient_checker.compute_gradient_error
-kernel_tests\conv2d_backprop_filter_grad_test.py,72,testGradient,36,assertLess,2,71,
 kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,1,112,gradient_checker.compute_gradient_error
 kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,2,116,UNSUPPORTED Constant
 kernel_tests\conv2d_transpose_test.py,78,testConv2DTransposeSingleStride,39,assertAllClose,1,68,UNSUPPORTED Binary Operation
@@ -496,8 +494,8 @@ kernel_tests\linalg_ops_test.py,576,run_test,562,assertAllClose,1,571,scipy.lina
 kernel_tests\linalg_ops_test.py,576,run_test,562,assertAllClose,2,573,linalg.eigh_tridiagonal
 kernel_tests\linalg_ops_test.py,617,test_select,603,assertAllClose,2,615,linalg.eigh_tridiagonal
 kernel_tests\linalg_ops_test.py,627,test_select,603,assertAllClose,2,622,linalg.eigh_tridiagonal
-kernel_tests\lookup_ops_test.py,3533,testMutableHashTableStringFloat,3518,assertAllClose,1,3519,
-kernel_tests\lookup_ops_test.py,3550,testMutableHashTableIntFloat,3535,assertAllClose,1,3536,
+kernel_tests\lookup_ops_test.py,3533,testMutableHashTableStringFloat,3518,assertAllClose,1,3519,UNSUPPORTED Unary Operation
+kernel_tests\lookup_ops_test.py,3550,testMutableHashTableIntFloat,3535,assertAllClose,1,3536,UNSUPPORTED Unary Operation
 kernel_tests\losses_test.py,228,testSoftmaxLabelSmoothing,209,assertAlmostEqual,2,227,UNSUPPORTED Binary Operation
 kernel_tests\losses_test.py,353,testNonZeroLossWithPlaceholderForWeights,343,assertAlmostEqual,2,351,sess.run
 kernel_tests\losses_test.py,369,testUnknownShapePlaceholderForLogitsLabelsButScalarWeights,356,assertAlmostEqual,2,362,sess.run
@@ -736,10 +734,6 @@ kernel_tests\rnn_cell_test.py,1298,_testDynamicEquivalentToStaticRNN,1123,assert
 kernel_tests\rnn_cell_test.py,1298,_testDynamicEquivalentToStaticRNN,1123,assertAllClose,2,1293,UNSUPPORTED Name (named variable or defined function: state_dynamic)
 kernel_tests\rnn_cell_test.py,1302,_testDynamicEquivalentToStaticRNN,1123,assertAllClose,1,1205,sess.run
 kernel_tests\rnn_cell_test.py,1302,_testDynamicEquivalentToStaticRNN,1123,assertAllClose,2,1280,sess.run
-kernel_tests\rnn_cell_test.py,1562,_testBidirectionalDynamicRNN,1505,assertAllClose,1,1519,
-kernel_tests\rnn_cell_test.py,1562,_testBidirectionalDynamicRNN,1505,assertAllClose,2,1520,
-kernel_tests\rnn_cell_test.py,1567,_testBidirectionalDynamicRNN,1505,assertAllClose,1,1519,
-kernel_tests\rnn_cell_test.py,1567,_testBidirectionalDynamicRNN,1505,assertAllClose,2,1520,
 kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,1,2139,sess.run
 kernel_tests\rnn_cell_test.py,2154,_testRawRNN,2060,assertAllClose,2,2145,sess.run
 kernel_tests\rnn_cell_test.py,2625,testBasicLSTMCell,2576,assertAllClose,2,2622,np.array
@@ -829,7 +823,6 @@ kernel_tests\sparse_ops_test.py,1015,testGradient,1006,assertLess,1,1013,gradien
 kernel_tests\sparse_reorder_op_test.py,125,testGradients,110,assertLess,1,119,gradient_checker.compute_gradient_error
 kernel_tests\sparse_slice_op_test.py,262,testGradients,248,assertLess,1,260,gradient_checker.compute_gradient_error
 kernel_tests\sparse_tensor_dense_matmul_grad_test.py,88,_testGradients,64,assertLess,1,83,gradient_checker.compute_gradient_error
-kernel_tests\sparse_tensor_dense_matmul_grad_test.py,88,_testGradients,64,assertLess,2,82,
 kernel_tests\sparse_tensor_dense_matmul_op_test.py,86,_testMatmul,50,assertAllClose,1,63,x_mat.dot
 kernel_tests\sparse_tensor_dense_matmul_op_test.py,88,_testMatmul,50,assertAllClose,1,63,x_mat.dot
 kernel_tests\sparse_tensor_dense_matmul_op_test.py,90,_testMatmul,50,assertAllClose,1,63,x_mat.dot
@@ -886,8 +879,8 @@ kernel_tests\tensordot_op_test.py,230,test_tensordot_scalar_axes,201,assertAllCl
 kernel_tests\tensor_array_ops_test.py,707,testSkipEagerTensorArrayGradWithShapeKnownElementShape,681,assertAllClose,1,706,np.random.random
 kernel_tests\tensor_array_ops_test.py,707,testSkipEagerTensorArrayGradWithShapeKnownElementShape,681,assertAllClose,1,703,np.random.random
 kernel_tests\tensor_array_ops_test.py,732,testSkipEagerTensorArrayGradWithShapeUnknownElementShape,712,assertAllClose,1,731,np.random.random
-kernel_tests\tensor_array_ops_test.py,1056,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,
-kernel_tests\tensor_array_ops_test.py,1057,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,
+kernel_tests\tensor_array_ops_test.py,1056,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,UNSUPPORTED Unary Operation
+kernel_tests\tensor_array_ops_test.py,1057,_testWhileLoopWritePackGradients,972,assertAllClose,1,1013,UNSUPPORTED Unary Operation
 kernel_tests\topk_op_test.py,58,_validateTopK,42,assertAllClose,1,48,np.array
 kernel_tests\topk_op_test.py,80,_validateTopK,42,assert_almost_equal,2,74,np.array
 kernel_tests\trace_op_test.py,36,compare,32,assertAllClose,1,35,eval
@@ -951,21 +944,9 @@ kernel_tests\boosted_trees\prediction_ops_test.py,2342,testPredictionMultipleTre
 kernel_tests\boosted_trees\prediction_ops_test.py,2505,testPredictionMultipleTreeMultiClass,2345,assertAllClose,2,2504,session.run
 kernel_tests\boosted_trees\prediction_ops_test.py,2568,testCategoricalSplits,2508,assertAllClose,2,2567,session.run
 kernel_tests\boosted_trees\prediction_ops_test.py,2633,testCategoricalSplitsMultiDimensionFeature,2571,assertAllClose,2,2632,session.run
-kernel_tests\boosted_trees\prediction_ops_test.py,2700,testContribsForOnlyABiasNode,2640,assertAllClose,2,2677,
-kernel_tests\boosted_trees\prediction_ops_test.py,2701,testContribsForOnlyABiasNode,2640,assertAllClose,2,2678,
-kernel_tests\boosted_trees\prediction_ops_test.py,2702,testContribsForOnlyABiasNode,2640,assertAllClose,1,2676,
-kernel_tests\boosted_trees\prediction_ops_test.py,2765,testContribsForOnlyABiasNodeMultiDimensionFeature,2705,assertAllClose,2,2742,
-kernel_tests\boosted_trees\prediction_ops_test.py,2766,testContribsForOnlyABiasNodeMultiDimensionFeature,2705,assertAllClose,2,2743,
-kernel_tests\boosted_trees\prediction_ops_test.py,2767,testContribsForOnlyABiasNodeMultiDimensionFeature,2705,assertAllClose,2,2741,
-kernel_tests\boosted_trees\prediction_ops_test.py,2868,testContribsMultipleTreeWhenFirstTreeIsABiasNode,2770,assertAllClose,2,2840,
-kernel_tests\boosted_trees\prediction_ops_test.py,2869,testContribsMultipleTreeWhenFirstTreeIsABiasNode,2770,assertAllClose,2,2844,
-kernel_tests\boosted_trees\prediction_ops_test.py,2870,testContribsMultipleTreeWhenFirstTreeIsABiasNode,2770,assertAllClose,2,2845,
-kernel_tests\boosted_trees\prediction_ops_test.py,2971,testContribsMultipleTreeWhenFirstTreeIsABiasNodeMultiDimFeature,2873,assertAllClose,2,2944,
-kernel_tests\boosted_trees\prediction_ops_test.py,2972,testContribsMultipleTreeWhenFirstTreeIsABiasNodeMultiDimFeature,2873,assertAllClose,2,2948,
-kernel_tests\boosted_trees\prediction_ops_test.py,2973,testContribsMultipleTreeWhenFirstTreeIsABiasNodeMultiDimFeature,2873,assertAllClose,2,2949,
-kernel_tests\boosted_trees\prediction_ops_test.py,3117,testContribsMultipleTree,2976,assertAllClose,2,3088,
-kernel_tests\boosted_trees\prediction_ops_test.py,3118,testContribsMultipleTree,2976,assertAllClose,2,3093,
-kernel_tests\boosted_trees\prediction_ops_test.py,3119,testContribsMultipleTree,2976,assertAllClose,1,3095,
+kernel_tests\boosted_trees\prediction_ops_test.py,2701,testContribsForOnlyABiasNode,2640,assertAllClose,2,2675,UNSUPPORTED Binary Operation
+kernel_tests\boosted_trees\prediction_ops_test.py,2766,testContribsForOnlyABiasNodeMultiDimensionFeature,2705,assertAllClose,2,2740,UNSUPPORTED Binary Operation
+kernel_tests\boosted_trees\prediction_ops_test.py,3118,testContribsMultipleTree,2976,assertAllClose,2,3087,UNSUPPORTED Binary Operation
 kernel_tests\boosted_trees\stats_ops_test.py,1330,testMakeStatsSummarySimple,1327,assertAllClose,1,1329,np.asarray
 kernel_tests\boosted_trees\stats_ops_test.py,1349,testAggregateStatsSimple,1341,assertAllClose,1,1343,np.asarray
 kernel_tests\boosted_trees\stats_ops_test.py,1349,testAggregateStatsSimple,1341,assertAllClose,1,1346,np.reshape
@@ -1236,7 +1217,6 @@ kernel_tests\random\random_crop_test.py,77,testRandomization,54,assertAllClose,2
 kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,1,94,util.test_moment_matching
 kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,2,82,UNSUPPORTED Constant
 kernel_tests\random\random_gamma_test.py,156,testDistinct,142,assertLess,1,149,sum
-kernel_tests\random\random_gamma_test.py,156,testDistinct,142,assertLess,2,150,
 kernel_tests\random\random_grad_test.py,143,_testCompareToExplicitDerivative,114,assertAllClose,2,139,misc.derivative
 kernel_tests\random\random_grad_test.py,249,testQuadraticLoss,223,assertAllClose,1,242,UNSUPPORTED Binary Operation
 kernel_tests\random\random_ops_test.py,336,testUniformInts,317,assertLess,1,335,np.abs
