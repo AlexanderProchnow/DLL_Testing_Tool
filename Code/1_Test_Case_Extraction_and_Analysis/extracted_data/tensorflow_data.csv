@@ -25,7 +25,6 @@ kernel_tests\atrous_conv2d_test.py,201,testAtrousConv2DTransposeForward,168,asse
 kernel_tests\atrous_conv2d_test.py,229,testAtrousDepthwiseConv2DForward,207,assertAllClose,1,226,nn_impl.depthwise_conv2d
 kernel_tests\atrous_conv2d_test.py,229,testAtrousDepthwiseConv2DForward,207,assertAllClose,2,228,nn_impl.depthwise_conv2d
 kernel_tests\atrous_convolution_test.py,265,_test_gradient,254,assertLess,1,262,gradient_checker.compute_gradient_error
-kernel_tests\atrous_convolution_test.py,265,_test_gradient,254,assertLess,2,264,UNSUPPORTED Constant
 kernel_tests\attention_ops_test.py,105,_VerifyValues,33,assertLessEqual,2,100,max
 kernel_tests\attention_ops_test.py,107,_VerifyValues,33,assertLessEqual,2,100,max
 kernel_tests\banded_triangular_solve_op_test.py,100,_verifySolve,50,assertAllClose,1,98,np.linalg.solve
@@ -44,10 +43,8 @@ kernel_tests\betainc_op_test.py,69,_testBetaInc,38,assertAllCloseAccordingToType
 kernel_tests\betainc_op_test.py,69,_testBetaInc,38,assertAllCloseAccordingToType,2,67,eval
 kernel_tests\betainc_op_test.py,189,testBetaIncGrads,175,assertLess,1,186,gradient_checker.compute_gradient_error
 kernel_tests\betainc_op_test.py,189,testBetaIncGrads,175,assertLess,1,195,gradient_checker.compute_gradient_error
-kernel_tests\betainc_op_test.py,189,testBetaIncGrads,175,assertLess,2,176,UNSUPPORTED Constant
 kernel_tests\betainc_op_test.py,198,testBetaIncGrads,175,assertLess,1,186,gradient_checker.compute_gradient_error
 kernel_tests\betainc_op_test.py,198,testBetaIncGrads,175,assertLess,1,195,gradient_checker.compute_gradient_error
-kernel_tests\betainc_op_test.py,198,testBetaIncGrads,175,assertLess,2,176,UNSUPPORTED Constant
 kernel_tests\bias_op_base.py,57,_testBias,53,assertAllCloseAccordingToType,1,54,self._npBias
 kernel_tests\broadcast_to_ops_test.py,141,testGradientForScalar,130,assertLess,1,138,gradient_checker_v2.max_error
 kernel_tests\broadcast_to_ops_test.py,154,testGradientWithSameRank,143,assertLess,1,151,gradient_checker_v2.max_error
@@ -56,7 +53,6 @@ kernel_tests\broadcast_to_ops_test.py,179,testGradientWithBroadcastAllDimensions
 kernel_tests\broadcast_to_ops_test.py,194,testGradientWithLargeDim,181,assertLess,1,191,gradient_checker_v2.max_error
 kernel_tests\candidate_sampler_ops_test.py,128,testSeed,112,allclose,1,128,UNSUPPORTED Name (named variable or defined function: draw)
 kernel_tests\candidate_sampler_ops_test.py,128,testSeed,112,allclose,2,128,UNSUPPORTED Name (named variable or defined function: draw)
-kernel_tests\candidate_sampler_ops_test.py,132,testSeed,112,assertLessEqual,1,126,UNSUPPORTED Constant
 kernel_tests\cast_op_test.py,110,testBfloat16,106,assertAllClose,1,107,astype
 kernel_tests\cast_op_test.py,113,testBfloat16,106,assertAllClose,1,107,astype
 kernel_tests\cast_op_test.py,185,testGradients,171,assertLess,1,183,gradient_checker_v2.max_error
@@ -147,35 +143,22 @@ kernel_tests\control_flow_ops_py_test.py,4196,testExampleCond,4183,assertAllClos
 kernel_tests\control_flow_ops_py_test.py,4197,testExampleCond,4183,assertAllClose,2,4195,control_flow_ops.cond
 kernel_tests\control_flow_ops_py_test.py,4945,testGuardedAssertDoesNotCopyWhenTrue,4910,assertLess,2,4945,UNSUPPORTED Name (named variable or defined function: len)
 kernel_tests\conv1d_test.py,122,testConv1DTranspose,84,assertAllClose,1,103,np.zeros
-kernel_tests\conv1d_transpose_test.py,90,testConv1DTransposeSame,63,assertAllClose,1,85,UNSUPPORTED Constant
 kernel_tests\conv1d_transpose_test.py,131,testConv1DTransposeValid,92,assertAllClose,1,111,np.zeros
 kernel_tests\conv1d_transpose_test.py,151,testGradient,134,assertLess,1,147,gradient_checker.compute_gradient_error
-kernel_tests\conv1d_transpose_test.py,151,testGradient,134,assertLess,2,150,UNSUPPORTED Constant
-kernel_tests\conv1d_transpose_test.py,214,testConv1DTransposeSameNCW,184,assertAllClose,1,209,UNSUPPORTED Constant
 kernel_tests\conv1d_transpose_test.py,256,testConv1DTransposeValidNCW,216,assertAllClose,1,237,np.zeros
 kernel_tests\conv2d_backprop_filter_grad_test.py,72,testGradient,36,assertLess,1,67,gradient_checker.compute_gradient_error
 kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,1,112,gradient_checker.compute_gradient_error
-kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,2,116,UNSUPPORTED Constant
-kernel_tests\conv2d_transpose_test.py,114,testConv2DTransposeSame,80,assertAllClose,1,102,UNSUPPORTED Constant
 kernel_tests\conv2d_transpose_test.py,164,testConv2DTransposeValid,116,assertAllClose,1,134,np.zeros
 kernel_tests\conv2d_transpose_test.py,184,testGradient,167,assertLess,1,180,gradient_checker.compute_gradient_error
-kernel_tests\conv2d_transpose_test.py,184,testGradient,167,assertLess,2,183,UNSUPPORTED Constant
-kernel_tests\conv2d_transpose_test.py,255,testConv2DTransposeSameNCHW,221,assertAllClose,1,247,UNSUPPORTED Constant
 kernel_tests\conv2d_transpose_test.py,303,testConv2DTransposeValidNCHW,257,assertAllClose,1,278,np.zeros
 kernel_tests\conv3d_backprop_filter_v2_grad_test.py,63,testGradient,36,assertLess,1,58,gradient_checker.compute_gradient_error
-kernel_tests\conv3d_backprop_filter_v2_grad_test.py,63,testGradient,36,assertLess,2,62,UNSUPPORTED Constant
-kernel_tests\conv3d_transpose_test.py,121,testConv3DTransposeSame,85,assertAllClose,1,120,UNSUPPORTED Constant
 kernel_tests\conv3d_transpose_test.py,204,testConv3DTransposeValid,153,assertAllClose,1,172,np.zeros
 kernel_tests\conv3d_transpose_test.py,224,testGradient,207,assertLess,1,220,gradient_checker.compute_gradient_error
-kernel_tests\conv3d_transpose_test.py,224,testGradient,207,assertLess,2,223,UNSUPPORTED Constant
 kernel_tests\conv_ops_3d_test.py,214,testConv3DExpandedBatch,201,assertAllClose,1,208,nn_ops.conv3d_v2
 kernel_tests\conv_ops_3d_test.py,240,testConvolutionClass3DExpandedBatch,217,assertAllClose,1,236,convolver1
 kernel_tests\conv_ops_3d_test.py,256,testConvolutionWith2SpatialDimensionsAndExpandedBatch,243,assertAllClose,1,250,nn_ops.convolution
 kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,1,547,max
 kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,1,551,max
-kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,2,506,UNSUPPORTED Constant
-kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,2,508,UNSUPPORTED Constant
-kernel_tests\conv_ops_3d_test.py,554,_ConstructAndTestGradientForConfig,463,assertLess,2,510,UNSUPPORTED Constant
 kernel_tests\conv_ops_test.py,1948,ConstructAndTestGradient,1859,assertLess,1,1941,max
 kernel_tests\conv_ops_test.py,1948,ConstructAndTestGradient,1859,assertLess,1,1945,max
 kernel_tests\critical_section_test.py,61,testCreateCriticalSection,46,assertAllClose,2,62,UNSUPPORTED Name (named variable or defined function: sorted)
@@ -289,18 +272,12 @@ kernel_tests\extract_image_patches_grad_test.py,173,_VariableShapeGradient,140,a
 kernel_tests\extract_volume_patches_grad_test.py,83,testGradient,60,assertLess,1,80,gradient_checker_v2.max_error
 kernel_tests\fractional_avg_pool_op_test.py,141,_ValidateFractionalAvgPoolResult,114,assertAllClose,1,138,self._GetExpectedFractionalAvgPoolResult
 kernel_tests\fractional_avg_pool_op_test.py,459,testAllInputOptionsThroughGradientError,433,assertLess,1,452,gradient_checker.compute_gradient_error
-kernel_tests\fractional_avg_pool_op_test.py,459,testAllInputOptionsThroughGradientError,433,assertLess,2,451,UNSUPPORTED Constant
 kernel_tests\fractional_avg_pool_op_test.py,491,testDifferentTensorShapesThroughGradientError,462,assertLess,1,484,gradient_checker.compute_gradient_error
-kernel_tests\fractional_avg_pool_op_test.py,491,testDifferentTensorShapesThroughGradientError,462,assertLess,2,483,UNSUPPORTED Constant
 kernel_tests\fractional_avg_pool_op_test.py,519,testLargePoolingRatioThroughGradientError,494,assertLess,1,512,gradient_checker.compute_gradient_error
-kernel_tests\fractional_avg_pool_op_test.py,519,testLargePoolingRatioThroughGradientError,494,assertLess,2,511,UNSUPPORTED Constant
 kernel_tests\fractional_max_pool_op_test.py,141,_ValidateFractionalMaxPoolResult,114,assertAllClose,1,138,self._GetExpectedFractionalMaxPoolResult
 kernel_tests\fractional_max_pool_op_test.py,464,testAllInputOptionsThroughGradientError,436,assertLess,1,457,gradient_checker.compute_gradient_error
-kernel_tests\fractional_max_pool_op_test.py,464,testAllInputOptionsThroughGradientError,436,assertLess,2,456,UNSUPPORTED Constant
 kernel_tests\fractional_max_pool_op_test.py,498,testDifferentTensorShapesThroughGradientError,467,assertLess,1,491,gradient_checker.compute_gradient_error
-kernel_tests\fractional_max_pool_op_test.py,498,testDifferentTensorShapesThroughGradientError,467,assertLess,2,490,UNSUPPORTED Constant
 kernel_tests\fractional_max_pool_op_test.py,528,testLargePoolingRatioThroughGradientError,501,assertLess,1,521,gradient_checker.compute_gradient_error
-kernel_tests\fractional_max_pool_op_test.py,528,testLargePoolingRatioThroughGradientError,501,assertLess,2,520,UNSUPPORTED Constant
 kernel_tests\fractional_max_pool_op_test.py,589,testWhenRepeatedMaxValueInPoolingRegion,530,assertAllClose,1,561,np.reshape
 kernel_tests\fractional_max_pool_op_test.py,599,testWhenRepeatedMaxValueInPoolingRegion,530,assertAllClose,1,567,np.reshape
 kernel_tests\functional_ops_test.py,913,_testForMLP,903,assertAllClose,1,911,self._npMLP
@@ -310,35 +287,15 @@ kernel_tests\init_ops_test.py,62,identicaltest,43,allclose,1,59,eval
 kernel_tests\init_ops_test.py,62,identicaltest,43,allclose,2,61,eval
 kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,1,59,eval
 kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,2,61,eval
-kernel_tests\init_ops_test.py,408,testTruncatedNormalDistribution,394,assertNear,2,396,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,425,testNormalDistribution,412,assertNear,2,414,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,443,testUntruncatedNormalDistribution,429,assertNear,2,431,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,456,testUniformDistribution,447,assertNear,2,449,UNSUPPORTED Constant
 kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,1,706,np.linspace
 kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,2,705,self._LinSpace
 kernel_tests\init_ops_test.py,742,testNumConstant,738,assertArrayNear,1,741,np.linspace
 kernel_tests\init_ops_test.py,742,testNumConstant,738,assertArrayNear,2,740,self._LinSpaceNumConstant
 kernel_tests\init_ops_test.py,816,testGain,808,assertAllClose,1,814,eval
 kernel_tests\init_ops_test.py,880,testGain,871,assertAllClose,1,878,eval
-kernel_tests\init_ops_test.py,919,testShapesValues,883,assertAllClose,2,884,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,941,testNonuniformity,922,assertLess,1,923,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,942,testNonuniformity,922,assertLess,2,923,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,945,testNonuniformity,922,assertAllClose,1,924,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,945,testNonuniformity,922,assertAllClose,2,926,UNSUPPORTED Constant
 kernel_tests\init_ops_test.py,990,testGain,981,assertAllClose,1,988,eval
-kernel_tests\init_ops_test.py,1012,testNonuniformity,993,assertLess,1,994,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1013,testNonuniformity,993,assertLess,2,994,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1016,testNonuniformity,993,assertAllClose,1,995,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1016,testNonuniformity,993,assertAllClose,2,997,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1072,testShapesValues,1019,assertAllClose,2,1048,UNSUPPORTED Constant
 kernel_tests\init_ops_test.py,1115,testGain,1106,assertAllClose,1,1113,eval
-kernel_tests\init_ops_test.py,1176,testShapesValues,1118,assertAllClose,2,1152,UNSUPPORTED Constant
 kernel_tests\init_ops_test.py,1221,testGain,1212,assertAllClose,1,1219,eval
-kernel_tests\init_ops_test.py,1243,testNonuniformity,1224,assertLess,1,1225,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1244,testNonuniformity,1224,assertLess,2,1225,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1247,testNonuniformity,1224,assertAllClose,1,1226,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1247,testNonuniformity,1224,assertAllClose,2,1228,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,1311,testShapesValues,1250,assertAllClose,2,1287,UNSUPPORTED Constant
 kernel_tests\init_ops_test.py,1332,testNonSquare,1328,assertAllClose,1,1332,UNSUPPORTED Name (named variable or defined function: init)
 kernel_tests\init_ops_test.py,1341,testGain,1335,assertAllClose,1,1341,UNSUPPORTED Name (named variable or defined function: init_default)
 kernel_tests\init_ops_test.py,1343,testGain,1335,assertAllClose,1,1343,UNSUPPORTED Name (named variable or defined function: init_custom)
@@ -502,7 +459,6 @@ kernel_tests\losses_test.py,863,testSomeMisclassified,856,assertAllClose,1,860,l
 kernel_tests\losses_test.py,881,testAllQuadratic,876,assertAllClose,1,880,losses.huber_loss
 kernel_tests\losses_test.py,890,testAllLinear,885,assertAllClose,1,889,losses.huber_loss
 kernel_tests\losses_test.py,903,testMixedQuadraticLinear,893,assertAllClose,1,899,losses.huber_loss
-kernel_tests\losses_test.py,922,testAllLinearDelta,914,assertAllClose,1,915,UNSUPPORTED Constant
 kernel_tests\losses_test.py,1058,_test_valid_weights,1035,assertAlmostEqual,2,1049,losses.mean_pairwise_squared_error
 kernel_tests\losses_test.py,1231,testLossIsAssociativeAcrossBatchElements,1198,assertAlmostEqual,2,1222,losses.mean_pairwise_squared_error
 kernel_tests\losses_test.py,1524,_test_valid_weights,1511,assertAllClose,1,1520,np.sum
@@ -561,8 +517,6 @@ kernel_tests\matrix_triangular_solve_op_test.py,95,_verifySolve,50,assertAllClos
 kernel_tests\metrics_test.py,267,testUnweighted,239,assertAlmostEqual,1,262,np.mean
 kernel_tests\metrics_test.py,268,testUnweighted,239,assertAlmostEqual,1,262,np.mean
 kernel_tests\metrics_test.py,1434,testWithMultipleUpdates,1387,assertAlmostEqual,1,1409,self.np_auc
-kernel_tests\metrics_test.py,2016,testWithMultipleUpdates,1948,assertAlmostEqual,1,1961,UNSUPPORTED Constant
-kernel_tests\metrics_test.py,2017,testWithMultipleUpdates,1948,assertAlmostEqual,1,1961,UNSUPPORTED Constant
 kernel_tests\metrics_test.py,3774,testMultipleUpdatesWithWeights,3731,assertAlmostEqual,1,3773,np.mean
 kernel_tests\metrics_test.py,3811,testMultipleUpdatesWithMissingClass,3777,assertAlmostEqual,1,3810,np.mean
 kernel_tests\metrics_test.py,3836,testUpdateOpEvalIsAccumulatedConfusionMatrix,3814,assertAlmostEqual,1,3835,np.mean
@@ -590,29 +544,20 @@ kernel_tests\partitioned_variables_test.py,603,testConcat,580,assertAllClose,1,5
 kernel_tests\partitioned_variables_test.py,603,testConcat,580,assertAllClose,2,582,variable_scope.get_variable
 kernel_tests\pooling_ops_3d_test.py,87,_VerifyOneTest,48,assertAllClose,2,86,vals.flatten
 kernel_tests\pooling_ops_3d_test.py,303,_ConstructAndTestGradientForConfig,228,assertLess,1,287,gradient_checker.compute_gradient_error
-kernel_tests\pooling_ops_3d_test.py,303,_ConstructAndTestGradientForConfig,228,assertLess,2,258,UNSUPPORTED Constant
 kernel_tests\pooling_ops_3d_test.py,305,_ConstructAndTestGradientForConfig,228,assertLess,1,294,gradient_checker.compute_gradient_error
-kernel_tests\pooling_ops_3d_test.py,305,_ConstructAndTestGradientForConfig,228,assertLess,2,259,UNSUPPORTED Constant
 kernel_tests\pooling_ops_test.py,1065,testMaxPoolingGradWithArgmax,1034,assertAllClose,1,1064,flatten
 kernel_tests\pooling_ops_test.py,1105,testMaxPoolingGradGradWithArgmax,1070,assertAllClose,1,1104,flatten
 kernel_tests\pooling_ops_test.py,1184,_ConstructAndTestGradient,1108,assertLess,1,1176,gradient_checker.compute_gradient_error
-kernel_tests\pooling_ops_test.py,1184,_ConstructAndTestGradient,1108,assertLess,2,1148,UNSUPPORTED Constant
-kernel_tests\pooling_ops_test.py,1184,_ConstructAndTestGradient,1108,assertLess,2,1155,UNSUPPORTED Constant
 kernel_tests\pooling_ops_test.py,1261,_ConstructAndTestSecondGradient,1186,assertLess,1,1253,gradient_checker.compute_gradient_error
-kernel_tests\pooling_ops_test.py,1261,_ConstructAndTestSecondGradient,1186,assertLess,2,1226,UNSUPPORTED Constant
-kernel_tests\pooling_ops_test.py,1261,_ConstructAndTestSecondGradient,1186,assertLess,2,1233,UNSUPPORTED Constant
 kernel_tests\pool_test.py,155,_test,148,assertAllClose,1,153,pool_direct
 kernel_tests\pool_test.py,305,_test_gradient,294,assertLess,1,300,gradient_checker.compute_gradient_error
-kernel_tests\pool_test.py,305,_test_gradient,294,assertLess,2,304,UNSUPPORTED Constant
 kernel_tests\py_func_test.py,151,testComplexType,146,assertAllClose,2,151,UNSUPPORTED Name (named variable or defined function: np_func)
 kernel_tests\py_func_test.py,565,testRenamedDeviceInTestClusterCorrectlyIdentifiedAsLocalhost,553,assertAllClose,1,564,session.run
 kernel_tests\qr_op_test.py,115,CheckApproximation,108,assertAllClose,1,114,test_util.matmul_without_tf32
 kernel_tests\qr_op_test.py,125,CheckUnitary,117,assertAllClose,1,120,array_ops.matrix_band_part
 kernel_tests\qr_op_test.py,125,CheckUnitary,117,assertAllClose,2,119,test_util.matmul_without_tf32
 kernel_tests\reader_ops_test.py,665,testReadUpTo,649,assertLessEqual,1,665,UNSUPPORTED Name (named variable or defined function: len)
-kernel_tests\reader_ops_test.py,665,testReadUpTo,649,assertLessEqual,2,653,UNSUPPORTED Constant
 kernel_tests\reader_ops_test.py,666,testReadUpTo,649,assertLessEqual,1,666,UNSUPPORTED Name (named variable or defined function: len)
-kernel_tests\reader_ops_test.py,666,testReadUpTo,649,assertLessEqual,2,653,UNSUPPORTED Constant
 kernel_tests\reduction_ops_test.py,162,_compare,157,assertAllClose,1,158,self._np_reduce
 kernel_tests\reduction_ops_test.py,162,_compare,157,assertAllClose,2,161,sess.run
 kernel_tests\reduction_ops_test.py,271,testFloat32,251,assertAllClose,1,264,np.sum
@@ -835,10 +780,6 @@ kernel_tests\topk_op_test.py,58,_validateTopK,42,assertAllClose,1,48,np.array
 kernel_tests\topk_op_test.py,80,_validateTopK,42,assert_almost_equal,2,74,np.array
 kernel_tests\trace_op_test.py,36,compare,32,assertAllClose,1,35,eval
 kernel_tests\trace_op_test.py,36,compare,32,assertAllClose,2,33,np.trace
-kernel_tests\transpose_op_test.py,65,_compareCpu,44,assertAllClose,1,60,UNSUPPORTED Constant
-kernel_tests\transpose_op_test.py,69,_compareCpu,44,assertAllClose,1,60,UNSUPPORTED Constant
-kernel_tests\transpose_op_test.py,95,_compareGpu,73,assertAllClose,1,90,UNSUPPORTED Constant
-kernel_tests\transpose_op_test.py,99,_compareGpu,73,assertAllClose,1,90,UNSUPPORTED Constant
 kernel_tests\tridiagonal_matmul_op_test.py,90,_testAllFormats,41,assertAllClose,2,87,np.array
 kernel_tests\tridiagonal_matmul_op_test.py,92,_testAllFormats,41,assertAllClose,2,88,np.stack
 kernel_tests\tridiagonal_matmul_op_test.py,161,testBatch,141,assertAllClose,2,152,np.matmul
@@ -933,7 +874,6 @@ kernel_tests\distributions\categorical_test.py,177,testCDFWithDynamicEventShapeK
 kernel_tests\distributions\categorical_test.py,178,testCDFWithDynamicEventShapeKnownNdims,144,assertAllClose,1,175,sess.run
 kernel_tests\distributions\categorical_test.py,205,testCDFWithBatch,196,assertAllClose,1,202,dist.cdf
 kernel_tests\distributions\categorical_test.py,216,testCDFNoBatch,208,assertAlmostEqual,1,213,dist.cdf
-kernel_tests\distributions\categorical_test.py,216,testCDFNoBatch,208,assertAlmostEqual,2,211,UNSUPPORTED Constant
 kernel_tests\distributions\categorical_test.py,243,testCDFBroadcasting,219,assertAllClose,1,230,categorical.Categorical
 kernel_tests\distributions\categorical_test.py,243,testCDFBroadcasting,219,assertAllClose,2,234,np.zeros
 kernel_tests\distributions\categorical_test.py,317,testLogPMF,313,assertAllClose,1,315,categorical.Categorical
@@ -980,8 +920,6 @@ kernel_tests\distributions\gamma_test.py,181,testGammaModeAllowNanStatsIsTrueRet
 kernel_tests\distributions\gamma_test.py,191,testGammaVariance,183,assertAllClose,2,190,stats.gamma.var
 kernel_tests\distributions\gamma_test.py,201,testGammaStd,193,assertAllClose,2,200,stats.gamma.std
 kernel_tests\distributions\gamma_test.py,211,testGammaEntropy,203,assertAllClose,2,210,stats.gamma.entropy
-kernel_tests\distributions\gamma_test.py,302,testGammaSampleMultiDimensional,271,assertLess,1,295,UNSUPPORTED Constant
-kernel_tests\distributions\gamma_test.py,345,_assertIntegral,337,assertNear,2,340,UNSUPPORTED Constant
 kernel_tests\distributions\laplace_test.py,73,testLaplaceLogPDF,60,assertAllClose,2,72,stats.laplace.logpdf
 kernel_tests\distributions\laplace_test.py,97,testLaplaceLogPDFMultidimensional,79,assertAllClose,2,96,stats.laplace.logpdf
 kernel_tests\distributions\laplace_test.py,118,testLaplaceLogPDFMultidimensionalBroadcasting,100,assertAllClose,2,117,stats.laplace.logpdf
@@ -993,8 +931,6 @@ kernel_tests\distributions\laplace_test.py,187,testLaplaceMode,182,assertAllClos
 kernel_tests\distributions\laplace_test.py,197,testLaplaceVariance,189,assertAllClose,2,196,stats.laplace.var
 kernel_tests\distributions\laplace_test.py,207,testLaplaceStd,199,assertAllClose,2,206,stats.laplace.std
 kernel_tests\distributions\laplace_test.py,217,testLaplaceEntropy,209,assertAllClose,2,216,stats.laplace.entropy
-kernel_tests\distributions\laplace_test.py,287,testLaplaceSampleMultiDimensional,256,assertLess,1,280,UNSUPPORTED Constant
-kernel_tests\distributions\laplace_test.py,332,_assertIntegral,324,assertNear,2,327,UNSUPPORTED Constant
 kernel_tests\distributions\multinomial_test.py,84,testLogits,77,assertAllClose,1,78,np.array
 kernel_tests\distributions\multinomial_test.py,93,testPmfUnderflow,88,assertAllClose,2,91,multinomial.Multinomial
 kernel_tests\distributions\multinomial_test.py,175,testPmfCountsStretchedInBroadcastWhenSameRank,170,assertAllClose,1,174,prob
@@ -1026,7 +962,6 @@ kernel_tests\distributions\normal_test.py,244,testNormalLogCDF,224,assertAllClos
 kernel_tests\distributions\normal_test.py,287,testNormalLogSurvivalFunction,267,assertAllClose,1,286,logsf
 kernel_tests\distributions\normal_test.py,308,testNormalEntropyWithScalarInputs,290,assertAllClose,1,307,entropy
 kernel_tests\distributions\normal_test.py,367,testNormalQuantile,344,assertAllClose,1,366,ppf
-kernel_tests\distributions\normal_test.py,431,testNormalSample,417,assertAllClose,2,420,UNSUPPORTED Constant
 kernel_tests\distributions\normal_test.py,432,testNormalSample,417,assertAllClose,2,421,np.sqrt
 kernel_tests\distributions\special_math_test.py,105,testNdtri,93,assertAllClose,1,103,special.ndtri
 kernel_tests\distributions\special_math_test.py,121,testNdtriDynamicShape,108,assertAllClose,1,120,special.ndtri
@@ -1042,13 +977,9 @@ kernel_tests\distributions\student_t_test.py,129,testStudentCDFAndLogCDF,107,ass
 kernel_tests\distributions\student_t_test.py,132,testStudentCDFAndLogCDF,107,assertAllClose,1,128,stats.t.cdf
 kernel_tests\distributions\student_t_test.py,156,testStudentEntropy,136,assertAllClose,1,151,stats.t.entropy
 kernel_tests\distributions\student_t_test.py,156,testStudentEntropy,136,assertAllClose,1,155,np.reshape
-kernel_tests\distributions\student_t_test.py,171,testStudentSample,158,assertAllClose,2,163,UNSUPPORTED Constant
 kernel_tests\distributions\student_t_test.py,253,_checkKLApprox,235,assertLess,1,252,np.sum
 kernel_tests\distributions\student_t_test.py,368,testVarianceAllowNanStatsFalseGivesCorrectValueForDefinedBatchMembers,354,assertAllClose,1,365,stats.t.var
 kernel_tests\distributions\student_t_test.py,397,testStd,382,assertAllClose,1,394,stats.t.std
-kernel_tests\distributions\student_t_test.py,481,_assertIntegral,473,assertNear,2,476,UNSUPPORTED Constant
-kernel_tests\distributions\uniform_test.py,56,testUniformRange,52,assertAllClose,1,53,UNSUPPORTED Constant
-kernel_tests\distributions\uniform_test.py,57,testUniformRange,52,assertAllClose,1,54,UNSUPPORTED Constant
 kernel_tests\distributions\uniform_test.py,80,testUniformPDF,61,assertAllClose,1,77,_expected_pdf
 kernel_tests\distributions\uniform_test.py,106,testUniformPDFWithScalarEndpoint,97,assertAllClose,1,103,np.array
 kernel_tests\distributions\uniform_test.py,126,testUniformCDF,109,assertAllClose,1,126,UNSUPPORTED Name (named variable or defined function: _expected_cdf)
@@ -1148,16 +1079,13 @@ kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,258,_testDenseSparse,229,as
 kernel_tests\random\multinomial_op_test.py,173,_do_sampling,150,assertLess,1,173,UNSUPPORTED Name (named variable or defined function: max)
 kernel_tests\random\parameterized_truncated_normal_op_test.py,150,validateMoments,120,assertLess,1,151,UNSUPPORTED Name (named variable or defined function: z_test)
 kernel_tests\random\random_binomial_test.py,75,testMoments,51,assertAllLess,1,68,util.test_moment_matching
-kernel_tests\random\random_binomial_test.py,75,testMoments,51,assertAllLess,2,60,UNSUPPORTED Constant
 kernel_tests\random\random_crop_test.py,77,testRandomization,54,assertAllClose,1,65,np.zeros
 kernel_tests\random\random_crop_test.py,77,testRandomization,54,assertAllClose,2,72,np.repeat
 kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,1,94,util.test_moment_matching
-kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,2,82,UNSUPPORTED Constant
 kernel_tests\random\random_gamma_test.py,156,testDistinct,142,assertLess,1,149,sum
 kernel_tests\random\random_grad_test.py,143,_testCompareToExplicitDerivative,114,assertAllClose,2,139,misc.derivative
 kernel_tests\random\random_ops_test.py,336,testUniformInts,317,assertLess,1,335,np.abs
 kernel_tests\random\random_poisson_test.py,76,testMoments,53,assertAllLess,1,70,util.test_moment_matching
-kernel_tests\random\random_poisson_test.py,76,testMoments,53,assertAllLess,2,63,UNSUPPORTED Constant
 kernel_tests\random\stateless_random_ops_test.py,228,_test_match_stateless_cpu_gpu,219,assertAllClose,1,224,stateless_op
 kernel_tests\random\stateless_random_ops_test.py,228,_test_match_stateless_cpu_gpu,219,assertAllClose,2,227,stateless_op
 kernel_tests\random\stateless_random_ops_test.py,238,_test_old_and_new_stateless_match,230,assertAllClose,1,235,stateless_op

@@ -81,8 +81,6 @@ test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,2,2067,compute_nor
 test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,2,2080,compute_norm
 test\test_nn.py,2085,test_clip_grad_norm,2043,assertLessEqual,1,2069,compute_norm
 test\test_nn.py,2085,test_clip_grad_norm,2043,assertLessEqual,1,2082,compute_norm
-test\test_nn.py,2085,test_clip_grad_norm,2043,assertLessEqual,2,2045,UNSUPPORTED Constant
-test\test_nn.py,2110,test_clip_grad_value,2099,assertLessEqual,2,2101,UNSUPPORTED Constant
 test\test_nn.py,2384,is_orthogonal,2382,allclose,2,2383,torch.eye
 test\test_nn.py,4340,test_fb_fc_packed,4326,assert_allclose,1,4339,fc_op
 test\test_nn.py,4340,test_fb_fc_packed,4326,assert_allclose,2,4338,torch.fbgemm_linear_fp16_weight
@@ -1251,7 +1249,6 @@ test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,2,16106,torch.
 test\test_optim.py,95,_test_rosenbrock_sparse,39,assertLessEqual,2,56,params.data.dist
 test\test_optim.py,127,_test_basic_cases_template,97,assertLess,1,127,UNSUPPORTED Name (named variable or defined function: fn)
 test\test_optim.py,127,_test_basic_cases_template,97,assertLess,2,118,item
-test\test_optim.py,1807,test_cosine_then_cyclic,1786,assertLessEqual,2,1789,UNSUPPORTED Constant
 test\test_sparse.py,857,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_sparse.py,861,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_spectral_ops.py,530,test_fftshift_frequencies,522,allclose,1,529,torch.fft.fftshift
@@ -1486,7 +1483,6 @@ test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,al
 test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,2,29,sum_grad
 test\distributed\pipeline\sync\skip\test_gpipe.py,67,forward,50,allclose,1,51,
 test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,786,UNSUPPORTED Name (named variable or defined function: len)
-test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,785,UNSUPPORTED Constant
 test\distributions\test_distributions.py,1496,test_vonmises_logprob,1490,assertLess,1,1496,UNSUPPORTED Name (named variable or defined function: abs)
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2345,max
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2351,max
