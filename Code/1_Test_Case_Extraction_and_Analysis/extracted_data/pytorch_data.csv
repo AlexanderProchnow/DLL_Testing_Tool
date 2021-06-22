@@ -1497,7 +1497,7 @@ test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,172,test_ddp_comm_h
 test\distributed\elastic\multiprocessing\api_test.py,781,test_function_exit,743,assertLessEqual,2,781,UNSUPPORTED Name (named variable or defined function: int)
 test\distributed\elastic\rendezvous\dynamic_rendezvous_test.py,158,test_encoded_size_is_within_expected_limit,125,assertLessEqual,1,158,UNSUPPORTED Name (named variable or defined function: len)
 test\distributed\elastic\timer\local_timer_test.py,179,test_get_less_than_size,161,assertLessEqual,2,179,UNSUPPORTED Name (named variable or defined function: len)
-test\distributed\elastic\timer\local_timer_test.py,206,test_watchdog_call_count,193,assertLessEqual,1,204,
+test\distributed\elastic\timer\local_timer_test.py,206,test_watchdog_call_count,193,assertLessEqual,1,197,mock.MagicMock
 test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,1,529,cast
 test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,2,530,cast
 test\distributed\pipeline\sync\test_deferred_batch_norm.py,111,tilt_dist,19,allclose,1,111,UNSUPPORTED Name (named variable or defined function: bn)
