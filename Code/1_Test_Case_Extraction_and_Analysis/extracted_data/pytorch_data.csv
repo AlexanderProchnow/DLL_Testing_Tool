@@ -7,8 +7,7 @@ test\test_autograd.py,1329,test_set_grad_coroutines_benign_exceptions,1295,asser
 test\test_autograd.py,1329,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1339,coro.throw
 test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1328,coro.throw
 test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1339,coro.throw
-test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,1,2788,UNSUPPORTED Binary Operation
-test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,2,2789,UNSUPPORTED Binary Operation
+test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,2,2785,input2.mean
 test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8967,torch.randn
 test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8966,torch.rand
 test\test_autograd.py,8973,test_cat_r_to_c,8965,gradcheck,2,8966,torch.rand
@@ -56,22 +55,9 @@ test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,1,1787,UNSU
 test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,2,1788,UNSUPPORTED Name (named variable or defined function: eager)
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,1,1819,fn
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,2,1823,script
-test\test_linalg.py,5712,test_lobpcg_torchscript,5700,assertLess,1,5711,UNSUPPORTED Binary Operation
 test\test_linalg.py,5761,test_lobpcg_scipy,5718,assertLess,1,5761,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_linalg.py,5767,test_lobpcg_scipy,5718,assertLess,1,5765,UNSUPPORTED Binary Operation
-test\test_linalg.py,5767,test_lobpcg_scipy,5718,assertLess,1,5785,UNSUPPORTED Binary Operation
-test\test_linalg.py,5767,test_lobpcg_scipy,5718,assertLess,1,5844,UNSUPPORTED Binary Operation
-test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5766,UNSUPPORTED Binary Operation
-test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5786,UNSUPPORTED Binary Operation
-test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5849,UNSUPPORTED Binary Operation
 test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
 test\test_linalg.py,5783,test_lobpcg_scipy,5718,assertLess,1,5783,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5765,UNSUPPORTED Binary Operation
-test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5785,UNSUPPORTED Binary Operation
-test\test_linalg.py,5787,test_lobpcg_scipy,5718,assertLess,1,5844,UNSUPPORTED Binary Operation
-test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5766,UNSUPPORTED Binary Operation
-test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5786,UNSUPPORTED Binary Operation
-test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5849,UNSUPPORTED Binary Operation
 test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
 test\test_mobile_optimizer.py,160,forward,95,assert_allclose,1,160,UNSUPPORTED Name (named variable or defined function: bn_scripted_module)
 test\test_mobile_optimizer.py,160,forward,95,assert_allclose,2,160,UNSUPPORTED Name (named variable or defined function: bn_fold_scripted_module)
@@ -82,13 +68,11 @@ test\test_nn.py,232,test_doubletensor_avg_pool2d,224,allclose,1,230,actual.view
 test\test_nn.py,232,test_doubletensor_avg_pool2d,224,allclose,2,231,self._avg_pool2d
 test\test_nn.py,247,test_doubletensor_avg_pool2d_with_divisor,238,allclose,1,244,F.avg_pool2d
 test\test_nn.py,247,test_doubletensor_avg_pool2d_with_divisor,238,allclose,1,245,actual.view
-test\test_nn.py,247,test_doubletensor_avg_pool2d_with_divisor,238,allclose,2,246,UNSUPPORTED Binary Operation
 test\test_nn.py,258,test_doubletensor_avg_pool3d,249,allclose,1,255,torch.nn.functional.avg_pool3d
 test\test_nn.py,258,test_doubletensor_avg_pool3d,249,allclose,1,256,actual.view
 test\test_nn.py,258,test_doubletensor_avg_pool3d,249,allclose,2,257,self._avg_pool3d
 test\test_nn.py,270,test_doubletensor_avg_pool3d_with_divisor,260,allclose,1,267,torch.nn.functional.avg_pool3d
 test\test_nn.py,270,test_doubletensor_avg_pool3d_with_divisor,260,allclose,1,268,actual.view
-test\test_nn.py,270,test_doubletensor_avg_pool3d_with_divisor,260,allclose,2,269,UNSUPPORTED Binary Operation
 test\test_nn.py,1063,_test_alpha_dropout,1054,assertLess,1,1063,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_nn.py,1065,_test_alpha_dropout,1054,assertLess,1,1065,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,1,2069,compute_norm
@@ -111,7 +95,6 @@ test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4617,_fc
 test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4618,np.squeeze
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,1,4625,numpy
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4411,UNSUPPORTED Name (named variable or defined function: reference)
-test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4412,UNSUPPORTED Binary Operation
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5192,torch.randn
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5193,torch.randn
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5194,torch.randn
@@ -1263,7 +1246,6 @@ test\test_nn.py,13212,test_avg_pool2d_nhwc,13188,allclose,1,13205,pool
 test\test_nn.py,13212,test_avg_pool2d_nhwc,13188,allclose,2,13207,ref_pool
 test\test_nn.py,13337,test_max_pool2d_nhwc,13316,allclose,1,13330,pool
 test\test_nn.py,13337,test_max_pool2d_nhwc,13316,allclose,2,13332,ref_pool
-test\test_nn.py,14099,_test_gumbel_softmax_straight_through,14075,assertLess,1,14096,UNSUPPORTED Binary Operation
 test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,1,16105,double
 test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,2,16106,torch.tensor
 test\test_optim.py,95,_test_rosenbrock_sparse,39,assertLessEqual,2,56,params.data.dist
@@ -1298,14 +1280,14 @@ test\test_static_runtime.py,231,test_fusion_trivial_graph,224,assert_allclose,2,
 test\test_static_runtime.py,268,test_fusion_loop,259,assert_allclose,1,264,lg
 test\test_static_runtime.py,268,test_fusion_loop,259,assert_allclose,2,267,lg
 test\test_tensorexpr.py,69,test_easy,58,assert_allclose,2,67,warmup_and_run_forward
-test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,1,89,UNSUPPORTED Binary Operation
+test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,1,86,torch.rand
 test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,2,87,warmup_and_run_forward
 test\test_tensorexpr.py,120,test_four_arg,96,assert_allclose,1,117,warmup_and_run_forward
 test\test_tensorexpr.py,120,test_four_arg,96,assert_allclose,2,119,run_addcmul
-test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,1,146,UNSUPPORTED Binary Operation
+test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,1,142,torch.rand
 test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,2,143,traced
 test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,2,144,warmup_and_run_forward
-test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,1,174,UNSUPPORTED Binary Operation
+test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,1,171,torch.rand
 test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,2,172,warmup_and_run_forward
 test\test_tensorexpr.py,206,test_all_combos,181,assert_allclose,1,205,np_easy
 test\test_tensorexpr.py,206,test_all_combos,181,assert_allclose,2,203,warmup_and_run_forward
@@ -1365,10 +1347,8 @@ test\test_tensorexpr.py,997,test_remainder,966,assert_allclose,1,994,warmup_and_
 test\test_tensorexpr.py,997,test_remainder,966,assert_allclose,2,982,run_remainder
 test\test_tensorexpr.py,997,test_remainder,966,assert_allclose,2,989,run_remainder
 test\test_tensorexpr.py,997,test_remainder,966,assert_allclose,2,996,run_remainder
-test\test_tensorexpr.py,1012,test_multioutput,999,assert_allclose,1,1001,UNSUPPORTED Binary Operation
-test\test_tensorexpr.py,1012,test_multioutput,999,assert_allclose,2,1010,UNSUPPORTED Binary Operation
-test\test_tensorexpr.py,1013,test_multioutput,999,assert_allclose,1,1002,UNSUPPORTED Binary Operation
-test\test_tensorexpr.py,1013,test_multioutput,999,assert_allclose,2,1011,UNSUPPORTED Binary Operation
+test\test_tensorexpr.py,1012,test_multioutput,999,assert_allclose,2,1007,torch.zeros
+test\test_tensorexpr.py,1013,test_multioutput,999,assert_allclose,2,1007,torch.zeros
 test\test_tensorexpr.py,1029,test_chunk,1015,assert_allclose,2,1024,warmup_and_run_forward
 test\test_tensorexpr.py,1046,test_cat,1031,assert_allclose,1,1045,foo
 test\test_tensorexpr.py,1046,test_cat,1031,assert_allclose,2,1043,warmup_and_run_forward
@@ -1387,12 +1367,10 @@ test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,1,1125,
 test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,2,1115,warmup_and_run_forward
 test\test_tensorexpr.py,1126,test_cat_empty_tensors,1103,assert_allclose,2,1123,warmup_and_run_forward
 test\test_tensorexpr.py,1145,test_scalar,1128,assert_allclose,1,1143,test
-test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1179,UNSUPPORTED Binary Operation
 test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1176,torch.ones
 test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,1,1177,traced
 test\test_tensorexpr.py,1180,test_slice,1165,assert_allclose,2,1177,traced
 test\test_tensorexpr.py,1199,test_unsqueeze,1184,assert_allclose,1,1197,np.expand_dims
-test\test_tensorexpr.py,1199,test_unsqueeze,1184,assert_allclose,1,1198,UNSUPPORTED Binary Operation
 test\test_tensorexpr.py,1199,test_unsqueeze,1184,assert_allclose,2,1196,traced
 test\test_tensorexpr.py,1232,_test_softmax,1203,assert_allclose,1,1231,test
 test\test_tensorexpr.py,1232,_test_softmax,1203,assert_allclose,2,1229,traced
@@ -1506,16 +1484,16 @@ test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allc
 test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allclose,2,140,UNSUPPORTED Name (named variable or defined function: dbn)
 test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,1,40,sum_grad
 test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,2,29,sum_grad
-test\distributed\pipeline\sync\skip\test_gpipe.py,67,forward,50,allclose,1,52,UNSUPPORTED Binary Operation
-test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,789,UNSUPPORTED Binary Operation
+test\distributed\pipeline\sync\skip\test_gpipe.py,67,forward,50,allclose,1,51,
+test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,786,UNSUPPORTED Name (named variable or defined function: len)
+test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,785,UNSUPPORTED Constant
 test\distributions\test_distributions.py,1496,test_vonmises_logprob,1490,assertLess,1,1496,UNSUPPORTED Name (named variable or defined function: abs)
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2345,max
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2351,max
 test\distributions\test_distributions.py,2352,test_kumaraswamy_mean_variance,2333,assertLess,1,2345,max
 test\distributions\test_distributions.py,2352,test_kumaraswamy_mean_variance,2333,assertLess,1,2351,max
 test\distributions\test_distributions.py,2609,test_lkj_cholesky_log_prob,2589,allclose,1,2591,vec_to_tril_matrix
-test\distributions\test_distributions.py,2609,test_lkj_cholesky_log_prob,2589,allclose,1,2593,UNSUPPORTED Binary Operation
-test\distributions\test_distributions.py,2671,test_cdf_icdf_inverse,2659,assertLess,1,2670,UNSUPPORTED Binary Operation
+test\distributions\test_distributions.py,2609,test_lkj_cholesky_log_prob,2589,allclose,1,2592,diag_embed
 test\distributions\test_distributions.py,3801,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3800,max
 test\distributions\test_distributions.py,3808,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3807,max
 test\distributions\test_distributions.py,3815,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3814,max
@@ -1539,9 +1517,7 @@ test\jit\test_freezing.py,1994,test_hardswish_hardsigmoid,1970,allclose,1,1994,U
 test\jit\test_freezing.py,1994,test_hardswish_hardsigmoid,1970,allclose,2,1994,UNSUPPORTED Name (named variable or defined function: m)
 test\jit\test_tracer.py,1260,forward,1256,allclose,1,1260,UNSUPPORTED Name (named variable or defined function: traced)
 test\mobile\test_bytecode.py,271,test_backport_bytecode_from_file_to_file,239,assert_allclose,1,269,mobile_module
-test\mobile\test_bytecode.py,271,test_backport_bytecode_from_file_to_file,239,assert_allclose,2,270,UNSUPPORTED Binary Operation
 test\mobile\test_bytecode.py,297,test_backport_bytecode_from_file_to_buffer,275,assert_allclose,1,295,mobile_module
-test\mobile\test_bytecode.py,297,test_backport_bytecode_from_file_to_buffer,275,assert_allclose,2,296,UNSUPPORTED Binary Operation
 test\onnx\test_pytorch_onnx_caffe2_quantized.py,48,generic_test,14,assert_almost_equal,1,28,q_model
 test\package\test_model.py,59,test_resnet,34,allclose,1,59,UNSUPPORTED Name (named variable or defined function: r2)
 test\package\test_model.py,59,test_resnet,34,allclose,2,58,resnet
@@ -1626,48 +1602,33 @@ test\quantization\core\test_quantized_op.py,4768,test_adaptive_avg_pool2d,4733,a
 test\quantization\core\test_quantized_op.py,4789,test_mean,4778,assert_array_almost_equal,1,4786,torch.mean
 test\quantization\core\test_quantized_op.py,4789,test_mean,4778,assert_array_almost_equal,1,4787,torch.quantize_per_tensor
 test\quantization\core\test_quantized_op.py,4789,test_mean,4778,assert_array_almost_equal,2,4788,torch.mean
-test\quantization\core\test_quantized_tensor.py,248,test_qtensor_quant_dequant,238,allclose,1,242,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,248,test_qtensor_quant_dequant,238,allclose,1,251,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,248,test_qtensor_quant_dequant,238,allclose,1,244,r.contiguous
 test\quantization\core\test_quantized_tensor.py,248,test_qtensor_quant_dequant,238,allclose,2,254,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,248,test_qtensor_quant_dequant,238,allclose,2,247,qr.dequantize
-test\quantization\core\test_quantized_tensor.py,255,test_qtensor_quant_dequant,238,allclose,1,242,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,255,test_qtensor_quant_dequant,238,allclose,1,251,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,255,test_qtensor_quant_dequant,238,allclose,1,244,r.contiguous
 test\quantization\core\test_quantized_tensor.py,255,test_qtensor_quant_dequant,238,allclose,2,254,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,255,test_qtensor_quant_dequant,238,allclose,2,247,qr.dequantize
-test\quantization\core\test_quantized_tensor.py,329,test_qtensor_dtypes,322,allclose,1,323,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,329,test_qtensor_dtypes,322,allclose,2,328,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,357,_test_quantize_per_channel,331,allclose,1,355,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,357,_test_quantize_per_channel,331,allclose,2,353,_quantize_per_channel_ref_nd
 test\quantization\core\test_quantized_tensor.py,358,_test_quantize_per_channel,331,allclose,2,356,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,375,test_qtensor_quantize_per_channel,360,allclose,1,373,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,375,test_qtensor_quantize_per_channel,360,allclose,2,375,UNSUPPORTED Name (named variable or defined function: quantize_c)
-test\quantization\core\test_quantized_tensor.py,376,test_qtensor_quantize_per_channel,360,allclose,1,361,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,376,test_qtensor_quantize_per_channel,360,allclose,1,379,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,376,test_qtensor_quantize_per_channel,360,allclose,1,389,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,376,test_qtensor_quantize_per_channel,360,allclose,2,374,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,417,test_quantize_per_channel_float_qparams,398,allclose,1,414,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,417,test_quantize_per_channel_float_qparams,398,allclose,2,416,quantize_ref
-test\quantization\core\test_quantized_tensor.py,418,test_quantize_per_channel_float_qparams,398,allclose,1,399,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,418,test_quantize_per_channel_float_qparams,398,allclose,1,421,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,418,test_quantize_per_channel_float_qparams,398,allclose,1,431,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,418,test_quantize_per_channel_float_qparams,398,allclose,2,415,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,475,test_quantize_per_channel_sub_byte,440,allclose,1,446,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,475,test_quantize_per_channel_sub_byte,440,allclose,1,482,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,475,test_quantize_per_channel_sub_byte,440,allclose,2,474,_quantize_per_channel_sub_byte_ref
 test\quantization\core\test_quantized_tensor.py,475,test_quantize_per_channel_sub_byte,440,allclose,2,483,_quantize_per_channel_sub_byte_ref
-test\quantization\core\test_quantized_tensor.py,476,test_quantize_per_channel_sub_byte,440,allclose,1,443,UNSUPPORTED Binary Operation
-test\quantization\core\test_quantized_tensor.py,476,test_quantize_per_channel_sub_byte,440,allclose,1,479,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,476,test_quantize_per_channel_sub_byte,440,allclose,2,447,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_sub_byte,440,allclose,1,446,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_sub_byte,440,allclose,1,482,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_sub_byte,440,allclose,2,474,_quantize_per_channel_sub_byte_ref
 test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_sub_byte,440,allclose,2,483,_quantize_per_channel_sub_byte_ref
-test\quantization\core\test_quantized_tensor.py,496,test_qtensor_permute,486,allclose,1,490,UNSUPPORTED Binary Operation
 test\quantization\core\test_quantized_tensor.py,496,test_qtensor_permute,486,allclose,2,494,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,508,test_qtensor_permute,486,allclose,1,500,qr.transpose
-test\quantization\core\test_quantized_tensor.py,508,test_qtensor_permute,486,allclose,2,490,UNSUPPORTED Binary Operation
 test\quantization\core\test_workflow_module.py,282,test_state_dict_respects_device_affinity,250,assertLessEqual,1,282,UNSUPPORTED Name (named variable or defined function: len)
 test\quantization\core\test_workflow_module.py,691,test_fq_module_per_channel,677,assert_allclose,1,689,_fake_quantize_per_channel_affine_reference
 test\quantization\core\test_workflow_module.py,691,test_fq_module_per_channel,677,assert_allclose,2,686,fq_module

@@ -147,34 +147,23 @@ kernel_tests\control_flow_ops_py_test.py,4196,testExampleCond,4183,assertAllClos
 kernel_tests\control_flow_ops_py_test.py,4197,testExampleCond,4183,assertAllClose,2,4195,control_flow_ops.cond
 kernel_tests\control_flow_ops_py_test.py,4945,testGuardedAssertDoesNotCopyWhenTrue,4910,assertLess,2,4945,UNSUPPORTED Name (named variable or defined function: len)
 kernel_tests\conv1d_test.py,122,testConv1DTranspose,84,assertAllClose,1,103,np.zeros
-kernel_tests\conv1d_transpose_test.py,61,testConv1DTransposeSingleStride,35,assertAllClose,1,57,UNSUPPORTED Binary Operation
 kernel_tests\conv1d_transpose_test.py,90,testConv1DTransposeSame,63,assertAllClose,1,85,UNSUPPORTED Constant
 kernel_tests\conv1d_transpose_test.py,131,testConv1DTransposeValid,92,assertAllClose,1,111,np.zeros
 kernel_tests\conv1d_transpose_test.py,151,testGradient,134,assertLess,1,147,gradient_checker.compute_gradient_error
 kernel_tests\conv1d_transpose_test.py,151,testGradient,134,assertLess,2,150,UNSUPPORTED Constant
-kernel_tests\conv1d_transpose_test.py,182,testConv1DTransposeSingleStrideNCW,153,assertAllClose,1,178,UNSUPPORTED Binary Operation
 kernel_tests\conv1d_transpose_test.py,214,testConv1DTransposeSameNCW,184,assertAllClose,1,209,UNSUPPORTED Constant
 kernel_tests\conv1d_transpose_test.py,256,testConv1DTransposeValidNCW,216,assertAllClose,1,237,np.zeros
 kernel_tests\conv2d_backprop_filter_grad_test.py,72,testGradient,36,assertLess,1,67,gradient_checker.compute_gradient_error
 kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,1,112,gradient_checker.compute_gradient_error
 kernel_tests\conv2d_backprop_filter_grad_test.py,117,testGradientDilatedConv,78,assertLess,2,116,UNSUPPORTED Constant
-kernel_tests\conv2d_transpose_test.py,78,testConv2DTransposeSingleStride,39,assertAllClose,1,68,UNSUPPORTED Binary Operation
 kernel_tests\conv2d_transpose_test.py,114,testConv2DTransposeSame,80,assertAllClose,1,102,UNSUPPORTED Constant
 kernel_tests\conv2d_transpose_test.py,164,testConv2DTransposeValid,116,assertAllClose,1,134,np.zeros
 kernel_tests\conv2d_transpose_test.py,184,testGradient,167,assertLess,1,180,gradient_checker.compute_gradient_error
 kernel_tests\conv2d_transpose_test.py,184,testGradient,167,assertLess,2,183,UNSUPPORTED Constant
-kernel_tests\conv2d_transpose_test.py,219,testConv2DTransposeSingleStrideNCHW,186,assertAllClose,1,212,UNSUPPORTED Binary Operation
 kernel_tests\conv2d_transpose_test.py,255,testConv2DTransposeSameNCHW,221,assertAllClose,1,247,UNSUPPORTED Constant
 kernel_tests\conv2d_transpose_test.py,303,testConv2DTransposeValidNCHW,257,assertAllClose,1,278,np.zeros
 kernel_tests\conv3d_backprop_filter_v2_grad_test.py,63,testGradient,36,assertLess,1,58,gradient_checker.compute_gradient_error
 kernel_tests\conv3d_backprop_filter_v2_grad_test.py,63,testGradient,36,assertLess,2,62,UNSUPPORTED Constant
-kernel_tests\conv3d_transpose_test.py,83,testConv3DTransposeSingleStride,35,assertAllClose,1,76,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,83,testConv3DTransposeSingleStride,35,assertAllClose,1,78,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,83,testConv3DTransposeSingleStride,35,assertAllClose,1,80,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,83,testConv3DTransposeSingleStride,35,assertAllClose,1,82,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,121,testConv3DTransposeSame,85,assertAllClose,1,114,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,121,testConv3DTransposeSame,85,assertAllClose,1,116,UNSUPPORTED Binary Operation
-kernel_tests\conv3d_transpose_test.py,121,testConv3DTransposeSame,85,assertAllClose,1,118,UNSUPPORTED Binary Operation
 kernel_tests\conv3d_transpose_test.py,121,testConv3DTransposeSame,85,assertAllClose,1,120,UNSUPPORTED Constant
 kernel_tests\conv3d_transpose_test.py,204,testConv3DTransposeValid,153,assertAllClose,1,172,np.zeros
 kernel_tests\conv3d_transpose_test.py,224,testGradient,207,assertLess,1,220,gradient_checker.compute_gradient_error
@@ -278,7 +267,6 @@ kernel_tests\einsum_op_test.py,181,testDtypes,157,assertAllClose,1,174,astype
 kernel_tests\einsum_op_test.py,181,testDtypes,157,assertAllClose,1,177,np.einsum
 kernel_tests\einsum_op_test.py,233,testPlaceholder,217,assertAllClose,1,231,np.einsum
 kernel_tests\einsum_op_test.py,251,testOutputRepeatedLabels,242,assertAllClose,1,249,np.diag
-kernel_tests\einsum_op_test.py,312,_check_gradient,294,assertLess,2,299,UNSUPPORTED Binary Operation
 kernel_tests\embedding_ops_test.py,291,testMaxNormNontrivial,280,assertAllClose,1,285,embedding_ops.embedding_lookup
 kernel_tests\embedding_ops_test.py,508,testGradientsEmbeddingLookup,490,assertLess,1,506,gradient_checker.compute_gradient_error
 kernel_tests\embedding_ops_test.py,529,testGradientsEmbeddingLookupWithComputedParams,511,assertLess,1,527,gradient_checker.compute_gradient_error
@@ -323,13 +311,9 @@ kernel_tests\init_ops_test.py,62,identicaltest,43,allclose,2,61,eval
 kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,1,59,eval
 kernel_tests\init_ops_test.py,89,identicaltest,43,allclose,2,61,eval
 kernel_tests\init_ops_test.py,408,testTruncatedNormalDistribution,394,assertNear,2,396,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,409,testTruncatedNormalDistribution,394,assertNear,2,397,UNSUPPORTED Binary Operation
 kernel_tests\init_ops_test.py,425,testNormalDistribution,412,assertNear,2,414,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,426,testNormalDistribution,412,assertNear,2,415,UNSUPPORTED Binary Operation
 kernel_tests\init_ops_test.py,443,testUntruncatedNormalDistribution,429,assertNear,2,431,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,444,testUntruncatedNormalDistribution,429,assertNear,2,432,UNSUPPORTED Binary Operation
 kernel_tests\init_ops_test.py,456,testUniformDistribution,447,assertNear,2,449,UNSUPPORTED Constant
-kernel_tests\init_ops_test.py,457,testUniformDistribution,447,assertNear,2,450,UNSUPPORTED Binary Operation
 kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,1,706,np.linspace
 kernel_tests\init_ops_test.py,707,testScalarsCompareToNumpy,703,assertArrayNear,2,705,self._LinSpace
 kernel_tests\init_ops_test.py,742,testNumConstant,738,assertArrayNear,1,741,np.linspace
@@ -496,7 +480,6 @@ kernel_tests\linalg_ops_test.py,617,test_select,603,assertAllClose,2,615,linalg.
 kernel_tests\linalg_ops_test.py,627,test_select,603,assertAllClose,2,622,linalg.eigh_tridiagonal
 kernel_tests\lookup_ops_test.py,3533,testMutableHashTableStringFloat,3518,assertAllClose,1,3519,UNSUPPORTED Unary Operation
 kernel_tests\lookup_ops_test.py,3550,testMutableHashTableIntFloat,3535,assertAllClose,1,3536,UNSUPPORTED Unary Operation
-kernel_tests\losses_test.py,228,testSoftmaxLabelSmoothing,209,assertAlmostEqual,2,227,UNSUPPORTED Binary Operation
 kernel_tests\losses_test.py,353,testNonZeroLossWithPlaceholderForWeights,343,assertAlmostEqual,2,351,sess.run
 kernel_tests\losses_test.py,369,testUnknownShapePlaceholderForLogitsLabelsButScalarWeights,356,assertAlmostEqual,2,362,sess.run
 kernel_tests\losses_test.py,386,testNonZeroLossWithPlaceholderForLogitsLabelsAndWeights,372,assertAlmostEqual,2,378,sess.run
@@ -504,7 +487,6 @@ kernel_tests\losses_test.py,525,testLossWithSingleDimPlaceholderForLogitsAndWeig
 kernel_tests\losses_test.py,525,testLossWithSingleDimPlaceholderForLogitsAndWeights1,511,assertAlmostEqual,2,520,sess.run
 kernel_tests\losses_test.py,542,testLossWithSingleDimPlaceholderForLogitsAndWeights2,528,assertAlmostEqual,2,533,losses.sigmoid_cross_entropy
 kernel_tests\losses_test.py,542,testLossWithSingleDimPlaceholderForLogitsAndWeights2,528,assertAlmostEqual,2,537,sess.run
-kernel_tests\losses_test.py,633,testSigmoidLabelSmoothingCorrect,612,assertAlmostEqual,2,632,UNSUPPORTED Binary Operation
 kernel_tests\losses_test.py,688,testAllCorrectNoLossWeightWithPlaceholder,683,assertAlmostEqual,2,686,losses.log_loss
 kernel_tests\losses_test.py,720,testNonZeroLossWithScalarTensorWeightAndPlaceholder,712,assertAlmostEqual,2,716,losses.log_loss
 kernel_tests\losses_test.py,720,testNonZeroLossWithScalarTensorWeightAndPlaceholder,712,assertAlmostEqual,2,719,sess.run
@@ -520,12 +502,9 @@ kernel_tests\losses_test.py,863,testSomeMisclassified,856,assertAllClose,1,860,l
 kernel_tests\losses_test.py,881,testAllQuadratic,876,assertAllClose,1,880,losses.huber_loss
 kernel_tests\losses_test.py,890,testAllLinear,885,assertAllClose,1,889,losses.huber_loss
 kernel_tests\losses_test.py,903,testMixedQuadraticLinear,893,assertAllClose,1,899,losses.huber_loss
-kernel_tests\losses_test.py,903,testMixedQuadraticLinear,893,assertAllClose,2,902,UNSUPPORTED Binary Operation
-kernel_tests\losses_test.py,912,testAllQuadraticDelta,905,assertAllClose,1,910,UNSUPPORTED Binary Operation
-kernel_tests\losses_test.py,922,testAllLinearDelta,914,assertAllClose,1,918,UNSUPPORTED Binary Operation
+kernel_tests\losses_test.py,922,testAllLinearDelta,914,assertAllClose,1,915,UNSUPPORTED Constant
 kernel_tests\losses_test.py,1058,_test_valid_weights,1035,assertAlmostEqual,2,1049,losses.mean_pairwise_squared_error
 kernel_tests\losses_test.py,1231,testLossIsAssociativeAcrossBatchElements,1198,assertAlmostEqual,2,1222,losses.mean_pairwise_squared_error
-kernel_tests\losses_test.py,1522,_test_valid_weights,1511,assertAllClose,1,1519,UNSUPPORTED Binary Operation
 kernel_tests\losses_test.py,1524,_test_valid_weights,1511,assertAllClose,1,1520,np.sum
 kernel_tests\lrn_op_test.py,115,testGradientsZeroInput,105,assertAllClose,1,113,grad.eval
 kernel_tests\lrn_op_test.py,115,testGradientsZeroInput,105,assertAllClose,2,114,astype
@@ -564,7 +543,6 @@ kernel_tests\map_ops_test.py,403,testStringKeyGrad,383,assertAllClose,1,402,map_
 kernel_tests\map_ops_test.py,403,testStringKeyGrad,383,assertAllClose,2,389,constant_op.constant
 kernel_tests\map_ops_test.py,430,testStringKeyValue,417,assertAllClose,1,429,map_ops.tensor_map_lookup
 kernel_tests\map_ops_test.py,430,testStringKeyValue,417,assertAllClose,2,422,constant_op.constant
-kernel_tests\matmul_op_test.py,112,Test,85,assertAllCloseAccordingToType,2,86,UNSUPPORTED Binary Operation
 kernel_tests\matrix_band_part_op_test.py,88,Test,79,assertLess,1,86,gradient_checker.compute_gradient_error
 kernel_tests\matrix_exponential_op_test.py,66,_verifyExponential,52,assertAllClose,1,57,np.empty
 kernel_tests\matrix_exponential_op_test.py,66,_verifyExponential,52,assertAllClose,1,60,np.zeros
@@ -582,31 +560,9 @@ kernel_tests\matrix_square_root_op_test.py,42,_verifySquareRoot,35,assertAllClos
 kernel_tests\matrix_triangular_solve_op_test.py,95,_verifySolve,50,assertAllClose,1,93,np.linalg.solve
 kernel_tests\metrics_test.py,267,testUnweighted,239,assertAlmostEqual,1,262,np.mean
 kernel_tests\metrics_test.py,268,testUnweighted,239,assertAlmostEqual,1,262,np.mean
-kernel_tests\metrics_test.py,278,_test_3d_weighted,270,assertAlmostEqual,1,272,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,279,_test_3d_weighted,270,assertAlmostEqual,1,272,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,842,testWeighted1d,831,assertAlmostEqual,1,841,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,843,testWeighted1d,831,assertAlmostEqual,1,841,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,860,testWeightedScalar_placeholders,846,assertAlmostEqual,1,859,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,862,testWeightedScalar_placeholders,846,assertAlmostEqual,1,859,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,881,testWeighted1d_placeholders,866,assertAlmostEqual,1,880,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,883,testWeighted1d_placeholders,866,assertAlmostEqual,1,880,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,900,testWeighted2d,887,assertAlmostEqual,1,899,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,901,testWeighted2d,887,assertAlmostEqual,1,899,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,921,testWeighted2d_placeholders,904,assertAlmostEqual,1,920,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,923,testWeighted2d_placeholders,904,assertAlmostEqual,1,920,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1042,testWeighted1d,1031,assertAlmostEqual,1,1041,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1043,testWeighted1d,1031,assertAlmostEqual,1,1041,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1057,testWeighted2d,1046,assertAlmostEqual,1,1056,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1058,testWeighted2d,1046,assertAlmostEqual,1,1056,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1238,testCorrectAUCPRSpecialCase,1227,assertAlmostEqual,1,1237,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1239,testCorrectAUCPRSpecialCase,1227,assertAlmostEqual,1,1237,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1255,testCorrectAnotherAUCPRSpecialCase,1242,assertAlmostEqual,1,1254,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1256,testCorrectAnotherAUCPRSpecialCase,1242,assertAlmostEqual,1,1254,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1272,testThirdCorrectAUCPRSpecialCase,1259,assertAlmostEqual,1,1271,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,1273,testThirdCorrectAUCPRSpecialCase,1259,assertAlmostEqual,1,1271,UNSUPPORTED Binary Operation
 kernel_tests\metrics_test.py,1434,testWithMultipleUpdates,1387,assertAlmostEqual,1,1409,self.np_auc
-kernel_tests\metrics_test.py,2016,testWithMultipleUpdates,1948,assertAlmostEqual,1,1977,UNSUPPORTED Binary Operation
-kernel_tests\metrics_test.py,2017,testWithMultipleUpdates,1948,assertAlmostEqual,1,1978,UNSUPPORTED Binary Operation
+kernel_tests\metrics_test.py,2016,testWithMultipleUpdates,1948,assertAlmostEqual,1,1961,UNSUPPORTED Constant
+kernel_tests\metrics_test.py,2017,testWithMultipleUpdates,1948,assertAlmostEqual,1,1961,UNSUPPORTED Constant
 kernel_tests\metrics_test.py,3774,testMultipleUpdatesWithWeights,3731,assertAlmostEqual,1,3773,np.mean
 kernel_tests\metrics_test.py,3811,testMultipleUpdatesWithMissingClass,3777,assertAlmostEqual,1,3810,np.mean
 kernel_tests\metrics_test.py,3836,testUpdateOpEvalIsAccumulatedConfusionMatrix,3814,assertAlmostEqual,1,3835,np.mean
@@ -673,9 +629,6 @@ kernel_tests\reduction_ops_test.py,1095,_compare,1083,assertAllClose,1,1085,asty
 kernel_tests\reduction_ops_test.py,1095,_compare,1083,assertAllClose,1,1087,np.sum
 kernel_tests\reduction_ops_test.py,1095,_compare,1083,assertAllClose,1,1091,np.sum
 kernel_tests\reduction_ops_test.py,1095,_compare,1083,assertAllClose,2,1094,sess.run
-kernel_tests\reduction_ops_test_big.py,77,testFloat32Sum,52,assertAllClose,1,65,UNSUPPORTED Binary Operation
-kernel_tests\reduction_ops_test_big.py,78,testFloat32Sum,52,assertAllClose,1,66,UNSUPPORTED Binary Operation
-kernel_tests\reduction_ops_test_big.py,79,testFloat32Sum,52,assertAllClose,1,67,UNSUPPORTED Binary Operation
 kernel_tests\reduction_ops_test_big.py,96,testFloat32Sum,52,assertAllClose,1,86,np.ones
 kernel_tests\reduction_ops_test_big.py,97,testFloat32Sum,52,assertAllClose,1,87,np.ones
 kernel_tests\reduction_ops_test_big.py,126,testFloat32Max,100,assertAllClose,1,114,np.max
@@ -788,8 +741,6 @@ kernel_tests\softsign_op_test.py,41,_testSoftsign,36,assertAllClose,1,37,self._n
 kernel_tests\softsign_op_test.py,68,testGradient,54,assertLess,1,65,gradient_checker.compute_gradient_error
 kernel_tests\sparse_add_op_test.py,157,testGradients,144,assertLess,1,154,gradient_checker.compute_gradient_error
 kernel_tests\sparse_add_op_test.py,194,testSparseTensorDenseAddGradients,181,assertLess,1,192,gradient_checker.compute_gradient_error
-kernel_tests\sparse_matmul_op_test.py,73,_testCpuMatmul,43,assertAllCloseAccordingToType,1,71,UNSUPPORTED Binary Operation
-kernel_tests\sparse_matmul_op_test.py,167,_testGradients,137,assertLessEqual,1,158,UNSUPPORTED Binary Operation
 kernel_tests\sparse_ops_test.py,546,testFillFloat,522,assertLess,1,543,gradient_checker.compute_gradient_error
 kernel_tests\sparse_ops_test.py,554,testFillFloat,522,assertLess,1,548,gradient_checker.compute_gradient_error
 kernel_tests\sparse_ops_test.py,737,_compare,694,assertAllClose,1,697,UNSUPPORTED Name (named variable or defined function: densified)
@@ -856,7 +807,6 @@ kernel_tests\sparse_to_dense_op_py_test.py,64,testSetSingleValue,61,assertAllClo
 kernel_tests\sparse_to_dense_op_py_test.py,64,testSetSingleValue,61,assertAllClose,2,62,sparse_ops.sparse_to_dense
 kernel_tests\sparse_to_dense_op_py_test.py,71,test2d,66,assertAllClose,1,68,astype
 kernel_tests\sparse_to_dense_op_py_test.py,71,test2d,66,assertAllClose,2,67,sparse_ops.sparse_to_dense
-kernel_tests\sparse_to_dense_op_py_test.py,83,test3d,77,assertAllClose,1,80,UNSUPPORTED Binary Operation
 kernel_tests\sparse_to_dense_op_py_test.py,83,test3d,77,assertAllClose,2,78,sparse_ops.sparse_to_dense
 kernel_tests\sparse_xent_op_test.py,278,_testHighDim,261,assertAllCloseAccordingToType,1,264,np.reshape
 kernel_tests\sparse_xent_op_test.py,278,_testHighDim,261,assertAllCloseAccordingToType,2,265,nn_ops.sparse_softmax_cross_entropy_with_logits
@@ -935,7 +885,6 @@ kernel_tests\array_ops\slice_op_test.py,362,_testGradientSliceTape,339,assertAll
 kernel_tests\array_ops\stack_op_test.py,253,testAgainstNumpy,233,assertNDArrayNear,1,237,self.randn
 kernel_tests\array_ops\unstack_op_test.py,125,testGradientsAxis0,113,assertLess,1,123,gradient_checker_v2.max_error
 kernel_tests\array_ops\unstack_op_test.py,139,testGradientsAxis1,127,assertLess,1,137,gradient_checker_v2.max_error
-kernel_tests\boosted_trees\prediction_ops_test.py,312,testNoCachedPredictionButTreeExistsMultiClass,242,assertAllClose,1,311,UNSUPPORTED Binary Operation
 kernel_tests\boosted_trees\prediction_ops_test.py,2010,testCachedPredictionFromThePreviousTreeWithPostPrunedNodesMultiClass,1822,assertAllClose,1,2001,UNSUPPORTED Name (named variable or defined function: tree1_logits)
 kernel_tests\boosted_trees\prediction_ops_test.py,2183,testPredictionOnEmptyEnsemble,2163,assertAllClose,2,2182,session.run
 kernel_tests\boosted_trees\prediction_ops_test.py,2206,testPredictionOnEmptyEnsembleMultiDimensionFeature,2186,assertAllClose,2,2205,session.run
@@ -944,9 +893,6 @@ kernel_tests\boosted_trees\prediction_ops_test.py,2342,testPredictionMultipleTre
 kernel_tests\boosted_trees\prediction_ops_test.py,2505,testPredictionMultipleTreeMultiClass,2345,assertAllClose,2,2504,session.run
 kernel_tests\boosted_trees\prediction_ops_test.py,2568,testCategoricalSplits,2508,assertAllClose,2,2567,session.run
 kernel_tests\boosted_trees\prediction_ops_test.py,2633,testCategoricalSplitsMultiDimensionFeature,2571,assertAllClose,2,2632,session.run
-kernel_tests\boosted_trees\prediction_ops_test.py,2701,testContribsForOnlyABiasNode,2640,assertAllClose,2,2675,UNSUPPORTED Binary Operation
-kernel_tests\boosted_trees\prediction_ops_test.py,2766,testContribsForOnlyABiasNodeMultiDimensionFeature,2705,assertAllClose,2,2740,UNSUPPORTED Binary Operation
-kernel_tests\boosted_trees\prediction_ops_test.py,3118,testContribsMultipleTree,2976,assertAllClose,2,3087,UNSUPPORTED Binary Operation
 kernel_tests\boosted_trees\stats_ops_test.py,1330,testMakeStatsSummarySimple,1327,assertAllClose,1,1329,np.asarray
 kernel_tests\boosted_trees\stats_ops_test.py,1349,testAggregateStatsSimple,1341,assertAllClose,1,1343,np.asarray
 kernel_tests\boosted_trees\stats_ops_test.py,1349,testAggregateStatsSimple,1341,assertAllClose,1,1346,np.reshape
@@ -976,19 +922,11 @@ kernel_tests\distributions\bernoulli_test.py,247,testEntropyWithBatch,244,assert
 kernel_tests\distributions\bernoulli_test.py,247,testEntropyWithBatch,244,assertAllClose,2,249,UNSUPPORTED Name (named variable or defined function: entropy)
 kernel_tests\distributions\bernoulli_test.py,247,testEntropyWithBatch,244,assertAllClose,2,249,UNSUPPORTED Name (named variable or defined function: entropy)
 kernel_tests\distributions\bernoulli_test.py,247,testEntropyWithBatch,244,assertAllClose,2,250,UNSUPPORTED Name (named variable or defined function: entropy)
-kernel_tests\distributions\bernoulli_test.py,335,testBernoulliBernoulliKL,320,assertAllClose,2,331,UNSUPPORTED Binary Operation
 kernel_tests\distributions\beta_test.py,195,testBetaMean,187,assertAllClose,1,194,stats.beta.mean
 kernel_tests\distributions\beta_test.py,205,testBetaVariance,197,assertAllClose,1,204,stats.beta.var
-kernel_tests\distributions\beta_test.py,213,testBetaMode,207,assertAllClose,1,210,UNSUPPORTED Binary Operation
-kernel_tests\distributions\beta_test.py,236,testBetaModeEnableAllowNanStats,228,assertAllClose,1,233,UNSUPPORTED Binary Operation
-kernel_tests\distributions\beta_test.py,236,testBetaModeEnableAllowNanStats,228,assertAllClose,1,242,UNSUPPORTED Binary Operation
-kernel_tests\distributions\beta_test.py,245,testBetaModeEnableAllowNanStats,228,assertAllClose,1,233,UNSUPPORTED Binary Operation
-kernel_tests\distributions\beta_test.py,245,testBetaModeEnableAllowNanStats,228,assertAllClose,1,242,UNSUPPORTED Binary Operation
 kernel_tests\distributions\beta_test.py,255,testBetaEntropy,247,assertAllClose,1,254,stats.beta.entropy
-kernel_tests\distributions\beta_test.py,391,testBetaBetaKL,360,assertAllClose,2,381,UNSUPPORTED Binary Operation
 kernel_tests\distributions\bijector_test.py,308,testHandlesNonStaticEventNdims,299,assertAllClose,2,306,sess.run
 kernel_tests\distributions\categorical_test.py,64,testLogits,57,assertAllClose,2,58,np.array
-kernel_tests\distributions\categorical_test.py,65,testLogits,57,assertAllClose,2,59,UNSUPPORTED Binary Operation
 kernel_tests\distributions\categorical_test.py,134,testPMFWithBatch,130,assertAllClose,1,132,categorical.Categorical
 kernel_tests\distributions\categorical_test.py,141,testPMFNoBatch,137,assertAllClose,1,139,categorical.Categorical
 kernel_tests\distributions\categorical_test.py,177,testCDFWithDynamicEventShapeKnownNdims,144,assertAllClose,1,174,sess.run
@@ -1013,8 +951,8 @@ kernel_tests\distributions\dirichlet_multinomial_test.py,268,testCovarianceFromS
 kernel_tests\distributions\dirichlet_multinomial_test.py,268,testCovarianceFromSampling,228,assertAllClose,2,256,sess.run
 kernel_tests\distributions\dirichlet_multinomial_test.py,269,testCovarianceFromSampling,228,assertAllClose,1,256,sess.run
 kernel_tests\distributions\dirichlet_multinomial_test.py,269,testCovarianceFromSampling,228,assertAllClose,2,256,sess.run
-kernel_tests\distributions\dirichlet_multinomial_test.py,304,testCovariance,273,assertAllClose,1,301,UNSUPPORTED Binary Operation
-kernel_tests\distributions\dirichlet_multinomial_test.py,342,testCovarianceNAlphaBroadcast,306,assertAllClose,1,338,UNSUPPORTED Binary Operation
+kernel_tests\distributions\dirichlet_multinomial_test.py,304,testCovariance,273,assertAllClose,1,288,np.array
+kernel_tests\distributions\dirichlet_multinomial_test.py,342,testCovarianceNAlphaBroadcast,306,assertAllClose,1,318,np.array
 kernel_tests\distributions\dirichlet_multinomial_test.py,462,testSampleUnbiasedNonScalarBatch,438,assertAllClose,1,455,sess.run
 kernel_tests\distributions\dirichlet_multinomial_test.py,462,testSampleUnbiasedNonScalarBatch,438,assertAllClose,2,455,sess.run
 kernel_tests\distributions\dirichlet_multinomial_test.py,464,testSampleUnbiasedNonScalarBatch,438,assertAllClose,1,455,sess.run
@@ -1025,10 +963,7 @@ kernel_tests\distributions\dirichlet_multinomial_test.py,493,testSampleUnbiasedS
 kernel_tests\distributions\dirichlet_multinomial_test.py,493,testSampleUnbiasedScalarBatch,468,assertAllClose,2,484,sess.run
 kernel_tests\distributions\dirichlet_test.py,164,testMean,157,assertAllClose,2,163,stats.dirichlet.mean
 kernel_tests\distributions\dirichlet_test.py,215,testVariance,205,assertAllClose,2,212,np.diag
-kernel_tests\distributions\dirichlet_test.py,223,testMode,218,assertAllClose,2,220,UNSUPPORTED Binary Operation
-kernel_tests\distributions\dirichlet_test.py,239,testModeEnableAllowNanStats,232,assertAllClose,2,236,UNSUPPORTED Binary Operation
 kernel_tests\distributions\dirichlet_test.py,248,testEntropy,241,assertAllClose,2,247,stats.dirichlet.entropy
-kernel_tests\distributions\dirichlet_test.py,302,testDirichletDirichletKL,276,assertAllClose,1,296,UNSUPPORTED Binary Operation
 kernel_tests\distributions\exponential_test.py,65,testExponentialLogPDF,49,assertAllClose,2,64,stats.expon.logpdf
 kernel_tests\distributions\exponential_test.py,89,testExponentialCDF,75,assertAllClose,2,88,stats.expon.cdf
 kernel_tests\distributions\exponential_test.py,105,testExponentialLogSurvival,91,assertAllClose,2,104,stats.expon.logsf
@@ -1040,14 +975,13 @@ kernel_tests\distributions\gamma_test.py,105,testGammaLogPDFMultidimensional,88,
 kernel_tests\distributions\gamma_test.py,126,testGammaLogPDFMultidimensionalBroadcasting,108,assertAllClose,2,125,stats.gamma.logpdf
 kernel_tests\distributions\gamma_test.py,143,testGammaCDF,129,assertAllClose,2,142,stats.gamma.cdf
 kernel_tests\distributions\gamma_test.py,153,testGammaMean,145,assertAllClose,2,152,stats.gamma.mean
-kernel_tests\distributions\gamma_test.py,161,testGammaModeAllowNanStatsIsFalseWorksWhenAllBatchMembersAreDefined,155,assertAllClose,2,159,UNSUPPORTED Binary Operation
-kernel_tests\distributions\gamma_test.py,181,testGammaModeAllowNanStatsIsTrueReturnsNaNforUndefinedBatchMembers,172,assertAllClose,2,178,UNSUPPORTED Binary Operation
+kernel_tests\distributions\gamma_test.py,161,testGammaModeAllowNanStatsIsFalseWorksWhenAllBatchMembersAreDefined,155,assertAllClose,2,157,np.array
+kernel_tests\distributions\gamma_test.py,181,testGammaModeAllowNanStatsIsTrueReturnsNaNforUndefinedBatchMembers,172,assertAllClose,2,175,np.array
 kernel_tests\distributions\gamma_test.py,191,testGammaVariance,183,assertAllClose,2,190,stats.gamma.var
 kernel_tests\distributions\gamma_test.py,201,testGammaStd,193,assertAllClose,2,200,stats.gamma.std
 kernel_tests\distributions\gamma_test.py,211,testGammaEntropy,203,assertAllClose,2,210,stats.gamma.entropy
 kernel_tests\distributions\gamma_test.py,302,testGammaSampleMultiDimensional,271,assertLess,1,295,UNSUPPORTED Constant
 kernel_tests\distributions\gamma_test.py,345,_assertIntegral,337,assertNear,2,340,UNSUPPORTED Constant
-kernel_tests\distributions\gamma_test.py,400,testGammaGammaKL,372,assertAllClose,1,393,UNSUPPORTED Binary Operation
 kernel_tests\distributions\laplace_test.py,73,testLaplaceLogPDF,60,assertAllClose,2,72,stats.laplace.logpdf
 kernel_tests\distributions\laplace_test.py,97,testLaplaceLogPDFMultidimensional,79,assertAllClose,2,96,stats.laplace.logpdf
 kernel_tests\distributions\laplace_test.py,118,testLaplaceLogPDFMultidimensionalBroadcasting,100,assertAllClose,2,117,stats.laplace.logpdf
@@ -1062,14 +996,11 @@ kernel_tests\distributions\laplace_test.py,217,testLaplaceEntropy,209,assertAllC
 kernel_tests\distributions\laplace_test.py,287,testLaplaceSampleMultiDimensional,256,assertLess,1,280,UNSUPPORTED Constant
 kernel_tests\distributions\laplace_test.py,332,_assertIntegral,324,assertNear,2,327,UNSUPPORTED Constant
 kernel_tests\distributions\multinomial_test.py,84,testLogits,77,assertAllClose,1,78,np.array
-kernel_tests\distributions\multinomial_test.py,85,testLogits,77,assertAllClose,1,79,UNSUPPORTED Binary Operation
 kernel_tests\distributions\multinomial_test.py,93,testPmfUnderflow,88,assertAllClose,2,91,multinomial.Multinomial
 kernel_tests\distributions\multinomial_test.py,175,testPmfCountsStretchedInBroadcastWhenSameRank,170,assertAllClose,1,174,prob
 kernel_tests\distributions\multinomial_test.py,184,testPmfCountsStretchedInBroadcastWhenLowerRank,179,assertAllClose,1,183,prob
-kernel_tests\distributions\multinomial_test.py,216,testMultinomialMean,209,assertAllClose,1,214,UNSUPPORTED Binary Operation
 kernel_tests\distributions\multinomial_test.py,216,testMultinomialMean,209,assertAllClose,2,213,multinomial.Multinomial
 kernel_tests\distributions\multinomial_test.py,228,testMultinomialCovariance,219,assertAllClose,2,223,multinomial.Multinomial
-kernel_tests\distributions\multinomial_test.py,243,testMultinomialCovarianceBatch,231,assertAllClose,1,241,UNSUPPORTED Binary Operation
 kernel_tests\distributions\multinomial_test.py,243,testMultinomialCovarianceBatch,231,assertAllClose,2,237,multinomial.Multinomial
 kernel_tests\distributions\multinomial_test.py,301,testCovarianceFromSampling,264,assertAllClose,1,291,sess.run
 kernel_tests\distributions\multinomial_test.py,301,testCovarianceFromSampling,264,assertAllClose,2,291,sess.run
@@ -1094,11 +1025,9 @@ kernel_tests\distributions\normal_test.py,221,testNormalSurvivalFunction,202,ass
 kernel_tests\distributions\normal_test.py,244,testNormalLogCDF,224,assertAllClose,1,243,logcdf
 kernel_tests\distributions\normal_test.py,287,testNormalLogSurvivalFunction,267,assertAllClose,1,286,logsf
 kernel_tests\distributions\normal_test.py,308,testNormalEntropyWithScalarInputs,290,assertAllClose,1,307,entropy
-kernel_tests\distributions\normal_test.py,320,testNormalEntropy,311,assert_allclose,1,318,UNSUPPORTED Binary Operation
 kernel_tests\distributions\normal_test.py,367,testNormalQuantile,344,assertAllClose,1,366,ppf
 kernel_tests\distributions\normal_test.py,431,testNormalSample,417,assertAllClose,2,420,UNSUPPORTED Constant
 kernel_tests\distributions\normal_test.py,432,testNormalSample,417,assertAllClose,2,421,np.sqrt
-kernel_tests\distributions\normal_test.py,548,testNormalNormalKL,531,assertAllClose,2,544,UNSUPPORTED Binary Operation
 kernel_tests\distributions\special_math_test.py,105,testNdtri,93,assertAllClose,1,103,special.ndtri
 kernel_tests\distributions\special_math_test.py,121,testNdtriDynamicShape,108,assertAllClose,1,120,special.ndtri
 kernel_tests\distributions\special_math_test.py,121,testNdtriDynamicShape,108,assertAllClose,2,118,sess.run
@@ -1165,14 +1094,22 @@ kernel_tests\linalg\linear_operator_identity_test.py,89,test_float16_matmul,81,a
 kernel_tests\linalg\linear_operator_test.py,178,test_generic_to_dense_method_non_square_matrix_static,172,assertAllClose,1,173,rng.randn
 kernel_tests\linalg\linear_operator_test.py,185,test_generic_to_dense_method_non_square_matrix_tensor,180,assertAllClose,1,181,rng.randn
 kernel_tests\linalg\linear_operator_util_test.py,105,test_one_batch_matrix_returned_after_tensor_conversion,100,assertAllClose,1,101,rng.rand
-kernel_tests\linalg\linear_operator_util_test.py,122,test_static_dims_broadcast,107,assertAllClose,1,114,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,123,test_static_dims_broadcast,107,assertAllClose,1,115,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,140,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,132,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,141,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,133,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,159,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,150,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,160,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,151,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,178,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,169,UNSUPPORTED Binary Operation
-kernel_tests\linalg\linear_operator_util_test.py,179,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,170,UNSUPPORTED Binary Operation
+kernel_tests\linalg\linear_operator_util_test.py,122,test_static_dims_broadcast,107,assertAllClose,1,111,rng.rand
+kernel_tests\linalg\linear_operator_util_test.py,122,test_static_dims_broadcast,107,assertAllClose,1,113,np.zeros
+kernel_tests\linalg\linear_operator_util_test.py,123,test_static_dims_broadcast,107,assertAllClose,1,112,rng.rand
+kernel_tests\linalg\linear_operator_util_test.py,123,test_static_dims_broadcast,107,assertAllClose,1,113,np.zeros
+kernel_tests\linalg\linear_operator_util_test.py,140,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,129,rng.rand
+kernel_tests\linalg\linear_operator_util_test.py,140,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,131,np.zeros
+kernel_tests\linalg\linear_operator_util_test.py,141,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,130,rng.rand
+kernel_tests\linalg\linear_operator_util_test.py,141,test_static_dims_broadcast_second_arg_higher_rank,125,assertAllClose,1,131,np.zeros
+kernel_tests\linalg\linear_operator_util_test.py,159,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,147,astype
+kernel_tests\linalg\linear_operator_util_test.py,159,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,149,astype
+kernel_tests\linalg\linear_operator_util_test.py,160,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,148,astype
+kernel_tests\linalg\linear_operator_util_test.py,160,test_dynamic_dims_broadcast_32bit,143,assertAllClose,1,149,astype
+kernel_tests\linalg\linear_operator_util_test.py,178,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,166,astype
+kernel_tests\linalg\linear_operator_util_test.py,178,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,168,astype
+kernel_tests\linalg\linear_operator_util_test.py,179,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,167,astype
+kernel_tests\linalg\linear_operator_util_test.py,179,test_dynamic_dims_broadcast_32bit_second_arg_higher_rank,162,assertAllClose,1,168,astype
 kernel_tests\linalg\sparse\conjugate_gradient_test.py,96,_test_conjugate_gradient,43,assertLessEqual,1,95,np.linalg.norm
 kernel_tests\linalg\sparse\conjugate_gradient_test.py,101,_test_conjugate_gradient,43,assertLessEqual,1,100,np.linalg.norm
 kernel_tests\linalg\sparse\csr_sparse_matrix_grad_test.py,108,testLargeBatchSparseConversionGrad,87,assertAllClose,1,98,astype
@@ -1180,7 +1117,6 @@ kernel_tests\linalg\sparse\csr_sparse_matrix_grad_test.py,108,testLargeBatchSpar
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,198,testCSRSparseMatrixResourceVariable,177,assertAllClose,1,183,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,201,testCSRSparseMatrixResourceVariable,177,assertAllClose,1,183,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,328,testDenseConversion,306,assertAllClose,1,308,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,460,testSparseMatrixAdd,428,assertAllClose,1,447,UNSUPPORTED Binary Operation
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,504,testSparseMatrixMatMul,487,assertAllClose,1,503,a_sparse_mat.dot
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,680,testSparseMatrixSparseMatMul,655,assertAllClose,1,679,todense
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,779,testLargeBatchRegisteredAddN,759,assertAllClose,1,778,np.sum
@@ -1188,15 +1124,16 @@ kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,854,testTranspose,832,a
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,854,testTranspose,832,assertAllClose,1,845,np.conj
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,879,testLargeBatchTranspose,857,assertAllClose,1,867,np.transpose
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,879,testLargeBatchTranspose,857,assertAllClose,1,870,np.conj
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,968,testSoftmaxGrad,946,assertAllClose,1,955,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,993,testLargeBatchSoftmaxGrad,971,assertAllClose,1,980,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,968,testSoftmaxGrad,946,assertAllClose,1,952,sparsify
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,993,testLargeBatchSoftmaxGrad,971,assertAllClose,1,977,sparsify
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1044,testLargeBatchConj,1024,assertAllClose,1,1038,np.conj
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1062,testLargeBatchSparseMatrixMulScalar,1047,assertAllClose,1,1055,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1080,testLargeBatchSparseMatrixMulVec,1065,assertAllClose,1,1073,UNSUPPORTED Binary Operation
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1121,testSparseCholesky,1083,assertAllClose,1,1119,UNSUPPORTED Binary Operation
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1062,testLargeBatchSparseMatrixMulScalar,1047,assertAllClose,1,1053,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1062,testLargeBatchSparseMatrixMulScalar,1047,assertAllClose,1,1054,np.float32
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1080,testLargeBatchSparseMatrixMulVec,1065,assertAllClose,1,1071,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1080,testLargeBatchSparseMatrixMulVec,1065,assertAllClose,1,1072,astype
+kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1121,testSparseCholesky,1083,assertAllClose,1,1084,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1172,testBatchSparseCholesky,1124,assertAllClose,1,1125,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1211,testLargeBatchSparseCholesky,1176,assertAllClose,1,1184,astype
-kernel_tests\linalg\sparse\csr_sparse_matrix_ops_test.py,1211,testLargeBatchSparseCholesky,1176,assertAllClose,1,1191,UNSUPPORTED Binary Operation
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,79,testConstructorFromDenseTensorNoIndices,61,assertAllClose,1,67,astype
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,79,testConstructorFromDenseTensorNoIndices,61,assertAllClose,2,72,a_sm.to_dense
 kernel_tests\linalg\sparse\csr_sparse_matrix_test.py,118,testConj,104,assertAllClose,1,110,sparsify
@@ -1218,7 +1155,6 @@ kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,1,94,
 kernel_tests\random\random_gamma_test.py,100,_testMoments,72,assertAllLess,2,82,UNSUPPORTED Constant
 kernel_tests\random\random_gamma_test.py,156,testDistinct,142,assertLess,1,149,sum
 kernel_tests\random\random_grad_test.py,143,_testCompareToExplicitDerivative,114,assertAllClose,2,139,misc.derivative
-kernel_tests\random\random_grad_test.py,249,testQuadraticLoss,223,assertAllClose,1,242,UNSUPPORTED Binary Operation
 kernel_tests\random\random_ops_test.py,336,testUniformInts,317,assertLess,1,335,np.abs
 kernel_tests\random\random_poisson_test.py,76,testMoments,53,assertAllLess,1,70,util.test_moment_matching
 kernel_tests\random\random_poisson_test.py,76,testMoments,53,assertAllLess,2,63,UNSUPPORTED Constant
@@ -1276,8 +1212,6 @@ kernel_tests\signal\spectral_ops_test.py,117,_compare,87,assertAllClose,1,115,Sp
 kernel_tests\signal\spectral_ops_test.py,117,_compare,87,assertAllClose,2,94,spectral_ops.inverse_stft
 kernel_tests\signal\spectral_ops_test.py,253,test_inverse_stft_window_fn_special_case,242,assertAllClose,1,250,window_ops.hann_window
 kernel_tests\signal\spectral_ops_test.py,363,test_mdct_round_trip,332,assertAllClose,2,342,astype
-kernel_tests\signal\window_ops_test.py,82,_check_mdct_window,73,assertAllClose,1,81,UNSUPPORTED Binary Operation
-kernel_tests\signal\window_ops_test.py,85,_check_mdct_window,73,assertAllClose,1,84,UNSUPPORTED Binary Operation
 kernel_tests\signal\window_ops_test.py,96,_compare_window_fns,88,assertAllClose,1,92,astype
 kernel_tests\signal\window_ops_test.py,96,_compare_window_fns,88,assertAllClose,2,94,tf_window_fn
 kernel_tests\v1_compat_tests\scatter_nd_ops_test.py,123,_VariableRankTest,76,assertAllClose,1,115,ref.copy
