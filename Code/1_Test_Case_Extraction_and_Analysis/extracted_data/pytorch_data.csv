@@ -7,6 +7,7 @@ test\test_autograd.py,1329,test_set_grad_coroutines_benign_exceptions,1295,asser
 test\test_autograd.py,1329,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1339,coro.throw
 test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1328,coro.throw
 test\test_autograd.py,1340,test_set_grad_coroutines_benign_exceptions,1295,assertLess,1,1339,coro.throw
+test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,2,2784,input2.var
 test\test_autograd.py,2790,test_var_mean_differentiable,2778,allclose,2,2785,input2.mean
 test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8967,torch.randn
 test\test_autograd.py,8972,test_cat_r_to_c,8965,gradcheck,2,8966,torch.rand
@@ -25,44 +26,21 @@ test\test_cuda.py,201,_test_memory_stats_generator,151,assertLessEqual,1,187,tor
 test\test_cuda.py,201,_test_memory_stats_generator,151,assertLessEqual,1,198,torch.cuda.memory_reserved
 test\test_cuda.py,201,_test_memory_stats_generator,151,assertLessEqual,2,188,torch.cuda.max_memory_reserved
 test\test_cuda.py,201,_test_memory_stats_generator,151,assertLessEqual,2,199,torch.cuda.max_memory_reserved
-test\test_fx_experimental.py,809,forward,803,assert_allclose,1,809,UNSUPPORTED Name (named variable or defined function: traced)
-test\test_fx_experimental.py,809,forward,803,assert_allclose,2,809,UNSUPPORTED Name (named variable or defined function: normalized)
-test\test_fx_experimental.py,822,forward,816,assert_allclose,1,822,UNSUPPORTED Name (named variable or defined function: traced)
-test\test_fx_experimental.py,822,forward,816,assert_allclose,2,822,UNSUPPORTED Name (named variable or defined function: normalized)
-test\test_fx_experimental.py,1275,forward,1266,assert_allclose,1,1275,UNSUPPORTED Name (named variable or defined function: model)
-test\test_fx_experimental.py,1275,forward,1266,assert_allclose,2,1275,UNSUPPORTED Name (named variable or defined function: optimized_model)
-test\test_fx_experimental.py,1279,forward,1266,assert_allclose,1,1279,UNSUPPORTED Name (named variable or defined function: model)
-test\test_fx_experimental.py,1279,forward,1266,assert_allclose,2,1279,UNSUPPORTED Name (named variable or defined function: optimized_model2)
+test\test_cuda.py,2009,test_grad_scaling_unscale_sparse,1984,allclose,2,1999,torch.sparse_coo_tensor
+test\test_cuda.py,2031,test_grad_scaling_unscale_sparse,1984,allclose,2,1999,torch.sparse_coo_tensor
 test\test_fx_experimental.py,1308,test_optimize_for_inference_cpu_torchvision,1284,assert_allclose,1,1306,model
 test\test_fx_experimental.py,1308,test_optimize_for_inference_cpu_torchvision,1284,assert_allclose,2,1307,optimized_model
-test\test_jit.py,8685,test_pack_unpack_state,8682,assert_allclose,1,8685,UNSUPPORTED Name (named variable or defined function: sm)
-test\test_jit.py,8700,test_pack_unpack_state,8682,assert_allclose,1,8700,UNSUPPORTED Name (named variable or defined function: imported)
-test\test_jit.py,8898,forward,8894,assert_allclose,1,8898,UNSUPPORTED Name (named variable or defined function: m)
-test\test_jit.py,8900,forward,8894,assert_allclose,1,8900,UNSUPPORTED Name (named variable or defined function: m)
-test\test_jit.py,8902,forward,8894,assert_allclose,1,8902,UNSUPPORTED Name (named variable or defined function: m)
-test\test_jit.py,12883,forward,12867,allclose,1,12883,UNSUPPORTED Name (named variable or defined function: weak_mod)
-test\test_jit.py,12887,forward,12867,allclose,1,12887,UNSUPPORTED Name (named variable or defined function: weak_mod)
-test\test_jit.py,14522,test_torchscript_multi_head_attn,14458,allclose,1,14500,UNSUPPORTED Name (named variable or defined function: jit_multihead_attn_forward)
+test\test_jit.py,8685,test_pack_unpack_state,8682,assert_allclose,2,8684,torch.rand
+test\test_jit.py,8700,test_pack_unpack_state,8682,assert_allclose,2,8684,torch.rand
 test\test_jit_cuda_fuser.py,567,_compare,564,allclose,1,565,numpy
 test\test_jit_cuda_fuser.py,567,_compare,564,allclose,2,566,numpy
 test\test_jit_fuser_te.py,1193,test_masked_fill,1171,assert_allclose,1,1190,fn
-test\test_jit_fuser_te.py,1193,test_masked_fill,1171,assert_allclose,2,1193,UNSUPPORTED Name (named variable or defined function: t)
 test\test_jit_fuser_te.py,1294,test_unary_ops,1236,assert_allclose,1,1286,fn
-test\test_jit_fuser_te.py,1294,test_unary_ops,1236,assert_allclose,2,1294,UNSUPPORTED Name (named variable or defined function: t)
-test\test_jit_fuser_te.py,1783,test_type_as_cat,1773,assert_allclose,1,1784,UNSUPPORTED Name (named variable or defined function: script)
-test\test_jit_fuser_te.py,1783,test_type_as_cat,1773,assert_allclose,2,1785,UNSUPPORTED Name (named variable or defined function: eager)
-test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,1,1787,UNSUPPORTED Name (named variable or defined function: script)
-test\test_jit_fuser_te.py,1786,test_type_as_cat,1773,assert_allclose,2,1788,UNSUPPORTED Name (named variable or defined function: eager)
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,1,1819,fn
 test\test_jit_fuser_te.py,1831,_test_fwd_bwd,1814,assert_allclose,2,1823,script
-test\test_linalg.py,5761,test_lobpcg_scipy,5718,assertLess,1,5761,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_linalg.py,5768,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
-test\test_linalg.py,5783,test_lobpcg_scipy,5718,assertLess,1,5783,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_linalg.py,5788,test_lobpcg_scipy,5718,assertLess,1,5853,UNSUPPORTED Unary Operation
-test\test_mobile_optimizer.py,160,forward,95,assert_allclose,1,160,UNSUPPORTED Name (named variable or defined function: bn_scripted_module)
-test\test_mobile_optimizer.py,160,forward,95,assert_allclose,2,160,UNSUPPORTED Name (named variable or defined function: bn_fold_scripted_module)
-test\test_mobile_optimizer.py,167,forward,95,assert_allclose,1,167,UNSUPPORTED Name (named variable or defined function: bn_scripted_module)
-test\test_mobile_optimizer.py,167,forward,95,assert_allclose,2,167,UNSUPPORTED Name (named variable or defined function: no_bn_fold_scripted_module)
+test\test_multiprocessing_spawn.py,187,test_nested,159,assertLess,1,174,time.time
 test\test_nn.py,232,test_doubletensor_avg_pool2d,224,allclose,1,229,torch.nn.functional.avg_pool2d
 test\test_nn.py,232,test_doubletensor_avg_pool2d,224,allclose,1,230,actual.view
 test\test_nn.py,232,test_doubletensor_avg_pool2d,224,allclose,2,231,self._avg_pool2d
@@ -73,8 +51,6 @@ test\test_nn.py,258,test_doubletensor_avg_pool3d,249,allclose,1,256,actual.view
 test\test_nn.py,258,test_doubletensor_avg_pool3d,249,allclose,2,257,self._avg_pool3d
 test\test_nn.py,270,test_doubletensor_avg_pool3d_with_divisor,260,allclose,1,267,torch.nn.functional.avg_pool3d
 test\test_nn.py,270,test_doubletensor_avg_pool3d_with_divisor,260,allclose,1,268,actual.view
-test\test_nn.py,1063,_test_alpha_dropout,1054,assertLess,1,1063,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_nn.py,1065,_test_alpha_dropout,1054,assertLess,1,1065,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,1,2069,compute_norm
 test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,1,2082,compute_norm
 test\test_nn.py,2072,test_clip_grad_norm,2043,assertLessEqual,2,2067,compute_norm
@@ -92,7 +68,7 @@ test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4448,np.res
 test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4617,_fc
 test\test_nn.py,4622,test_multihead_attention,4388,assert_allclose,2,4618,np.squeeze
 test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,1,4625,numpy
-test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4411,UNSUPPORTED Name (named variable or defined function: reference)
+test\test_nn.py,4627,test_multihead_attention,4388,assert_allclose,2,4412,np.sum
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5192,torch.randn
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5193,torch.randn
 test\test_nn.py,5200,test_thnn_conv_strided_padded_dilated,5181,gradcheck,2,5194,torch.randn
@@ -1232,58 +1208,58 @@ test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7115,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7124,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7135,to
 test\test_nn.py,7168,test_transformerdecoder,6846,assert_allclose,2,7160,to
-test\test_nn.py,8005,test_RNN_dropout,7970,assertLess,1,8005,UNSUPPORTED Name (named variable or defined function: min)
 test\test_nn.py,8897,test_cosine_similarity,8871,assertLessEqual,1,8896,F.cosine_similarity
 test\test_nn.py,11233,test_add_relu,11222,allclose,1,11231,torch._VF._add_relu
 test\test_nn.py,11233,test_add_relu,11222,allclose,2,11230,torch.relu
-test\test_nn.py,11644,_test_dropout,11636,assertLess,1,11644,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_nn.py,11647,_test_dropout,11636,assertLess,1,11647,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_nn.py,11653,_test_dropout,11636,assertLess,1,11653,UNSUPPORTED Name (named variable or defined function: abs)
-test\test_nn.py,11656,_test_dropout,11636,assertLess,1,11656,UNSUPPORTED Name (named variable or defined function: abs)
 test\test_nn.py,13212,test_avg_pool2d_nhwc,13188,allclose,1,13205,pool
 test\test_nn.py,13212,test_avg_pool2d_nhwc,13188,allclose,2,13207,ref_pool
 test\test_nn.py,13337,test_max_pool2d_nhwc,13316,allclose,1,13330,pool
 test\test_nn.py,13337,test_max_pool2d_nhwc,13316,allclose,2,13332,ref_pool
+test\test_nn.py,14099,_test_gumbel_softmax_straight_through,14075,assertLess,1,14083,torch.zeros_like
+test\test_nn.py,14099,_test_gumbel_softmax_straight_through,14075,assertLess,1,14085,F.gumbel_softmax
+test\test_nn.py,14099,_test_gumbel_softmax_straight_through,14075,assertLess,1,14081,logits.softmax
 test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,1,16105,double
 test\test_nn.py,16109,test_softplus_low_threshold,16103,gradcheck,2,16106,torch.tensor
 test\test_optim.py,95,_test_rosenbrock_sparse,39,assertLessEqual,2,56,params.data.dist
-test\test_optim.py,127,_test_basic_cases_template,97,assertLess,1,127,UNSUPPORTED Name (named variable or defined function: fn)
+test\test_optim.py,127,_test_basic_cases_template,97,assertLess,1,114,sum
 test\test_optim.py,127,_test_basic_cases_template,97,assertLess,2,118,item
 test\test_sparse.py,857,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_sparse.py,861,test_add_sub_nnz,852,assertLessEqual,1,854,to_sparse
 test\test_spectral_ops.py,530,test_fftshift_frequencies,522,allclose,1,529,torch.fft.fftshift
-test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,191,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
-test\test_static_runtime.py,192,test_mlp,177,assert_allclose,1,201,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
 test\test_static_runtime.py,192,test_mlp,177,assert_allclose,2,190,bot_l
 test\test_static_runtime.py,192,test_mlp,177,assert_allclose,2,200,bot_l
-test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,194,UNSUPPORTED Name (named variable or defined function: top_l_acc)
-test\test_static_runtime.py,195,test_mlp,177,assert_allclose,1,204,UNSUPPORTED Name (named variable or defined function: top_l_acc)
 test\test_static_runtime.py,195,test_mlp,177,assert_allclose,2,193,top_l
 test\test_static_runtime.py,195,test_mlp,177,assert_allclose,2,203,top_l
-test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,191,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
-test\test_static_runtime.py,202,test_mlp,177,assert_allclose,1,201,UNSUPPORTED Name (named variable or defined function: bot_l_acc)
 test\test_static_runtime.py,202,test_mlp,177,assert_allclose,2,190,bot_l
 test\test_static_runtime.py,202,test_mlp,177,assert_allclose,2,200,bot_l
-test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,194,UNSUPPORTED Name (named variable or defined function: top_l_acc)
-test\test_static_runtime.py,205,test_mlp,177,assert_allclose,1,204,UNSUPPORTED Name (named variable or defined function: top_l_acc)
 test\test_static_runtime.py,205,test_mlp,177,assert_allclose,2,193,top_l
 test\test_static_runtime.py,205,test_mlp,177,assert_allclose,2,203,top_l
 test\test_static_runtime.py,213,test_trivial_graph,207,assert_allclose,1,210,tg
-test\test_static_runtime.py,213,test_trivial_graph,207,assert_allclose,2,212,UNSUPPORTED Name (named variable or defined function: tg_a)
 test\test_static_runtime.py,221,test_leaky_relu,215,assert_allclose,1,218,tg
-test\test_static_runtime.py,221,test_leaky_relu,215,assert_allclose,2,220,UNSUPPORTED Name (named variable or defined function: tg_a)
 test\test_static_runtime.py,231,test_fusion_trivial_graph,224,assert_allclose,1,227,tg
 test\test_static_runtime.py,231,test_fusion_trivial_graph,224,assert_allclose,2,230,tg
 test\test_static_runtime.py,268,test_fusion_loop,259,assert_allclose,1,264,lg
 test\test_static_runtime.py,268,test_fusion_loop,259,assert_allclose,2,267,lg
+test\test_tensorboard.py,196,test_prepare_video,179,assert_array_almost_equal,1,196,np.sum
+test\test_tensorboard.py,196,test_prepare_video,179,assert_array_almost_equal,2,196,np.sum
+test\test_tensorboard.py,206,test_numpy_vid_uint8,198,assert_array_almost_equal,1,206,np.sum
+test\test_tensorboard.py,206,test_numpy_vid_uint8,198,assert_array_almost_equal,2,206,np.sum
+test\test_tensorexpr.py,69,test_easy,58,assert_allclose,1,65,torch.rand
+test\test_tensorexpr.py,69,test_easy,58,assert_allclose,1,66,torch.rand
 test\test_tensorexpr.py,69,test_easy,58,assert_allclose,2,67,warmup_and_run_forward
+test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,1,84,torch.rand
+test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,1,85,torch.rand
 test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,1,86,torch.rand
 test\test_tensorexpr.py,90,test_three_arg,71,assert_allclose,2,87,warmup_and_run_forward
 test\test_tensorexpr.py,120,test_four_arg,96,assert_allclose,1,117,warmup_and_run_forward
 test\test_tensorexpr.py,120,test_four_arg,96,assert_allclose,2,119,run_addcmul
+test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,1,140,torch.rand
+test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,1,141,torch.rand
 test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,1,142,torch.rand
 test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,2,143,traced
 test\test_tensorexpr.py,147,test_three_arg2,122,assert_allclose,2,144,warmup_and_run_forward
+test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,1,169,torch.rand
+test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,1,170,torch.rand
 test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,1,171,torch.rand
 test\test_tensorexpr.py,175,test_broadcast3,149,assert_allclose,2,172,warmup_and_run_forward
 test\test_tensorexpr.py,206,test_all_combos,181,assert_allclose,1,205,np_easy
@@ -1296,27 +1272,54 @@ test\test_tensorexpr.py,280,test_broadcast_2,258,assert_allclose,1,276,warmup_an
 test\test_tensorexpr.py,280,test_broadcast_2,258,assert_allclose,2,279,foo_np
 test\test_tensorexpr.py,303,test_broadcast_big2,282,assert_allclose,1,300,warmup_and_run_forward
 test\test_tensorexpr.py,303,test_broadcast_big2,282,assert_allclose,2,302,foo_np
+test\test_tensorexpr.py,314,test_alpha,305,assert_allclose,1,312,torch.tensor
 test\test_tensorexpr.py,314,test_alpha,305,assert_allclose,2,313,traced
+test\test_tensorexpr.py,328,test_constant,317,assert_allclose,1,325,torch.tensor
 test\test_tensorexpr.py,328,test_constant,317,assert_allclose,2,326,warmup_and_run_forward
+test\test_tensorexpr.py,345,test_add_sub,330,assert_allclose,1,340,torch.rand
+test\test_tensorexpr.py,345,test_add_sub,330,assert_allclose,1,341,torch.rand
+test\test_tensorexpr.py,345,test_add_sub,330,assert_allclose,1,342,torch.rand
 test\test_tensorexpr.py,345,test_add_sub,330,assert_allclose,2,343,warmup_and_run_forward
+test\test_tensorexpr.py,361,test_promotion,347,assert_allclose,1,357,torch.zeros
+test\test_tensorexpr.py,361,test_promotion,347,assert_allclose,1,358,torch.rand
 test\test_tensorexpr.py,361,test_promotion,347,assert_allclose,2,359,warmup_and_run_forward
+test\test_tensorexpr.py,380,test_double,363,assert_allclose,1,376,torch.rand
+test\test_tensorexpr.py,380,test_double,363,assert_allclose,1,377,torch.full
 test\test_tensorexpr.py,380,test_double,363,assert_allclose,2,378,warmup_and_run_forward
+test\test_tensorexpr.py,400,test_short,382,assert_allclose,1,396,torch.randint
+test\test_tensorexpr.py,400,test_short,382,assert_allclose,1,397,torch.randint
 test\test_tensorexpr.py,400,test_short,382,assert_allclose,2,398,warmup_and_run_forward
+test\test_tensorexpr.py,420,test_char,402,assert_allclose,1,416,torch.randint
+test\test_tensorexpr.py,420,test_char,402,assert_allclose,1,417,torch.randint
 test\test_tensorexpr.py,420,test_char,402,assert_allclose,2,418,warmup_and_run_forward
+test\test_tensorexpr.py,440,test_int64_promotion,422,assert_allclose,1,436,torch.randint
+test\test_tensorexpr.py,440,test_int64_promotion,422,assert_allclose,1,437,torch.randint
 test\test_tensorexpr.py,440,test_int64_promotion,422,assert_allclose,2,438,warmup_and_run_forward
+test\test_tensorexpr.py,452,test_eq,442,assert_allclose,1,452,np.ones
 test\test_tensorexpr.py,452,test_eq,442,assert_allclose,2,450,warmup_and_run_forward
+test\test_tensorexpr.py,464,test_ne,454,assert_allclose,1,464,np.ones
 test\test_tensorexpr.py,464,test_ne,454,assert_allclose,2,462,warmup_and_run_forward
+test\test_tensorexpr.py,478,test_ge,466,assert_allclose,1,478,np.ones
 test\test_tensorexpr.py,478,test_ge,466,assert_allclose,2,476,warmup_and_run_forward
+test\test_tensorexpr.py,490,test_gt,480,assert_allclose,1,490,np.ones
 test\test_tensorexpr.py,490,test_gt,480,assert_allclose,2,488,warmup_and_run_forward
+test\test_tensorexpr.py,504,test_le,492,assert_allclose,1,504,np.zeros
 test\test_tensorexpr.py,504,test_le,492,assert_allclose,2,502,warmup_and_run_forward
+test\test_tensorexpr.py,517,test_lt,506,assert_allclose,1,517,np.zeros
 test\test_tensorexpr.py,517,test_lt,506,assert_allclose,2,515,warmup_and_run_forward
-test\test_tensorexpr.py,527,test_min_max,520,assert_allclose,1,528,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
-test\test_tensorexpr.py,539,test_min_max_reduction,533,assert_allclose,1,539,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
-test\test_tensorexpr.py,549,test_min_max_reduction2,543,assert_allclose,1,549,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
-test\test_tensorexpr.py,558,test_min_max_reduction_dim1,552,assert_allclose,1,558,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
-test\test_tensorexpr.py,580,test_clamp,572,assert_allclose,1,580,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
-test\test_tensorexpr.py,591,test_relu,583,assert_allclose,1,591,UNSUPPORTED Name (named variable or defined function: warmup_and_run_forward)
+test\test_tensorexpr.py,527,test_min_max,520,assert_allclose,2,528,np.maximum
+test\test_tensorexpr.py,539,test_min_max_reduction,533,assert_allclose,2,539,np.amin
+test\test_tensorexpr.py,539,test_min_max_reduction,533,assert_allclose,2,539,np.amax
+test\test_tensorexpr.py,549,test_min_max_reduction2,543,assert_allclose,2,549,np.amin
+test\test_tensorexpr.py,549,test_min_max_reduction2,543,assert_allclose,2,549,np.amax
+test\test_tensorexpr.py,558,test_min_max_reduction_dim1,552,assert_allclose,2,558,np.amin
+test\test_tensorexpr.py,558,test_min_max_reduction_dim1,552,assert_allclose,2,559,np.amax
+test\test_tensorexpr.py,569,test_min_max_reduction_dim1_2,563,assert_allclose,2,569,np.amin
+test\test_tensorexpr.py,580,test_clamp,572,assert_allclose,2,580,np.clip
+test\test_tensorexpr.py,591,test_relu,583,assert_allclose,2,591,np.clip
+test\test_tensorexpr.py,605,test_reps,594,assert_allclose,1,605,np.ones
 test\test_tensorexpr.py,605,test_reps,594,assert_allclose,2,604,warmup_and_run_forward
+test\test_tensorexpr.py,615,test_add_const_rhs,607,assert_allclose,1,612,torch.rand
 test\test_tensorexpr.py,615,test_add_const_rhs,607,assert_allclose,2,613,warmup_and_run_forward
 test\test_tensorexpr.py,627,test_int_output,617,assert_allclose,2,625,warmup_and_run_forward
 test\test_tensorexpr.py,716,test_binary_ops,629,assert_allclose,1,713,warmup_and_run_forward
@@ -1387,6 +1390,7 @@ test\test_tensorexpr.py,1391,test_bitwise_ops,1364,assert_allclose,2,1390,fn
 test\test_tensorexpr.py,1403,test_where,1393,assert_allclose,1,1400,warmup_and_run_forward
 test\test_tensorexpr.py,1403,test_where,1393,assert_allclose,2,1402,run_where
 test\test_tensorexpr.py,1414,test_multi_rand,1405,allclose,1,1412,warmup_and_run_forward
+test\test_tensorexpr.py,1414,test_multi_rand,1405,allclose,2,1410,torch.rand
 test\test_tensorexpr.py,1442,test_simple_add,1427,assert_allclose,1,1440,traced
 test\test_tensorexpr.py,1442,test_simple_add,1427,assert_allclose,2,1441,np.full
 test\test_tensorexpr_pybind.py,41,test_simple_sum,18,assert_allclose,2,39,torch.empty
@@ -1430,6 +1434,11 @@ test\test_torch.py,1564,test_sobolengine_continuing,1558,assert_allclose,1,1563,
 test\test_torch.py,1576,test_sobolengine_reset,1569,assert_allclose,1,1575,engine.draw
 test\test_torch.py,1576,test_sobolengine_reset,1569,assert_allclose,2,1570,self._sobol_reference_samples
 test\test_torch.py,1586,test_sobolengine_fast_forward,1581,assert_allclose,1,1585,engine.draw
+test\test_torch.py,1595,test_sobolengine_fast_forward,1581,assert_allclose,2,1597,np.concatenate
+test\test_torch.py,1610,test_sobolengine_distribution,1603,assert_allclose,1,1611,np.percentile
+test\test_torch.py,1610,test_sobolengine_distribution,1603,assert_allclose,2,1611,np.repeat
+test\test_torch.py,1613,test_sobolengine_distribution,1603,assert_allclose,1,1614,np.percentile
+test\test_torch.py,1613,test_sobolengine_distribution,1603,assert_allclose,2,1614,np.repeat
 test\test_torch.py,1658,test_parsing_double,1655,isclose,1,1657,torch.randn
 test\test_torch.py,1658,test_parsing_double,1655,isclose,2,1657,torch.randn
 test\test_torch.py,1659,test_parsing_double,1655,isclose,1,1657,torch.randn
@@ -1443,6 +1452,10 @@ test\test_torch.py,1663,test_parsing_double,1655,isclose,2,1657,torch.randn
 test\test_torch.py,1666,test_parsing_double,1655,isclose,1,1657,torch.randn
 test\test_torch.py,1666,test_parsing_double,1655,isclose,2,1657,torch.randn
 test\test_torch.py,2438,test_c10_layer_norm,2426,assert_allclose,1,2433,torch.nn.functional.layer_norm
+test\test_torch.py,7049,test_multinomial_rng_state_advance,7040,assertLessEqual,1,7046,torch.cat
+test\test_torch.py,7049,test_multinomial_rng_state_advance,7040,assertLessEqual,1,7052,torch.cat
+test\test_torch.py,7054,test_multinomial_rng_state_advance,7040,assertLessEqual,1,7046,torch.cat
+test\test_torch.py,7054,test_multinomial_rng_state_advance,7040,assertLessEqual,1,7052,torch.cat
 test\test_xnnpack_integration.py,37,test_linear,26,assert_allclose,1,34,F.linear
 test\test_xnnpack_integration.py,37,test_linear,26,assert_allclose,2,36,torch.ops.prepacked.linear_clamp_run
 test\test_xnnpack_integration.py,52,test_linear_1d_input,42,assert_allclose,1,49,F.linear
@@ -1457,10 +1470,24 @@ test\test_xnnpack_integration.py,968,validate_transform_conv1d_to_conv2d,937,ass
 test\test_xnnpack_integration.py,968,validate_transform_conv1d_to_conv2d,937,assert_allclose,2,967,deserialized_scripted_model
 test\test_xnnpack_integration.py,983,validate_transform_conv1d_to_conv2d,937,assert_allclose,1,951,scripted_model
 test\test_xnnpack_integration.py,983,validate_transform_conv1d_to_conv2d,937,assert_allclose,2,982,deserialized_optimized_scripted_model
-test\benchmark_utils\test_benchmark_utils.py,587,test_manipulate_callgrind_stats,579,assertLessEqual,1,587,UNSUPPORTED Name (named variable or defined function: len)
 test\custom_operator\test_custom_ops.py,21,test_calling_custom_op_string,19,assertLess,1,20,ops.custom.op2
 test\custom_operator\test_custom_ops.py,21,test_calling_custom_op_string,19,assertLess,1,22,ops.custom.op2
+test\custom_operator\test_custom_ops.py,41,test_calling_custom_op_with_autograd,37,allclose,1,38,torch.randn
+test\custom_operator\test_custom_ops.py,41,test_calling_custom_op_with_autograd,37,allclose,1,39,torch.randn
+test\custom_operator\test_custom_ops.py,47,test_calling_custom_op_with_autograd,37,allclose,2,39,torch.randn
+test\custom_operator\test_custom_ops.py,47,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
+test\custom_operator\test_custom_ops.py,48,test_calling_custom_op_with_autograd,37,allclose,2,38,torch.randn
+test\custom_operator\test_custom_ops.py,48,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
+test\custom_operator\test_custom_ops.py,55,test_calling_custom_op_with_autograd,37,allclose,1,38,torch.randn
+test\custom_operator\test_custom_ops.py,55,test_calling_custom_op_with_autograd,37,allclose,1,39,torch.randn
+test\custom_operator\test_custom_ops.py,55,test_calling_custom_op_with_autograd,37,allclose,1,53,torch.randn
+test\custom_operator\test_custom_ops.py,59,test_calling_custom_op_with_autograd,37,allclose,2,39,torch.randn
+test\custom_operator\test_custom_ops.py,59,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
+test\custom_operator\test_custom_ops.py,60,test_calling_custom_op_with_autograd,37,allclose,2,38,torch.randn
+test\custom_operator\test_custom_ops.py,60,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
 test\custom_operator\test_custom_ops.py,61,test_calling_custom_op_with_autograd,37,allclose,2,45,torch.ones
+test\custom_operator\test_custom_ops.py,68,test_calling_custom_op_with_autograd_in_nograd_mode,63,allclose,1,65,torch.randn
+test\custom_operator\test_custom_ops.py,68,test_calling_custom_op_with_autograd_in_nograd_mode,63,allclose,1,66,torch.randn
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,119,test_ddp_comm_hook_allreduce_hook,106,assert_allclose,1,117,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,119,test_ddp_comm_hook_allreduce_hook,106,assert_allclose,2,115,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,136,test_ddp_comm_hook_fp16compress_hook,123,assert_allclose,1,134,self._get_grads
@@ -1469,83 +1496,38 @@ test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,153,test_ddp_comm_h
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,153,test_ddp_comm_hook_quantize_per_tensor_hook,140,assert_allclose,2,149,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,172,test_ddp_comm_hook_quantize_per_channel_hook,157,assert_allclose,1,168,self._get_grads
 test\distributed\algorithms\ddp_comm_hooks\test_ddp_hooks.py,172,test_ddp_comm_hook_quantize_per_channel_hook,157,assert_allclose,2,166,self._get_grads
-test\distributed\elastic\multiprocessing\api_test.py,781,test_function_exit,743,assertLessEqual,2,781,UNSUPPORTED Name (named variable or defined function: int)
-test\distributed\elastic\rendezvous\dynamic_rendezvous_test.py,158,test_encoded_size_is_within_expected_limit,125,assertLessEqual,1,158,UNSUPPORTED Name (named variable or defined function: len)
-test\distributed\elastic\timer\local_timer_test.py,179,test_get_less_than_size,161,assertLessEqual,2,179,UNSUPPORTED Name (named variable or defined function: len)
+test\distributed\elastic\timer\local_timer_test.py,158,test_get_size,139,assertLessEqual,1,156,time.time
 test\distributed\elastic\timer\local_timer_test.py,206,test_watchdog_call_count,193,assertLessEqual,1,197,mock.MagicMock
 test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,1,529,cast
 test\distributed\optim\test_zero_redundancy_optimizer.py,532,test_pytorch_parity,474,allclose,2,530,cast
-test\distributed\pipeline\sync\test_deferred_batch_norm.py,111,tilt_dist,19,allclose,1,111,UNSUPPORTED Name (named variable or defined function: bn)
-test\distributed\pipeline\sync\test_deferred_batch_norm.py,111,tilt_dist,19,allclose,2,111,UNSUPPORTED Name (named variable or defined function: dbn)
-test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allclose,1,140,UNSUPPORTED Name (named variable or defined function: bn)
-test\distributed\pipeline\sync\test_deferred_batch_norm.py,140,tilt_dist,19,allclose,2,140,UNSUPPORTED Name (named variable or defined function: dbn)
 test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,1,40,sum_grad
 test\distributed\pipeline\sync\test_transparency.py,43,test_simple_linears,13,allclose,2,29,sum_grad
 test\distributed\pipeline\sync\skip\test_gpipe.py,67,forward,50,allclose,1,51,
-test\distributions\test_distributions.py,793,_check_sampler_sampler,765,assertLess,2,786,UNSUPPORTED Name (named variable or defined function: len)
-test\distributions\test_distributions.py,1496,test_vonmises_logprob,1490,assertLess,1,1496,UNSUPPORTED Name (named variable or defined function: abs)
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2345,max
 test\distributions\test_distributions.py,2346,test_kumaraswamy_mean_variance,2333,assertLess,1,2351,max
 test\distributions\test_distributions.py,2352,test_kumaraswamy_mean_variance,2333,assertLess,1,2345,max
 test\distributions\test_distributions.py,2352,test_kumaraswamy_mean_variance,2333,assertLess,1,2351,max
 test\distributions\test_distributions.py,2609,test_lkj_cholesky_log_prob,2589,allclose,1,2591,vec_to_tril_matrix
 test\distributions\test_distributions.py,2609,test_lkj_cholesky_log_prob,2589,allclose,1,2592,diag_embed
+test\distributions\test_distributions.py,2897,test_gamma,2879,assertLess,1,2897,np.max
+test\distributions\test_distributions.py,2925,test_chi2,2908,assertLess,1,2925,np.max
+test\distributions\test_distributions.py,2955,test_dirichlet_on_diagonal,2935,assertLess,1,2955,np.max
+test\distributions\test_distributions.py,2985,test_beta_wrt_alpha,2966,assertLess,1,2985,np.max
+test\distributions\test_distributions.py,3015,test_beta_wrt_beta,2996,assertLess,1,3015,np.max
 test\distributions\test_distributions.py,3801,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3800,max
 test\distributions\test_distributions.py,3808,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3807,max
 test\distributions\test_distributions.py,3815,test_kl_lowrank_multivariate_normal,3781,assertLess,1,3814,max
-test\distributions\test_transforms.py,291,get_transforms,17,allclose,1,291,UNSUPPORTED Name (named variable or defined function: f)
-test\distributions\test_transforms.py,291,get_transforms,17,allclose,2,291,UNSUPPORTED Name (named variable or defined function: traced_f)
-test\distributions\test_transforms.py,308,get_transforms,17,allclose,1,308,UNSUPPORTED Name (named variable or defined function: f)
-test\distributions\test_transforms.py,308,get_transforms,17,allclose,2,308,UNSUPPORTED Name (named variable or defined function: traced_f)
-test\distributions\test_transforms.py,326,get_transforms,17,allclose,1,326,UNSUPPORTED Name (named variable or defined function: f)
-test\distributions\test_transforms.py,326,get_transforms,17,allclose,2,326,UNSUPPORTED Name (named variable or defined function: traced_f)
 test\distributions\test_utils.py,20,test_tril_matrix_to_vec,13,allclose,1,19,vec_to_tril_matrix
 test\distributions\test_utils.py,20,test_tril_matrix_to_vec,13,allclose,2,17,mat.tril
-test\jit\test_freezing.py,1880,forward,1869,allclose,1,1880,UNSUPPORTED Name (named variable or defined function: model)
-test\jit\test_freezing.py,1880,forward,1869,allclose,2,1880,UNSUPPORTED Name (named variable or defined function: mod)
-test\jit\test_freezing.py,1904,test_pool2d_batchnorm,1883,allclose,1,1904,UNSUPPORTED Name (named variable or defined function: sub_model)
-test\jit\test_freezing.py,1904,test_pool2d_batchnorm,1883,allclose,2,1904,UNSUPPORTED Name (named variable or defined function: mod)
-test\jit\test_freezing.py,1928,test_pool3d_batchnorm,1907,allclose,1,1928,UNSUPPORTED Name (named variable or defined function: sub_model)
-test\jit\test_freezing.py,1928,test_pool3d_batchnorm,1907,allclose,2,1928,UNSUPPORTED Name (named variable or defined function: mod)
-test\jit\test_freezing.py,1967,forward,1940,allclose,1,1967,UNSUPPORTED Name (named variable or defined function: sub_model)
-test\jit\test_freezing.py,1967,forward,1940,allclose,2,1967,UNSUPPORTED Name (named variable or defined function: mod)
-test\jit\test_freezing.py,1994,test_hardswish_hardsigmoid,1970,allclose,1,1994,UNSUPPORTED Name (named variable or defined function: aten_op)
-test\jit\test_freezing.py,1994,test_hardswish_hardsigmoid,1970,allclose,2,1994,UNSUPPORTED Name (named variable or defined function: m)
-test\jit\test_tracer.py,1260,forward,1256,allclose,1,1260,UNSUPPORTED Name (named variable or defined function: traced)
 test\mobile\test_bytecode.py,271,test_backport_bytecode_from_file_to_file,239,assert_allclose,1,269,mobile_module
 test\mobile\test_bytecode.py,297,test_backport_bytecode_from_file_to_buffer,275,assert_allclose,1,295,mobile_module
 test\onnx\test_pytorch_onnx_caffe2_quantized.py,48,generic_test,14,assert_almost_equal,1,28,q_model
-test\package\test_model.py,59,test_resnet,34,allclose,1,59,UNSUPPORTED Name (named variable or defined function: r2)
+test\onnx\test_pytorch_onnx_caffe2_quantized.py,48,generic_test,14,assert_almost_equal,2,35,c2.run_model
 test\package\test_model.py,59,test_resnet,34,allclose,2,58,resnet
-test\package\test_model.py,91,test_resnet,34,allclose,1,91,UNSUPPORTED Name (named variable or defined function: r3)
 test\package\test_model.py,91,test_resnet,34,allclose,2,58,resnet
-test\package\test_model.py,102,test_resnet,34,allclose,1,102,UNSUPPORTED Name (named variable or defined function: r4)
 test\package\test_model.py,102,test_resnet,34,allclose,2,58,resnet
-test\package\test_model.py,209,test_script_resnet,183,allclose,1,209,UNSUPPORTED Name (named variable or defined function: loaded)
-test\package\test_model.py,209,test_script_resnet,183,allclose,2,209,UNSUPPORTED Name (named variable or defined function: resnet)
-test\package\test_package_fx.py,39,forward,25,allclose,1,39,UNSUPPORTED Name (named variable or defined function: loaded_traced)
-test\package\test_package_fx.py,39,forward,25,allclose,2,39,UNSUPPORTED Name (named variable or defined function: traced)
-test\package\test_package_fx.py,55,test_package_then_fx,41,allclose,1,55,UNSUPPORTED Name (named variable or defined function: loaded)
-test\package\test_package_fx.py,55,test_package_then_fx,41,allclose,2,55,UNSUPPORTED Name (named variable or defined function: traced)
-test\package\test_package_fx.py,90,test_package_fx_package,57,allclose,1,90,UNSUPPORTED Name (named variable or defined function: loaded)
-test\package\test_package_fx.py,90,test_package_fx_package,57,allclose,2,90,UNSUPPORTED Name (named variable or defined function: loaded2)
-test\package\test_package_fx.py,116,test_package_fx_with_imports,92,allclose,1,116,UNSUPPORTED Name (named variable or defined function: loaded_gm)
-test\package\test_package_fx.py,116,test_package_fx_with_imports,92,allclose,2,116,UNSUPPORTED Name (named variable or defined function: gm)
-test\package\test_package_script.py,44,test_package_interface,21,allclose,1,44,UNSUPPORTED Name (named variable or defined function: scripted)
-test\package\test_package_script.py,44,test_package_interface,21,allclose,2,44,UNSUPPORTED Name (named variable or defined function: scripted_loaded)
+test\package\test_package_script.py,106,test_package_script_class,93,allclose,1,107,fake.uses_script_class
 test\package\test_package_script.py,106,test_package_script_class,93,allclose,2,102,package_importer.import_module
-test\package\test_torchscript.py,428,test_save_shared_tensors,400,allclose,1,428,UNSUPPORTED Name (named variable or defined function: loaded_mod_1)
-test\package\test_torchscript.py,428,test_save_shared_tensors,400,allclose,2,428,UNSUPPORTED Name (named variable or defined function: mod1)
-test\package\test_torchscript.py,546,test_saving_and_scripting_packaged_mod,527,allclose,1,546,UNSUPPORTED Name (named variable or defined function: loaded_mod)
-test\package\test_torchscript.py,546,test_saving_and_scripting_packaged_mod,527,allclose,2,546,UNSUPPORTED Name (named variable or defined function: orig_mod)
-test\package\test_torchscript.py,559,test_saving_and_scripting_packaged_mod,527,allclose,1,559,UNSUPPORTED Name (named variable or defined function: loaded_mod_scripted)
-test\package\test_torchscript.py,559,test_saving_and_scripting_packaged_mod,527,allclose,2,559,UNSUPPORTED Name (named variable or defined function: orig_mod)
-test\package\test_torchscript.py,596,forward,573,allclose,1,596,UNSUPPORTED Name (named variable or defined function: loaded_imported)
-test\package\test_torchscript.py,596,forward,573,allclose,2,596,UNSUPPORTED Name (named variable or defined function: imported_mod)
-test\package\test_torchscript.py,637,forward,611,allclose,1,637,UNSUPPORTED Name (named variable or defined function: loaded_imported)
-test\package\test_torchscript.py,637,forward,611,allclose,2,637,UNSUPPORTED Name (named variable or defined function: imported_mod)
-test\package\test_torchscript.py,638,forward,611,allclose,1,638,UNSUPPORTED Name (named variable or defined function: loaded_inline)
-test\package\test_torchscript.py,638,forward,611,allclose,2,638,UNSUPPORTED Name (named variable or defined function: inline_mod)
 test\quantization\core\test_quantized_functional.py,64,_test_conv_api_impl,32,assert_array_almost_equal,1,46,conv_fn
 test\quantization\core\test_quantized_functional.py,64,_test_conv_api_impl,32,assert_array_almost_equal,1,47,torch.quantize_per_tensor
 test\quantization\core\test_quantized_functional.py,64,_test_conv_api_impl,32,assert_array_almost_equal,2,49,qconv_fn
@@ -1570,6 +1552,8 @@ test\quantization\core\test_quantized_op.py,3067,test_qlinear,2970,assert_array_
 test\quantization\core\test_quantized_op.py,3067,test_qlinear,2970,assert_array_almost_equal,2,3055,qlinear
 test\quantization\core\test_quantized_op.py,3079,test_qlinear,2970,assert_array_almost_equal,1,3076,torch.quantize_per_tensor
 test\quantization\core\test_quantized_op.py,3079,test_qlinear,2970,assert_array_almost_equal,2,3055,qlinear
+test\quantization\core\test_quantized_op.py,3112,test_qlinear_unpack,3087,assert_array_almost_equal,1,3112,np.float32
+test\quantization\core\test_quantized_op.py,3112,test_qlinear_unpack,3087,assert_array_almost_equal,2,3113,np.float32
 test\quantization\core\test_quantized_op.py,3205,_test_embedding_bag_unpack_fn,3127,assert_allclose,1,3133,pack_fn
 test\quantization\core\test_quantized_op.py,3205,_test_embedding_bag_unpack_fn,3127,assert_allclose,1,3135,pack_fn
 test\quantization\core\test_quantized_op.py,3207,_test_embedding_bag_unpack_fn,3127,assert_allclose,1,3136,unpack_fn
@@ -1589,6 +1573,8 @@ test\quantization\core\test_quantized_op.py,3492,test_embedding_bag_2d_indices,3
 test\quantization\core\test_quantized_op.py,3506,test_embedding_bag_2d_indices,3472,assert_allclose,1,3486,embedding_bag
 test\quantization\core\test_quantized_op.py,3506,test_embedding_bag_2d_indices,3472,assert_allclose,2,3491,pt_op
 test\quantization\core\test_quantized_op.py,3506,test_embedding_bag_2d_indices,3472,assert_allclose,2,3504,torch.ops.quantized.embedding_bag_byte
+test\quantization\core\test_quantized_op.py,3553,_test_qconv_unpack_impl,3510,assert_array_almost_equal,1,3554,np.float32
+test\quantization\core\test_quantized_op.py,3553,_test_qconv_unpack_impl,3510,assert_array_almost_equal,2,3555,np.float32
 test\quantization\core\test_quantized_op.py,3697,_test_qconv_impl,3644,assert_array_almost_equal,1,3669,torch.quantize_per_tensor
 test\quantization\core\test_quantized_op.py,3697,_test_qconv_impl,3644,assert_array_almost_equal,2,3679,qconv_fn
 test\quantization\core\test_quantized_op.py,4720,test_avg_pool2d,4677,assert_array_almost_equal,1,4718,torch.quantize_per_tensor
@@ -1609,7 +1595,7 @@ test\quantization\core\test_quantized_tensor.py,357,_test_quantize_per_channel,3
 test\quantization\core\test_quantized_tensor.py,357,_test_quantize_per_channel,331,allclose,2,353,_quantize_per_channel_ref_nd
 test\quantization\core\test_quantized_tensor.py,358,_test_quantize_per_channel,331,allclose,2,356,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,375,test_qtensor_quantize_per_channel,360,allclose,1,373,torch.quantize_per_channel
-test\quantization\core\test_quantized_tensor.py,375,test_qtensor_quantize_per_channel,360,allclose,2,375,UNSUPPORTED Name (named variable or defined function: quantize_c)
+test\quantization\core\test_quantized_tensor.py,375,test_qtensor_quantize_per_channel,360,allclose,2,367,torch.empty
 test\quantization\core\test_quantized_tensor.py,376,test_qtensor_quantize_per_channel,360,allclose,2,374,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,417,test_quantize_per_channel_float_qparams,398,allclose,1,414,torch.quantize_per_channel
 test\quantization\core\test_quantized_tensor.py,417,test_quantize_per_channel_float_qparams,398,allclose,2,416,quantize_ref
@@ -1625,7 +1611,6 @@ test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_su
 test\quantization\core\test_quantized_tensor.py,484,test_quantize_per_channel_sub_byte,440,allclose,2,483,_quantize_per_channel_sub_byte_ref
 test\quantization\core\test_quantized_tensor.py,496,test_qtensor_permute,486,allclose,2,494,qr.dequantize
 test\quantization\core\test_quantized_tensor.py,508,test_qtensor_permute,486,allclose,1,500,qr.transpose
-test\quantization\core\test_workflow_module.py,282,test_state_dict_respects_device_affinity,250,assertLessEqual,1,282,UNSUPPORTED Name (named variable or defined function: len)
 test\quantization\core\test_workflow_module.py,691,test_fq_module_per_channel,677,assert_allclose,1,689,_fake_quantize_per_channel_affine_reference
 test\quantization\core\test_workflow_module.py,691,test_fq_module_per_channel,677,assert_allclose,2,686,fq_module
 test\quantization\core\test_workflow_module.py,698,test_fq_module_per_channel,677,assert_allclose,1,696,_fake_quantize_per_channel_affine_grad_reference
@@ -1647,7 +1632,9 @@ test\quantization\core\test_workflow_ops.py,317,_test_learnable_forward_per_tens
 test\quantization\core\test_workflow_ops.py,317,_test_learnable_forward_per_tensor,299,allclose,2,314,to
 test\quantization\core\test_workflow_ops.py,373,_test_learnable_backward_per_tensor,341,allclose,1,365,detach
 test\quantization\core\test_workflow_ops.py,373,_test_learnable_backward_per_tensor,341,allclose,2,366,detach
+test\quantization\core\test_workflow_ops.py,377,_test_learnable_backward_per_tensor,341,allclose,1,367,detach
 test\quantization\core\test_workflow_ops.py,377,_test_learnable_backward_per_tensor,341,allclose,2,368,detach
+test\quantization\core\test_workflow_ops.py,381,_test_learnable_backward_per_tensor,341,allclose,1,369,detach
 test\quantization\core\test_workflow_ops.py,381,_test_learnable_backward_per_tensor,341,allclose,2,370,detach
 test\quantization\core\test_workflow_ops.py,429,test_numerical_consistency_per_tensor,416,assert_allclose,1,426,torch.dequantize
 test\quantization\core\test_workflow_ops.py,429,test_numerical_consistency_per_tensor,416,assert_allclose,2,427,torch.fake_quantize_per_tensor_affine
@@ -1670,7 +1657,9 @@ test\quantization\core\test_workflow_ops.py,734,test_backward_per_channel,716,as
 test\quantization\core\test_workflow_ops.py,756,_test_backward_per_channel_cachemask_impl,736,assert_allclose,1,753,_fake_quantize_per_channel_affine_grad_reference
 test\quantization\core\test_workflow_ops.py,802,_test_learnable_backward_per_channel,768,allclose,1,793,detach
 test\quantization\core\test_workflow_ops.py,802,_test_learnable_backward_per_channel,768,allclose,2,794,grad.detach
+test\quantization\core\test_workflow_ops.py,806,_test_learnable_backward_per_channel,768,allclose,1,795,detach
 test\quantization\core\test_workflow_ops.py,806,_test_learnable_backward_per_channel,768,allclose,2,796,grad.detach
+test\quantization\core\test_workflow_ops.py,811,_test_learnable_backward_per_channel,768,allclose,1,797,detach
 test\quantization\core\test_workflow_ops.py,811,_test_learnable_backward_per_channel,768,allclose,2,798,grad.detach
 test\quantization\core\test_workflow_ops.py,862,test_numerical_consistency_per_channel,847,assert_allclose,1,859,torch.dequantize
 test\quantization\core\test_workflow_ops.py,862,test_numerical_consistency_per_channel,847,assert_allclose,2,860,torch.fake_quantize_per_channel_affine
