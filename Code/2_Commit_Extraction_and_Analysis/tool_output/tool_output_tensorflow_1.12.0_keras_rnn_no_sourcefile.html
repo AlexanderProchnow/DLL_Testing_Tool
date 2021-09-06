@@ -1,0 +1,2173 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    </style>
+    </head>
+    <body>
+
+_____________________________________keras\layers\recurrent.py_________________________________________
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>File_Path</th>
+      <th>Line_Number</th>
+      <th>Found_in_Function</th>
+      <th>Function_Definition_Line_Number</th>
+      <th>Assert_Statement_Type</th>
+      <th>Oracle_Argument_ Position</th>
+      <th>Differential_Function_Line_Number</th>
+      <th>Differential_Test_Function</th>
+      <th>Extracted_Function_File_Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>26161</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>344</td>
+      <td>testRNNWithKerasSimpleRNNCell</td>
+      <td>323</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>335</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26164</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>345</td>
+      <td>testRNNWithKerasSimpleRNNCell</td>
+      <td>323</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>335</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26168</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>353</td>
+      <td>testRNNWithKerasSimpleRNNCell</td>
+      <td>323</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>335</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26176</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>354</td>
+      <td>testRNNWithKerasSimpleRNNCell</td>
+      <td>323</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>335</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26184</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>377</td>
+      <td>testRNNWithKerasGRUCell</td>
+      <td>356</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>368</td>
+      <td>keras.layers.GRUCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26187</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>378</td>
+      <td>testRNNWithKerasGRUCell</td>
+      <td>356</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>368</td>
+      <td>keras.layers.GRUCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26191</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>386</td>
+      <td>testRNNWithKerasGRUCell</td>
+      <td>356</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>368</td>
+      <td>keras.layers.GRUCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26199</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>387</td>
+      <td>testRNNWithKerasGRUCell</td>
+      <td>356</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>368</td>
+      <td>keras.layers.GRUCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26207</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>410</td>
+      <td>testRNNWithKerasLSTMCell</td>
+      <td>389</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>401</td>
+      <td>keras.layers.LSTMCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26210</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>411</td>
+      <td>testRNNWithKerasLSTMCell</td>
+      <td>389</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>401</td>
+      <td>keras.layers.LSTMCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26214</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>421</td>
+      <td>testRNNWithKerasLSTMCell</td>
+      <td>389</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>401</td>
+      <td>keras.layers.LSTMCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26223</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>422</td>
+      <td>testRNNWithKerasLSTMCell</td>
+      <td>389</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>401</td>
+      <td>keras.layers.LSTMCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26231</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>449</td>
+      <td>testRNNWithStackKerasCell</td>
+      <td>426</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>438</td>
+      <td>keras.layers.StackedRNNCells</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26234</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>450</td>
+      <td>testRNNWithStackKerasCell</td>
+      <td>426</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>438</td>
+      <td>keras.layers.StackedRNNCells</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26238</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>462</td>
+      <td>testRNNWithStackKerasCell</td>
+      <td>426</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>438</td>
+      <td>keras.layers.StackedRNNCells</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26247</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>463</td>
+      <td>testRNNWithStackKerasCell</td>
+      <td>426</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>438</td>
+      <td>keras.layers.StackedRNNCells</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26255</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>489</td>
+      <td>testStaticRNNWithKerasSimpleRNNCell</td>
+      <td>467</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>480</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26257</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>491</td>
+      <td>testStaticRNNWithKerasSimpleRNNCell</td>
+      <td>467</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>480</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26260</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>501</td>
+      <td>testStaticRNNWithKerasSimpleRNNCell</td>
+      <td>467</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>480</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26268</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>503</td>
+      <td>testStaticRNNWithKerasSimpleRNNCell</td>
+      <td>467</td>
+      <td>assertEqual</td>
+      <td>1</td>
+      <td>480</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26277</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>535</td>
+      <td>testKerasAndTFRNNLayerOutputComparison</td>
+      <td>505</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>522</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26286</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>536</td>
+      <td>testKerasAndTFRNNLayerOutputComparison</td>
+      <td>505</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>522</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26295</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>574</td>
+      <td>testSimpleRNNCellAndBasicRNNCellComparison</td>
+      <td>538</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>560</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26303</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>574</td>
+      <td>testSimpleRNNCellAndBasicRNNCellComparison</td>
+      <td>538</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>560</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26309</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>575</td>
+      <td>testSimpleRNNCellAndBasicRNNCellComparison</td>
+      <td>538</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>560</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+    <tr>
+      <th>26317</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>575</td>
+      <td>testSimpleRNNCellAndBasicRNNCellComparison</td>
+      <td>538</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>560</td>
+      <td>keras.layers.SimpleRNNCell</td>
+      <td>keras\layers\recurrent.py</td>
+    </tr>
+  </tbody>
+</table>
+ <br>Commit id closest to current version: 6a46d5259d079a58a9d32ad31a9e9da9c0ea563f
+
+ <br>Commit message: Update build script for GPU build.<br><br>PiperOrigin-RevId: 349461664<br><br>
+<br>Commit id closest to desired version: ab161eeb25ce45d61437b4d8c0fcf3e041a95311
+
+ <br>Commit message: Improve h5py 3.x compatibility in keras.callbacks.ModelCheckpoint.<br><br>PiperOrigin-RevId: 372466643<br><br>
+<br><button type="button" class="collapsible">Git Diff</button>
+<div class="content">
+<p>diff --git a/keras/layers/recurrent.py b/keras/layers/recurrent.py
+<br>index 31b8ed92..4b332d64 100644
+<br><span style="color:red">- -- a/keras/layers/recurrent.py</span>
+<br><span style="color:green">+++ b/keras/layers/recurrent.py</span>
+<br>@@ -13,20 +13,17 @@
+<br>&nbsp# limitations under the License.
+<br>&nbsp# ==============================================================================
+<br>&nbsp# pylint: disable=protected-access
+<br><span style="color:red">- """Recurrent layers and their base classes.</span>
+<br><span style="color:red">- """</span>
+<br><span style="color:red">- from __future__ import absolute_import</span>
+<br><span style="color:red">- from __future__ import division</span>
+<br><span style="color:red">- from __future__ import print_function</span>
+<br><span style="color:green">+# pylint: disable=g-classes-have-attributes</span>
+<br><span style="color:green">+"""Recurrent layers and their base classes."""</span>
+<br>&nbsp
+<br><span style="color:red">- import tensorflow as tf</span>
+<br><span style="color:green">+import tensorflow.compat.v2 as tf</span>
+<br>&nbsp
+<br>&nbspimport collections
+<br>&nbspimport warnings
+<br>&nbsp
+<br>&nbspimport numpy as np
+<br>&nbspfrom keras import activations
+<br><span style="color:red">- from keras import backend as K</span>
+<br><span style="color:green">+from keras import backend</span>
+<br>&nbspfrom keras import constraints
+<br>&nbspfrom keras import initializers
+<br>&nbspfrom keras import regularizers
+<br>@@ -37,8 +34,6 @@ from keras.utils import control_flow_util
+<br>&nbspfrom keras.utils import generic_utils
+<br>&nbspfrom keras.utils import tf_utils
+<br>&nbspfrom tensorflow.python.platform import tf_logging as logging
+<br><span style="color:red">- from tensorflow.python.training.tracking import base as trackable</span>
+<br><span style="color:red">- from tensorflow.python.training.tracking import data_structures</span>
+<br>&nbspfrom tensorflow.python.util.tf_export import keras_export
+<br>&nbspfrom tensorflow.tools.docs import doc_controls
+<br>&nbsp
+<br>@@ -159,7 +154,7 @@ class StackedRNNCells(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = input_shape[0]
+<br>&nbsp &nbsp &nbsp &nbsp &nbspfor cell in self.cells:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif isinstance(cell, Layer) and not cell.built:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith K.name_scope(cell.name):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith backend.name_scope(cell.name):</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcell.build(input_shape)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcell.built = True
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif getattr(cell, 'output_size', None) is not None:
+<br>@@ -228,7 +223,7 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`batch_size` is a scalar tensor that represents the batch size
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspof the inputs. `dtype` is `tf.DType` that represents the dtype of
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthe inputs.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFor backward compatible reason, if this method is not implemented</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFor backward compatibility, if this method is not implemented</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspby the cell, the RNN layer will create a zero filled tensor with the
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsize of [batch_size, cell.state_size].
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspIn the case that `cell` is a list of RNN cell instances, the cells
+<br>@@ -363,8 +358,8 @@ class RNN(Layer):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdef call(self, inputs, states):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprev_output = states[0]
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = K.dot(inputs, self.kernel)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = h + K.dot(prev_output, self.recurrent_kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = backend.dot(inputs, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = h + backend.dot(prev_output, self.recurrent_kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn output, [output]
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp# Let's use this cell in a RNN layer:
+<br>@@ -456,7 +451,7 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp@states.setter
+<br>&nbsp &nbsp &nbsp# Automatic tracking catches "self._states" which adds an extra weight and
+<br>&nbsp &nbsp &nbsp# breaks HDF5 checkpoints.
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef states(self, states):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._states = states
+<br>&nbsp
+<br>@@ -578,7 +573,7 @@ class RNN(Layer):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# allow cell (if layer) to build before we set or validate state_spec.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif isinstance(self.cell, Layer) and not self.cell.built:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith K.name_scope(self.cell.name):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith backend.name_scope(self.cell.name):</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.cell.build(step_input_shape)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.cell.built = True
+<br>&nbsp
+<br>@@ -672,22 +667,22 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif initial_state is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspadditional_inputs += initial_state
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.state_spec = tf.nest.map_structure(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplambda s: InputSpec(shape=K.int_shape(s)), initial_state)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplambda s: InputSpec(shape=backend.int_shape(s)), initial_state)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspadditional_specs += self.state_spec
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif constants is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspadditional_inputs += constants
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.constants_spec = [
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspInputSpec(shape=K.int_shape(constant)) for constant in constants</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspInputSpec(shape=backend.int_shape(constant)) for constant in constants</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp]
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._num_constants = len(constants)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspadditional_specs += self.constants_spec
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# additional_inputs can be empty if initial_state or constants are provided
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# but empty (e.g. the cell is stateless).
+<br>&nbsp &nbsp &nbsp &nbsp &nbspflat_additional_inputs = tf.nest.flatten(additional_inputs)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspis_keras_tensor = K.is_keras_tensor(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspis_keras_tensor = backend.is_keras_tensor(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_additional_inputs[0]) if flat_additional_inputs else True
+<br>&nbsp &nbsp &nbsp &nbsp &nbspfor tensor in flat_additional_inputs:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif K.is_keras_tensor(tensor) != is_keras_tensor:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif backend.is_keras_tensor(tensor) != is_keras_tensor:</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('The initial state or constants of an RNN'
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' layer cannot be specified with a mix of'
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' Keras tensors and non-Keras tensors'
+<br>@@ -728,7 +723,7 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspconstants=None):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# The input should be dense, padded with zeros. If a ragged input is fed
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# into the layer, it is padded and the row lengths are used for masking.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspinputs, row_lengths = K.convert_inputs_if_ragged(inputs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspinputs, row_lengths = backend.convert_inputs_if_ragged(inputs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspis_ragged_input = (row_lengths is not None)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._validate_args_if_ragged(is_ragged_input, mask)
+<br>&nbsp
+<br>@@ -747,9 +742,9 @@ class RNN(Layer):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif tf.nest.is_nested(inputs):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# In the case of nested input, use the first element for shape check.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = K.int_shape(tf.nest.flatten(inputs)[0])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = backend.int_shape(tf.nest.flatten(inputs)[0])</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = K.int_shape(inputs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = backend.int_shape(inputs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsptimesteps = input_shape[0] if self.time_major else input_shape[1]
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif self.unroll and timesteps is None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Cannot unroll a RNN if the '
+<br>@@ -795,7 +790,7 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not tf.nest.is_nested(new_states):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspnew_states = [new_states]
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn output, new_states
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsplast_output, outputs, states = K.rnn(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsplast_output, outputs, states = backend.rnn(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspstep,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinitial_state,
+<br>@@ -815,7 +810,8 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.add_update(updates)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif self.return_sequences:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = K.maybe_convert_to_ragged(is_ragged_input, outputs, row_lengths)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = backend.maybe_convert_to_ragged(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspis_ragged_input, outputs, row_lengths, go_backwards=self.go_backwards)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = last_output
+<br>&nbsp
+<br>@@ -930,12 +926,12 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif getattr(self.cell, 'get_initial_state', None):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_init_state_values = tf.nest.flatten(self.cell.get_initial_state(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs=None, batch_size=batch_size,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdtype=self.dtype or K.floatx()))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdtype=self.dtype or backend.floatx()))</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_init_state_values = tf.nest.flatten(_generate_zero_filled_state(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size, self.cell.state_size, self.dtype or K.floatx()))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size, self.cell.state_size, self.dtype or backend.floatx()))</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_states_variables = tf.nest.map_structure(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspK.variable, flat_init_state_values)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbackend.variable, flat_init_state_values)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.states = tf.nest.pack_sequence_as(self.cell.state_size,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_states_variables)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not tf.nest.is_nested(self.states):
+<br>@@ -943,8 +939,9 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelif states is None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor state, size in zip(tf.nest.flatten(self.states),
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.nest.flatten(self.cell.state_size)):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspK.set_value(state, np.zeros([batch_size] +</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.TensorShape(size).as_list()))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbackend.set_value(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspstate,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspnp.zeros([batch_size] + tf.TensorShape(size).as_list()))</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_states = tf.nest.flatten(self.states)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspflat_input_states = tf.nest.flatten(states)
+<br>@@ -962,7 +959,7 @@ class RNN(Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.name + ': expected shape=' + str(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(batch_size, state)) + ', found shape=' + str(value.shape))
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspset_value_tuples.append((state, value))
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspK.batch_set_value(set_value_tuples)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspbackend.batch_set_value(set_value_tuples)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef get_config(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspconfig = {
+<br>@@ -1033,8 +1030,8 @@ class AbstractRNNCell(Layer):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdef call(self, inputs, states):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprev_output = states[0]
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = K.dot(inputs, self.kernel)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = h + K.dot(prev_output, self.recurrent_kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = backend.dot(inputs, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = h + backend.dot(prev_output, self.recurrent_kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn output, output
+<br>&nbsp &nbsp &nbsp```
+<br>&nbsp
+<br>@@ -1106,7 +1103,7 @@ class DropoutRNNCellMixin(object):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._create_non_trackable_mask_cache()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspsuper(DropoutRNNCellMixin, self).__init__(*args, **kwargs)
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef _create_non_trackable_mask_cache(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Create the cache for dropout and recurrent dropout mask.
+<br>&nbsp
+<br>@@ -1124,8 +1121,9 @@ class DropoutRNNCellMixin(object):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspby python when deepcopy, we don't want `layer._obj_reference_counts_dict`
+<br>&nbsp &nbsp &nbsp &nbsp &nbspto track it by default.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself._dropout_mask_cache = K.ContextValueCache(self._create_dropout_mask)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself._recurrent_dropout_mask_cache = K.ContextValueCache(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._dropout_mask_cache = backend.ContextValueCache(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._create_dropout_mask)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._recurrent_dropout_mask_cache = backend.ContextValueCache(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._create_recurrent_dropout_mask)
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef reset_dropout_mask(self):
+<br>@@ -1215,9 +1213,9 @@ class DropoutRNNCellMixin(object):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn state
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef __setstate__(self, state):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspstate['_dropout_mask_cache'] = K.ContextValueCache(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspstate['_dropout_mask_cache'] = backend.ContextValueCache(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._create_dropout_mask)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspstate['_recurrent_dropout_mask_cache'] = K.ContextValueCache(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspstate['_recurrent_dropout_mask_cache'] = backend.ContextValueCache(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._create_recurrent_dropout_mask)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspsuper(DropoutRNNCellMixin, self).__setstate__(state)
+<br>&nbsp
+<br>@@ -1370,15 +1368,15 @@ class SimpleRNNCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprev_output, training)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif dp_mask is not None:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = K.dot(inputs * dp_mask, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = backend.dot(inputs * dp_mask, self.kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = K.dot(inputs, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = backend.dot(inputs, self.kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif self.bias is not None:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = K.bias_add(h, self.bias)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsph = backend.bias_add(h, self.bias)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif rec_dp_mask is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprev_output = prev_output * rec_dp_mask
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspoutput = h + K.dot(prev_output, self.recurrent_kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspoutput = h + backend.dot(prev_output, self.recurrent_kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif self.activation is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutput = self.activation(output)
+<br>&nbsp
+<br>@@ -1842,14 +1840,14 @@ class GRUCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs_r = inputs
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs_h = inputs
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_z = K.dot(inputs_z, self.kernel[:, :self.units])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_r = K.dot(inputs_r, self.kernel[:, self.units:self.units * 2])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_h = K.dot(inputs_h, self.kernel[:, self.units * 2:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_z = backend.dot(inputs_z, self.kernel[:, :self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_r = backend.dot(inputs_r, self.kernel[:, self.units:self.units * 2])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_h = backend.dot(inputs_h, self.kernel[:, self.units * 2:])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_z = K.bias_add(x_z, input_bias[:self.units])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_r = K.bias_add(x_r, input_bias[self.units: self.units * 2])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_h = K.bias_add(x_h, input_bias[self.units * 2:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_z = backend.bias_add(x_z, input_bias[:self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_r = backend.bias_add(x_r, input_bias[self.units: self.units * 2])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_h = backend.bias_add(x_h, input_bias[self.units * 2:])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 0. < self.recurrent_dropout < 1.:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_z = h_tm1 * rec_dp_mask[0]
+<br>@@ -1860,26 +1858,28 @@ class GRUCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_r = h_tm1
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_h = h_tm1
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_z = K.dot(h_tm1_z, self.recurrent_kernel[:, :self.units])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_r = K.dot(h_tm1_r,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.recurrent_kernel[:, self.units:self.units * 2])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_z = backend.dot(h_tm1_z, self.recurrent_kernel[:, :self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_r = backend.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_r, self.recurrent_kernel[:, self.units:self.units * 2])</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.reset_after and self.use_bias:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_z = K.bias_add(recurrent_z, recurrent_bias[:self.units])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_r = K.bias_add(recurrent_r,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_bias[self.units:self.units * 2])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_z = backend.bias_add(recurrent_z, recurrent_bias[:self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_r = backend.bias_add(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_r, recurrent_bias[self.units:self.units * 2])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = self.recurrent_activation(x_z + recurrent_z)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspr = self.recurrent_activation(x_r + recurrent_r)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# reset gate applied after/before matrix multiplication
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.reset_after:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = K.dot(h_tm1_h, self.recurrent_kernel[:, self.units * 2:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = backend.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_h, self.recurrent_kernel[:, self.units * 2:])</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = K.bias_add(recurrent_h, recurrent_bias[self.units * 2:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = backend.bias_add(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h, recurrent_bias[self.units * 2:])</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = r * recurrent_h
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = K.dot(r * h_tm1_h,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.recurrent_kernel[:, self.units * 2:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = backend.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspr * h_tm1_h, self.recurrent_kernel[:, self.units * 2:])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphh = self.activation(x_h + recurrent_h)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>@@ -1887,21 +1887,22 @@ class GRUCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs = inputs * dp_mask[0]
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# inputs projected by all gate matrices at once
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_x = K.dot(inputs, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_x = backend.dot(inputs, self.kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# biases: bias_z_i, bias_r_i, bias_h_i
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_x = K.bias_add(matrix_x, input_bias)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_x = backend.bias_add(matrix_x, input_bias)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_z, x_r, x_h = tf.split(matrix_x, 3, axis=-1)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.reset_after:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# hidden state projected by all gate matrices at once
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = K.dot(h_tm1, self.recurrent_kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = backend.dot(h_tm1, self.recurrent_kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = K.bias_add(matrix_inner, recurrent_bias)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = backend.bias_add(matrix_inner, recurrent_bias)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# hidden state projected separately for update/reset and new
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = K.dot(h_tm1, self.recurrent_kernel[:, :2 * self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner = backend.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1, self.recurrent_kernel[:, :2 * self.units])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_z, recurrent_r, recurrent_h = tf.split(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmatrix_inner, [self.units, self.units, -1], axis=-1)
+<br>@@ -1912,8 +1913,8 @@ class GRUCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.reset_after:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = r * recurrent_h
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = K.dot(r * h_tm1,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.recurrent_kernel[:, 2 * self.units:])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecurrent_h = backend.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspr * h_tm1, self.recurrent_kernel[:, 2 * self.units:])</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphh = self.activation(x_h + recurrent_h)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# previous and candidate state mixed by update gate
+<br>@@ -2334,13 +2335,7 @@ class LSTMCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.implementation = 1
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.implementation = implementation
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# tuple(_ListWrapper) was silently dropping list content in at least 2.7.10,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# and fixed after 2.7.16. Converting the state_size to wrapper around</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# NoDependency(), so that the base_layer.__setattr__ will not convert it to</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# ListWrapper. Down the stream, self.states will be a list since it is</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# generated from nest.map_structure with list, and tuple(list) will work</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# properly.</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself.state_size = data_structures.NoDependency([self.units, self.units])</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself.state_size = [self.units, self.units]</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.output_size = self.units
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp@tf_utils.shape_type_conversion
+<br>@@ -2366,7 +2361,7 @@ class LSTMCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.unit_forget_bias:
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdef bias_initializer(_, *args, **kwargs):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn K.concatenate([</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn backend.concatenate([</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.bias_initializer((self.units,), *args, **kwargs),
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinitializers.get('ones')((self.units,), *args, **kwargs),
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.bias_initializer((self.units * 2,), *args, **kwargs),
+<br>@@ -2389,13 +2384,13 @@ class LSTMCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspx_i, x_f, x_c, x_o = x
+<br>&nbsp &nbsp &nbsp &nbsp &nbsph_tm1_i, h_tm1_f, h_tm1_c, h_tm1_o = h_tm1
+<br>&nbsp &nbsp &nbsp &nbsp &nbspi = self.recurrent_activation(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i + K.dot(h_tm1_i, self.recurrent_kernel[:, :self.units]))</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspf = self.recurrent_activation(x_f + K.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i + backend.dot(h_tm1_i, self.recurrent_kernel[:, :self.units]))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspf = self.recurrent_activation(x_f + backend.dot(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_f, self.recurrent_kernel[:, self.units:self.units * 2]))
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspc = f * c_tm1 + i * self.activation(x_c + K.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspc = f * c_tm1 + i * self.activation(x_c + backend.dot(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_c, self.recurrent_kernel[:, self.units * 2:self.units * 3]))
+<br>&nbsp &nbsp &nbsp &nbsp &nbspo = self.recurrent_activation(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o + K.dot(h_tm1_o, self.recurrent_kernel[:, self.units * 3:]))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o + backend.dot(h_tm1_o, self.recurrent_kernel[:, self.units * 3:]))</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn c, o
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef _compute_carry_and_output_fused(self, z, c_tm1):
+<br>@@ -2428,17 +2423,17 @@ class LSTMCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs_o = inputs
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspk_i, k_f, k_c, k_o = tf.split(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.kernel, num_or_size_splits=4, axis=1)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i = K.dot(inputs_i, k_i)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_f = K.dot(inputs_f, k_f)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_c = K.dot(inputs_c, k_c)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o = K.dot(inputs_o, k_o)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i = backend.dot(inputs_i, k_i)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_f = backend.dot(inputs_f, k_f)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_c = backend.dot(inputs_c, k_c)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o = backend.dot(inputs_o, k_o)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspb_i, b_f, b_c, b_o = tf.split(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.bias, num_or_size_splits=4, axis=0)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i = K.bias_add(x_i, b_i)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_f = K.bias_add(x_f, b_f)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_c = K.bias_add(x_c, b_c)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o = K.bias_add(x_o, b_o)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i = backend.bias_add(x_i, b_i)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_f = backend.bias_add(x_f, b_f)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_c = backend.bias_add(x_c, b_c)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o = backend.bias_add(x_o, b_o)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 0 < self.recurrent_dropout < 1.:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_i = h_tm1 * rec_dp_mask[0]
+<br>@@ -2456,10 +2451,10 @@ class LSTMCell(DropoutRNNCellMixin, Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 0. < self.dropout < 1.:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinputs = inputs * dp_mask[0]
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = K.dot(inputs, self.kernel)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz += K.dot(h_tm1, self.recurrent_kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = backend.dot(inputs, self.kernel)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspz += backend.dot(h_tm1, self.recurrent_kernel)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.use_bias:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = K.bias_add(z, self.bias)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = backend.bias_add(z, self.bias)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspz = tf.split(z, num_or_size_splits=4, axis=1)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspc, o = self._compute_carry_and_output_fused(z, c_tm1)
+<br>@@ -2609,15 +2604,15 @@ class PeepholeLSTMCell(LSTMCell):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspx_i, x_f, x_c, x_o = x
+<br>&nbsp &nbsp &nbsp &nbsp &nbsph_tm1_i, h_tm1_f, h_tm1_c, h_tm1_o = h_tm1
+<br>&nbsp &nbsp &nbsp &nbsp &nbspi = self.recurrent_activation(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i + K.dot(h_tm1_i, self.recurrent_kernel[:, :self.units]) +</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_i + backend.dot(h_tm1_i, self.recurrent_kernel[:, :self.units]) +</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.input_gate_peephole_weights * c_tm1)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspf = self.recurrent_activation(x_f + K.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspf = self.recurrent_activation(x_f + backend.dot(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_f, self.recurrent_kernel[:, self.units:self.units * 2]) +
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.forget_gate_peephole_weights * c_tm1)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspc = f * c_tm1 + i * self.activation(x_c + K.dot(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspc = f * c_tm1 + i * self.activation(x_c + backend.dot(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsph_tm1_c, self.recurrent_kernel[:, self.units * 2:self.units * 3]))
+<br>&nbsp &nbsp &nbsp &nbsp &nbspo = self.recurrent_activation(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o + K.dot(h_tm1_o, self.recurrent_kernel[:, self.units * 3:]) +</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx_o + backend.dot(h_tm1_o, self.recurrent_kernel[:, self.units * 3:]) +</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.output_gate_peephole_weights * c)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn c, o
+<br>&nbsp
+<br>@@ -2910,14 +2905,14 @@ class LSTM(RNN):
+<br>&nbsp
+<br>&nbspdef _generate_dropout_mask(ones, rate, training=None, count=1):
+<br>&nbsp &nbsp &nbspdef dropped_inputs():
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn K.dropout(ones, rate)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn backend.dropout(ones, rate)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspif count > 1:
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn [
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspK.in_train_phase(dropped_inputs, ones, training=training)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbackend.in_train_phase(dropped_inputs, ones, training=training)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor _ in range(count)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp]
+<br><span style="color:red">- &nbsp &nbspreturn K.in_train_phase(dropped_inputs, ones, training=training)</span>
+<br><span style="color:green">+&nbsp &nbspreturn backend.in_train_phase(dropped_inputs, ones, training=training)</span>
+<br>&nbsp
+<br>&nbsp
+<br>&nbspdef _standardize_args(inputs, initial_state, constants, num_constants):
+<br>@@ -3039,22 +3034,23 @@ def _caching_device(rnn_cell):
+<br>&nbsp &nbsp &nbsp# prevents forward computations in loop iterations from re-reading the
+<br>&nbsp &nbsp &nbsp# updated weights.
+<br>&nbsp &nbsp &nbspif control_flow_util.IsInWhileLoop(tf.compat.v1.get_default_graph()):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsplogging.warn('Variable read device caching has been disabled because the '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'RNN is in tf.while_loop loop context, which will cause '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'reading stalled value in forward path. This could slow down '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'the training due to duplicated variable reads. Please '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'consider updating your code to remove tf.while_loop if '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'possible.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsplogging.warning(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Variable read device caching has been disabled because the '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'RNN is in tf.while_loop loop context, which will cause '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'reading stalled value in forward path. This could slow down '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'the training due to duplicated variable reads. Please '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'consider updating your code to remove tf.while_loop if possible.')</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn None
+<br>&nbsp &nbsp &nbspif (rnn_cell._dtype_policy.compute_dtype !=
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprnn_cell._dtype_policy.variable_dtype):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsplogging.warn('Variable read device caching has been disabled since it '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'doesn\'t work with the mixed precision API. This is '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'likely to cause a slowdown for RNN training due to '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'duplicated read of variable for each timestep, which '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'will be significant in a multi remote worker setting. '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Please consider disabling mixed precision API if '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'the performance has been affected.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsplogging.warning(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Variable read device caching has been disabled since it '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'doesn\'t work with the mixed precision API. This is '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'likely to cause a slowdown for RNN training due to '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'duplicated read of variable for each timestep, which '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'will be significant in a multi remote worker setting. '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Please consider disabling mixed precision API if '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'the performance has been affected.')</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn None
+<br>&nbsp &nbsp &nbsp# Cache the value on the device that access the variable.
+<br>&nbsp &nbsp &nbspreturn lambda op: op.device
+<br></p>
+</div>
+<br><br><br>_____________________________________keras\engine\input_layer.py_________________________________________
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>File_Path</th>
+      <th>Line_Number</th>
+      <th>Found_in_Function</th>
+      <th>Function_Definition_Line_Number</th>
+      <th>Assert_Statement_Type</th>
+      <th>Oracle_Argument_ Position</th>
+      <th>Differential_Function_Line_Number</th>
+      <th>Differential_Test_Function</th>
+      <th>Extracted_Function_File_Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>26283</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>535</td>
+      <td>testKerasAndTFRNNLayerOutputComparison</td>
+      <td>505</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>528</td>
+      <td>keras.Input</td>
+      <td>keras\engine\input_layer.py</td>
+    </tr>
+    <tr>
+      <th>26292</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>536</td>
+      <td>testKerasAndTFRNNLayerOutputComparison</td>
+      <td>505</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>528</td>
+      <td>keras.Input</td>
+      <td>keras\engine\input_layer.py</td>
+    </tr>
+    <tr>
+      <th>26323</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>636</td>
+      <td>testRNNCellSerialization</td>
+      <td>601</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>610</td>
+      <td>keras.Input</td>
+      <td>keras\engine\input_layer.py</td>
+    </tr>
+    <tr>
+      <th>26329</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>636</td>
+      <td>testRNNCellSerialization</td>
+      <td>601</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>610</td>
+      <td>keras.Input</td>
+      <td>keras\engine\input_layer.py</td>
+    </tr>
+  </tbody>
+</table>
+ <br>Commit id closest to current version: 6a46d5259d079a58a9d32ad31a9e9da9c0ea563f
+
+ <br>Commit message: Update build script for GPU build.<br><br>PiperOrigin-RevId: 349461664<br><br>
+<br>Commit id closest to desired version: ab161eeb25ce45d61437b4d8c0fcf3e041a95311
+
+ <br>Commit message: Improve h5py 3.x compatibility in keras.callbacks.ModelCheckpoint.<br><br>PiperOrigin-RevId: 372466643<br><br>
+<br><button type="button" class="collapsible">Git Diff</button>
+<div class="content">
+<p>diff --git a/keras/engine/input_layer.py b/keras/engine/input_layer.py
+<br>index f6188be3..9ccd6a37 100644
+<br><span style="color:red">- -- a/keras/engine/input_layer.py</span>
+<br><span style="color:green">+++ b/keras/engine/input_layer.py</span>
+<br>@@ -13,13 +13,9 @@
+<br>&nbsp# limitations under the License.
+<br>&nbsp# ==============================================================================
+<br>&nbsp# pylint: disable=protected-access
+<br><span style="color:red">- """Input layer code (`Input` and `InputLayer`).</span>
+<br><span style="color:red">- """</span>
+<br><span style="color:red">- from __future__ import absolute_import</span>
+<br><span style="color:red">- from __future__ import division</span>
+<br><span style="color:red">- from __future__ import print_function</span>
+<br><span style="color:green">+"""Input layer code (`Input` and `InputLayer`)."""</span>
+<br>&nbsp
+<br><span style="color:red">- import tensorflow as tf</span>
+<br><span style="color:green">+import tensorflow.compat.v2 as tf</span>
+<br>&nbspfrom keras import backend
+<br>&nbspfrom keras.distribute import distributed_training_utils
+<br>&nbspfrom keras.engine import base_layer
+<br>@@ -30,6 +26,13 @@ from keras.utils import tf_utils
+<br>&nbspfrom tensorflow.python.util.tf_export import keras_export
+<br>&nbsp
+<br>&nbsp
+<br><span style="color:green">+def _assert_other_arg_none(arg_name, arg):</span>
+<br><span style="color:green">+&nbsp &nbspif arg is not None:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspraise ValueError('When `type_spec` is not None, all other args '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'except `name` must be None, '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'but %s is not None.' % arg_name)</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+</span>
+<br>&nbsp@keras_export('keras.layers.InputLayer')
+<br>&nbspclass InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp"""Layer to be used as an entry point into a Network (a graph of layers).
+<br>@@ -83,6 +86,9 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspragged dimensions. For more information about RaggedTensors, see
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp[this guide](https://www.tensorflow.org/guide/ragged_tensors).
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspDefault to False.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptype_spec: A `tf.TypeSpec` object to create Input from. This `tf.TypeSpec`</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprepresents the entire batch. When provided, all other args except</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspname must be None.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspname: Optional name of the layer (string).
+<br>&nbsp &nbsp &nbsp"""
+<br>&nbsp
+<br>@@ -91,10 +97,18 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdtype=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_tensor=None,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsparse=False,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsparse=None,</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspname=None,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspragged=False,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspragged=None,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptype_spec=None,</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp**kwargs):
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_input_shape = input_shape</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_batch_size = batch_size</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_dtype = dtype</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_sparse = sparse</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_ragged = ragged</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._init_type_spec = type_spec</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspstrategy = tf.distribute.get_strategy()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif strategy and batch_size is not None and \
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdistributed_training_utils.global_batch_size_supported(strategy):
+<br>@@ -110,8 +124,12 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Only provide the input_shape OR '
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'batch_input_shape argument to '
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'InputLayer, not both at the same time.')
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size = batch_input_shape[0]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = batch_input_shape[1:]</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Set the input shape and batch size from the batch_input_shape.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Note that batch_input_shape can be None (unknown rank) or [] (scalar),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# in which case the batch size must be None.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif batch_input_shape:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size = batch_input_shape[0]</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = batch_input_shape[1:]</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif kwargs:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Unrecognized keyword arguments:', kwargs.keys())
+<br>&nbsp
+<br>@@ -133,8 +151,8 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(input_tensor.dtype, dtype))
+<br>&nbsp &nbsp &nbsp &nbsp &nbspsuper(InputLayer, self).__init__(dtype=dtype, name=name)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.built = True
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself.sparse = sparse</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself.ragged = ragged</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself.sparse = True if sparse else False</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself.ragged = True if ragged else False</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.batch_size = batch_size
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.supports_masking = True
+<br>&nbsp
+<br>@@ -143,7 +161,32 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelif isinstance(input_shape, int):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_shape = (input_shape,)
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif input_tensor is None:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif type_spec is not None:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspargs_that_must_be_none = [</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('(input_)shape', self._init_input_shape),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('batch_size', self._init_batch_size),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('dtype', self._init_dtype),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('input_tensor', input_tensor),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('sparse', self._init_sparse),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('ragged', self._init_ragged),</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp]</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor arg_name, arg in args_that_must_be_none:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp_assert_other_arg_none(arg_name, arg)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not tf.compat.v1.executing_eagerly_outside_functions():</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Creating Keras inputs from a type_spec is only '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'supported when eager execution is enabled.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_tensor = keras_tensor.keras_tensor_from_type_spec(type_spec)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif isinstance(input_tensor, keras_tensor.SparseKerasTensor):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.sparse = True</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif isinstance(input_tensor, keras_tensor.RaggedKerasTensor):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.ragged = True</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.is_placeholder = True</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptry:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._batch_input_shape = tuple(input_tensor.shape.as_list())</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspexcept ValueError:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# If the shape cannot be represented as a tuple (e.g. unknown rank)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._batch_input_shape = None</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspelif input_tensor is None:</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif input_shape is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_input_shape = (batch_size,) + tuple(input_shape)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>@@ -160,7 +203,7 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.is_placeholder = True
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._batch_input_shape = batch_input_shape
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif keras_tensor.keras_tensors_enabled():</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif tf.compat.v1.executing_eagerly_outside_functions():</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not isinstance(input_tensor, keras_tensor.KerasTensor):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_tensor = keras_tensor.keras_tensor_from_tensor(input_tensor)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>@@ -188,13 +231,19 @@ class InputLayer(base_layer.Layer):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspshape=input_tensor.shape, dtype=input_tensor.dtype, name=self.name)
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef get_config(self):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspconfig = {</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'batch_input_shape': self._batch_input_shape,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'dtype': self.dtype,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'sparse': self.sparse,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'ragged': self.ragged,</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'name': self.name</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self._init_type_spec is not None:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspconfig = {</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'name': self.name,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'type_spec': self._init_type_spec</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspconfig = {</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'batch_input_shape': self._batch_input_shape,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'dtype': self.dtype,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'sparse': self.sparse,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'ragged': self.ragged,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'name': self.name,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn config
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp@property
+<br>@@ -208,13 +257,14 @@ def Input(  # pylint: disable=invalid-name
+<br>&nbsp &nbsp &nbsp &nbsp &nbspbatch_size=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbspname=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbspdtype=None,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspsparse=False,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspsparse=None,</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsptensor=None,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspragged=False,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspragged=None,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsptype_spec=None,</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp**kwargs):
+<br>&nbsp &nbsp &nbsp"""`Input()` is used to instantiate a Keras tensor.
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbspA Keras tensor is a TensorFlow symbolic tensor object,</span>
+<br><span style="color:green">+&nbsp &nbspA Keras tensor is a symbolic tensor-like object,</span>
+<br>&nbsp &nbsp &nbspwhich we augment with certain attributes that allow us to build a Keras model
+<br>&nbsp &nbsp &nbspjust by knowing the inputs and outputs of the model.
+<br>&nbsp
+<br>@@ -246,6 +296,8 @@ def Input(  # pylint: disable=invalid-name
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalues of 'None' in the 'shape' argument represent ragged dimensions.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFor more information about RaggedTensors, see
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp[this guide](https://www.tensorflow.org/guide/ragged_tensors).
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptype_spec: A `tf.TypeSpec` object to create the input placeholder from.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWhen provided, all other args except name must be None.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp**kwargs: deprecated arguments support. Supports `batch_shape` and
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`batch_input_shape`.
+<br>&nbsp
+<br>@@ -262,20 +314,42 @@ def Input(  # pylint: disable=invalid-name
+<br>&nbsp &nbsp &nbsp```
+<br>&nbsp
+<br>&nbsp &nbsp &nbspNote that even if eager execution is enabled,
+<br><span style="color:red">- &nbsp &nbsp`Input` produces a symbolic tensor (i.e. a placeholder).</span>
+<br><span style="color:red">- &nbsp &nbspThis symbolic tensor can be used with other</span>
+<br><span style="color:red">- &nbsp &nbspTensorFlow ops, as such:</span>
+<br><span style="color:green">+&nbsp &nbsp`Input` produces a symbolic tensor-like object (i.e. a placeholder).</span>
+<br><span style="color:green">+&nbsp &nbspThis symbolic tensor-like object can be used with lower-level</span>
+<br><span style="color:green">+&nbsp &nbspTensorFlow ops that take tensors as inputs, as such:</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp```python
+<br>&nbsp &nbsp &nbspx = Input(shape=(32,))
+<br><span style="color:red">- &nbsp &nbspy = tf.square(x)</span>
+<br><span style="color:green">+&nbsp &nbspy = tf.square(x)  # This op will be treated like a layer</span>
+<br><span style="color:green">+&nbsp &nbspmodel = Model(x, y)</span>
+<br><span style="color:green">+&nbsp &nbsp```</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp(This behavior does not work for higher-order TensorFlow APIs such as</span>
+<br><span style="color:green">+&nbsp &nbspcontrol flow and being directly watched by a `tf.GradientTape`).</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbspHowever, the resulting model will not track any variables that were</span>
+<br><span style="color:green">+&nbsp &nbspused as inputs to TensorFlow ops. All variable usages must happen within</span>
+<br><span style="color:green">+&nbsp &nbspKeras layers to make sure they will be tracked by the model's weights.</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbspThe Keras Input can also create a placeholder from an arbitrary `tf.TypeSpec`,</span>
+<br><span style="color:green">+&nbsp &nbspe.g:</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp```python</span>
+<br><span style="color:green">+&nbsp &nbspx = Input(type_spec=tf.RaggedTensorSpec(shape=[None, None],</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdtype=tf.float32, ragged_rank=1))</span>
+<br><span style="color:green">+&nbsp &nbspy = x.values</span>
+<br><span style="color:green">+&nbsp &nbspmodel = Model(x, y)</span>
+<br>&nbsp &nbsp &nbsp```
+<br><span style="color:green">+&nbsp &nbspWhen passing an arbitrary `tf.TypeSpec`, it must represent the signature of an</span>
+<br><span style="color:green">+&nbsp &nbspentire batch instead of just one example.</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspRaises:
+<br>&nbsp &nbsp &nbsp &nbsp &nbspValueError: If both `sparse` and `ragged` are provided.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspValueError: If both `shape` and (`batch_input_shape` or `batch_shape`) are
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprovided.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspValueError: If both `shape` and `tensor` are None.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspValueError: If `shape`, `tensor` and `type_spec` are None.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspValueError: If arguments besides `type_spec` are non-None while `type_spec`</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspis passed.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspValueError: if any unrecognized parameters are provided.
+<br>&nbsp &nbsp &nbsp"""
+<br>&nbsp &nbsp &nbspif sparse and ragged:
+<br>@@ -283,16 +357,18 @@ def Input(  # pylint: disable=invalid-name
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Cannot set both sparse and ragged to True in a Keras input.')
+<br>&nbsp
+<br>&nbsp &nbsp &nbspinput_layer_config = {'name': name, 'dtype': dtype, 'sparse': sparse,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'ragged': ragged, 'input_tensor': tensor}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'ragged': ragged, 'input_tensor': tensor,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'type_spec': type_spec}</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspbatch_input_shape = kwargs.pop('batch_input_shape',
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspkwargs.pop('batch_shape', None))
+<br>&nbsp &nbsp &nbspif shape is not None and batch_input_shape is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Only provide the `shape` OR `batch_input_shape` argument '
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'to Input, not both at the same time.')
+<br><span style="color:red">- &nbsp &nbspif batch_input_shape is None and shape is None and tensor is None:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspraise ValueError('Please provide to Input either a `shape`'</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' or a `tensor` argument. Note that '</span>
+<br><span style="color:green">+&nbsp &nbspif (batch_input_shape is None and shape is None and tensor is None</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspand type_spec is None):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspraise ValueError('Please provide to Input a `shape`'</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' or a `tensor` or a `type_spec` argument. Note that '</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`shape` does not include the batch '
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'dimension.')
+<br>&nbsp &nbsp &nbspif kwargs:
+<br></p>
+</div>
+<br><br><br>_____________________________________keras\engine\training.py_________________________________________
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>File_Path</th>
+      <th>Line_Number</th>
+      <th>Found_in_Function</th>
+      <th>Function_Definition_Line_Number</th>
+      <th>Assert_Statement_Type</th>
+      <th>Oracle_Argument_ Position</th>
+      <th>Differential_Function_Line_Number</th>
+      <th>Differential_Test_Function</th>
+      <th>Extracted_Function_File_Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>26322</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>636</td>
+      <td>testRNNCellSerialization</td>
+      <td>601</td>
+      <td>assertAllClose</td>
+      <td>1</td>
+      <td>613</td>
+      <td>keras.models.Model</td>
+      <td>keras\engine\training.py</td>
+    </tr>
+    <tr>
+      <th>26327</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>636</td>
+      <td>testRNNCellSerialization</td>
+      <td>601</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>613</td>
+      <td>keras.models.Model</td>
+      <td>keras\engine\training.py</td>
+    </tr>
+    <tr>
+      <th>26328</th>
+      <td>kernel_tests\rnn_test.py</td>
+      <td>636</td>
+      <td>testRNNCellSerialization</td>
+      <td>601</td>
+      <td>assertAllClose</td>
+      <td>2</td>
+      <td>633</td>
+      <td>keras.models.Model</td>
+      <td>keras\engine\training.py</td>
+    </tr>
+  </tbody>
+</table>
+ <br>Commit id closest to current version: 6a46d5259d079a58a9d32ad31a9e9da9c0ea563f
+
+ <br>Commit message: Update build script for GPU build.<br><br>PiperOrigin-RevId: 349461664<br><br>
+<br>Commit id closest to desired version: ab161eeb25ce45d61437b4d8c0fcf3e041a95311
+
+ <br>Commit message: Improve h5py 3.x compatibility in keras.callbacks.ModelCheckpoint.<br><br>PiperOrigin-RevId: 372466643<br><br>
+<br><button type="button" class="collapsible">Git Diff</button>
+<div class="content">
+<p>diff --git a/keras/engine/training.py b/keras/engine/training.py
+<br>index c9220b78..e0498b54 100644
+<br><span style="color:red">- -- a/keras/engine/training.py</span>
+<br><span style="color:green">+++ b/keras/engine/training.py</span>
+<br>@@ -12,28 +12,21 @@
+<br>&nbsp# See the License for the specific language governing permissions and
+<br>&nbsp# limitations under the License.
+<br>&nbsp# ==============================================================================
+<br><span style="color:red">- """Training-related part of the Keras engine.</span>
+<br><span style="color:red">- """</span>
+<br><span style="color:red">- from __future__ import absolute_import</span>
+<br><span style="color:red">- from __future__ import division</span>
+<br><span style="color:red">- from __future__ import print_function</span>
+<br><span style="color:green">+"""Training-related part of the Keras engine."""</span>
+<br>&nbsp
+<br><span style="color:red">- import tensorflow as tf</span>
+<br><span style="color:green">+import tensorflow.compat.v2 as tf</span>
+<br>&nbsp
+<br>&nbspimport copy
+<br>&nbspimport itertools
+<br>&nbspimport json
+<br>&nbspimport os
+<br>&nbspimport warnings
+<br><span style="color:red">- </span>
+<br><span style="color:red">- import six</span>
+<br><span style="color:red">- from tensorflow.python.distribute import values as ds_values</span>
+<br><span style="color:green">+import weakref</span>
+<br>&nbspfrom tensorflow.python.eager import context
+<br>&nbspfrom keras import backend
+<br>&nbspfrom keras import callbacks as callbacks_module
+<br>&nbspfrom keras import optimizer_v1
+<br>&nbspfrom keras import optimizers
+<br><span style="color:red">- from keras.distribute import distributed_training_utils as dist_utils</span>
+<br>&nbspfrom keras.engine import base_layer
+<br>&nbspfrom keras.engine import base_layer_utils
+<br>&nbspfrom keras.engine import compile_utils
+<br>@@ -48,18 +41,13 @@ from keras.saving.saved_model import json_utils
+<br>&nbspfrom keras.saving.saved_model import model_serialization
+<br>&nbspfrom keras.utils import generic_utils
+<br>&nbspfrom keras.utils import layer_utils
+<br><span style="color:red">- from keras.utils import tf_inspect</span>
+<br><span style="color:green">+from keras.utils import object_identity</span>
+<br>&nbspfrom keras.utils import tf_utils
+<br>&nbspfrom keras.utils import version_utils
+<br>&nbspfrom keras.utils.io_utils import ask_to_proceed_with_overwrite
+<br>&nbspfrom keras.utils.io_utils import path_to_string
+<br>&nbspfrom keras.utils.mode_keys import ModeKeys
+<br><span style="color:red">- from tensorflow.python.ops import summary_ops_v2</span>
+<br>&nbspfrom tensorflow.python.platform import tf_logging as logging
+<br><span style="color:red">- from tensorflow.python.training import checkpoint_management</span>
+<br><span style="color:red">- from tensorflow.python.training.tracking import base as trackable</span>
+<br><span style="color:red">- from tensorflow.python.training.tracking import data_structures</span>
+<br><span style="color:red">- from tensorflow.python.training.tracking import util as trackable_utils</span>
+<br>&nbspfrom tensorflow.python.util.tf_export import keras_export
+<br>&nbspfrom tensorflow.tools.docs import doc_controls
+<br>&nbsp
+<br>@@ -204,7 +192,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn super(Model, cls).__new__(cls, *args, **kwargs)
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef __init__(self, *args, **kwargs):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._is_model_for_instrumentation = True
+<br>&nbsp &nbsp &nbsp &nbsp &nbspbase_layer.keras_api_gauge.get_cell('model').set(True)
+<br>@@ -284,6 +272,9 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._distribution_strategy = tf.distribute.get_strategy()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._distribution_strategy = None
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._cluster_coordinator = None</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Defaults to value of `tf.config.experimental_functions_run_eagerly`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._run_eagerly = None
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Initialize cache attrs.
+<br>@@ -292,15 +283,14 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Fault-tolerance handler. Set in `ModelCheckpoint`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._training_state = None
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._saved_model_inputs_spec = None
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself._trackable_saver = (</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptrackable_utils.saver_with_op_caching(self))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspself._trackable_saver = saver_with_op_caching(self)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._steps_per_execution = None
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._init_batch_counters()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._base_model_initialized = True
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef _init_batch_counters(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Untracked Variables, used to keep track of mini-batches seen in `fit`,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# `evaluate`, and `predict`.
+<br>@@ -317,16 +307,15 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif all(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspisinstance(v, (base_layer.Layer,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_structures.TrackableDataStructure)) or</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.__internal__.tracking.TrackableDataStructure)) or</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbase_layer_utils.has_weights(v) for v in tf.nest.flatten(value)):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptry:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._base_model_initialized
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspexcept AttributeError:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# six.raise_from supresses the original AttributeError from being raised</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsix.raise_from(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspRuntimeError('It looks like you are subclassing `Model` and you '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'forgot to call `super(YourClass, self).__init__()`.'</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' Always start with this line.'), None)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise RuntimeError(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'It looks like you are subclassing `Model` and you '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'forgot to call `super(YourClass, self).__init__()`.'</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp' Always start with this line.')</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspsuper(Model, self).__setattr__(name, value)
+<br>&nbsp
+<br>@@ -517,7 +506,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprun_eagerly: Bool. Defaults to `False`. If `True`, this `Model`'s
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogic will not be wrapped in a `tf.function`. Recommended to leave
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthis as `None` unless your `Model` cannot be run inside a
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.function`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.function`. `run_eagerly=True` is not supported when using</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsteps_per_execution: Int. Defaults to 1. The number of batches to
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprun during each `tf.function` call. Running multiple batches
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinside a single `tf.function` call can greatly improve performance
+<br>@@ -538,12 +528,17 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspbase_layer.keras_api_gauge.get_cell('compile').set(True)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspwith self.distribute_strategy.scope():
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 'experimental_steps_per_execution' in kwargs:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogging.warn('The argument `steps_per_execution` is no longer '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'experimental. Pass `steps_per_execution` instead of '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`experimental_steps_per_execution`.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogging.warning('The argument `steps_per_execution` is no longer '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'experimental. Pass `steps_per_execution` instead of '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`experimental_steps_per_execution`.')</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not steps_per_execution:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsteps_per_execution = kwargs.pop('experimental_steps_per_execution')
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# When compiling from an already-serialized model, we do not want to</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# reapply some processing steps (e.g. metric renaming for multi-output</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# models, which have prefixes added for each corresponding output name).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspfrom_serialized = kwargs.pop('from_serialized', False)</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._validate_compile(optimizer, metrics, **kwargs)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._run_eagerly = run_eagerly
+<br>&nbsp
+<br>@@ -551,7 +546,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.compiled_loss = compile_utils.LossesContainer(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsploss, loss_weights, output_names=self.output_names)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.compiled_metrics = compile_utils.MetricsContainer(
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmetrics, weighted_metrics, output_names=self.output_names)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmetrics, weighted_metrics, output_names=self.output_names,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfrom_serialized=from_serialized)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._configure_steps_per_execution(steps_per_execution or 1)
+<br>&nbsp
+<br>@@ -586,7 +582,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn tf.nest.map_structure(_get_single_optimizer, optimizer)
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef _reset_compile_cache(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.train_function = None
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.test_function = None
+<br>@@ -595,7 +591,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Used to cache `trainable` attr of `Layer`s for `fit`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._compiled_trainable_state = self._get_trainable_state()
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef _configure_steps_per_execution(self, steps_per_execution):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._steps_per_execution = tf.Variable(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsteps_per_execution,
+<br>@@ -722,6 +718,10 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'constructed with `dynamic=True`). '
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'You cannot set `run_eagerly=False`.')
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self._cluster_coordinator and self._run_eagerly:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('When using `Model` with `ParameterServerStrategy`, '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`run_eagerly` is not supported.')</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Run eagerly logic, by priority:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# (1) Dynamic models must be run eagerly.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# (2) Explicitly setting run_eagerly causes a Model to be run eagerly.
+<br>@@ -738,6 +738,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""The logic for one training step.
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspThis method can be overridden to support custom training logic.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspFor concrete examples of how to override this method see</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp[Customizing what happends in fit](https://www.tensorflow.org/guide/keras/customizing_what_happens_in_fit).</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspThis method is called by `Model.make_train_function`.
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspThis method should contain the mathematical logic for one step of training.
+<br>@@ -762,14 +764,23 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# data when a `tf.data.Dataset` is provided.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspdata = data_adapter.expand_1d(data)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspx, y, sample_weight = data_adapter.unpack_x_y_sample_weight(data)
+<br><span style="color:red">- </span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# Run forward pass.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspwith tf.GradientTape() as tape:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy_pred = self(x, training=True)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsploss = self.compiled_loss(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy, y_pred, sample_weight, regularization_losses=self.losses)
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# Run backwards pass.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.compiled_metrics.update_state(y, y_pred, sample_weight)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn {m.name: m.result() for m in self.metrics}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# Collect metrics to return</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn_metrics = {}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspfor metric in self.metrics:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspresult = metric.result()</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif isinstance(result, dict):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_metrics.update(result)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_metrics[metric.name] = result</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn return_metrics</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef make_train_function(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Creates a function that executes one step of training.
+<br>@@ -830,6 +841,11 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptrain_function, experimental_relax_shapes=True)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.train_function = train_function
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self._cluster_coordinator:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.train_function = lambda iterator: self._cluster_coordinator.schedule(  # pylint: disable=g-long-lambda</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptrain_function, args=(iterator,))</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn self.train_function
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef fit(self,
+<br>@@ -837,7 +853,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspepochs=1,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose=1,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose='auto',</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks=None,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalidation_split=0.,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalidation_data=None,
+<br>@@ -867,8 +883,17 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`(inputs, targets, sample_weights)`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A generator or `keras.utils.Sequence` returning `(inputs, targets)`
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspor `(inputs, targets, sample_weights)`.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A `tf.keras.utils.experimental.DatasetCreator`, which wraps a</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallable that takes a single argument of type</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.InputContext`, and returns a `tf.data.Dataset`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`DatasetCreator` should be used when users prefer to specify the</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspper-replica batching and sharding logic for the `Dataset`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspSee `tf.keras.utils.experimental.DatasetCreator` doc for more</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinformation.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspA more detailed description of unpacking behavior for iterator types
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Dataset, generator, Sequence) is given below.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(Dataset, generator, Sequence) is given below. If using</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`, only</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`DatasetCreator` type is supported for `x`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy: Target data. Like the input data `x`,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspit could be either Numpy array(s) or TensorFlow tensor(s).
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspIt should be consistent with `x` (you cannot have Numpy inputs and
+<br>@@ -889,11 +914,13 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspThe model is not trained for a number of iterations
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspgiven by `epochs`, but merely until the epoch
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspof index `epochs` is reached.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose: 0, 1, or 2. Verbosity mode.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose: 'auto', 0, 1, or 2. Verbosity mode.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp0 = silent, 1 = progress bar, 2 = one line per epoch.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspNote that the progress bar is not particularly useful when</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogged to a file, so verbose=2 is recommended when not running</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinteractively (eg, in a production environment).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'auto' defaults to 1 for most cases, but 2 when used with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`ParameterServerStrategy`. Note that the progress bar is not</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspparticularly useful when logged to a file, so verbose=2 is</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsprecommended when not running interactively (eg, in a production</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspenvironment).</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks: List of `keras.callbacks.Callback` instances.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspList of callbacks to apply during training.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspSee `tf.keras.callbacks`. Note `tf.keras.callbacks.ProgbarLogger`
+<br>@@ -901,6 +928,10 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspand need not be passed into `model.fit`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.keras.callbacks.ProgbarLogger` is created or not based on
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`verbose` argument to `model.fit`.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCallbacks with batch-level calls are currently unsupported with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`, and users are</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspadvised to implement epoch-level calls instead with an appropriate</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`steps_per_epoch` value.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalidation_split: Float between 0 and 1.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFraction of the training data to be used as validation data.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspThe model will set apart this fraction of the training data,
+<br>@@ -911,6 +942,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspin the `x` and `y` data provided, before shuffling. This argument is
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspnot supported when `x` is a dataset, generator or
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`keras.utils.Sequence` instance.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`validation_split` is not yet supported with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalidation_data: Data on which to evaluate
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthe loss and any model metrics at the end of each epoch.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspThe model will not be trained on this data. Thus, note the fact
+<br>@@ -919,16 +952,17 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspnoise and dropout.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`validation_data` will override `validation_split`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`validation_data` could be:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- tuple `(x_val, y_val)` of Numpy arrays or tensors</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- tuple `(x_val, y_val, val_sample_weights)` of Numpy arrays</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- dataset</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFor the first two cases, `batch_size` must be provided.</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFor the last case, `validation_steps` could be provided.</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspNote that `validation_data` does not support all the data types that</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspare supported in `x`, eg, dict, generator or `keras.utils.Sequence`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A tuple `(x_val, y_val)` of Numpy arrays or tensors.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A tuple `(x_val, y_val, val_sample_weights)` of NumPy arrays.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A `tf.data.Dataset`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A Python generator or `keras.utils.Sequence` returning</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`(inputs, targets)` or `(inputs, targets, sample_weights)`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`validation_data` is not yet supported with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspshuffle: Boolean (whether to shuffle the training data
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbefore each epoch) or str (for 'batch'). This argument is ignored
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwhen `x` is a generator. 'batch' is a special option for dealing</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwhen `x` is a generator or an object of tf.data.Dataset.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'batch' is a special option for dealing</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith the limitations of HDF5 data; it shuffles in batch-sized
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspchunks. Has no effect when `steps_per_epoch` is not `None`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspclass_weight: Optional dictionary mapping class indices (integers)
+<br>@@ -963,7 +997,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspis None, the epoch will run until the input dataset is exhausted.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspWhen passing an infinitely repeating dataset, you must specify the
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`steps_per_epoch` argument. This argument is not supported with
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsparray inputs.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsparray inputs. `steps_per_epoch=None` is not supported when using</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspvalidation_steps: Only relevant if `validation_data` is provided and
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspis a `tf.data` dataset. Total number of steps (batches of
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsamples) to draw before stopping when performing validation
+<br>@@ -993,8 +1028,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspworkers: Integer. Used for generator or `keras.utils.Sequence` input
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsponly. Maximum number of processes to spin up
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwhen using process-based threading. If unspecified, `workers`
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwill default to 1. If 0, will execute the generator on the main</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthread.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwill default to 1.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspuse_multiprocessing: Boolean. Used for generator or
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`keras.utils.Sequence` input only. If `True`, use process-based
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthreading. If unspecified, `use_multiprocessing` will default to
+<br>@@ -1046,6 +1080,12 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._check_call_args('fit')
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp_disallow_inside_tf_function('fit')
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif verbose == 'auto':</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.distribute_strategy._should_use_with_coordinator:  # pylint: disable=protected-access</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose = 2  # Default to epoch-level logging for PSStrategy.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspverbose = 1  # Default to batch-level logging otherwise.</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif validation_split:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Create the validation data using the training data. Only supported for
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# `Tensor` and `NumPy` input.
+<br>@@ -1057,10 +1097,14 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspval_x, val_y, val_sample_weight = (
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_adapter.unpack_x_y_sample_weight(validation_data))
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self.distribute_strategy._should_use_with_coordinator:  # pylint: disable=protected-access</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._cluster_coordinator = tf.distribute.experimental.coordinator.ClusterCoordinator(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.distribute_strategy)</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspwith self.distribute_strategy.scope(), \
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptraining_utils.RespectCompiledTrainableState(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Creates a `tf.data.Dataset` and handles batch and epoch iteration.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.DataHandler(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.get_data_handler(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx=x,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy=y,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsample_weight=sample_weight,
+<br>@@ -1119,6 +1163,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif self.stop_training:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbreak
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogs = tf_utils.sync_to_numpy_or_python_type(logs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif logs is None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Expect x to be a non-empty array or dataset.')
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspepoch_logs = copy.copy(logs)
+<br>@@ -1127,8 +1172,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif validation_data and self._should_eval(epoch, validation_freq):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Create data_handler for evaluation and cache it.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif getattr(self, '_eval_data_handler', None) is None:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._fit_frame = tf_inspect.currentframe()</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._eval_data_handler = data_adapter.DataHandler(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._eval_data_handler = data_adapter.get_data_handler(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx=val_x,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy=val_y,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsample_weight=val_sample_weight,
+<br>@@ -1151,7 +1195,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmax_queue_size=max_queue_size,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspworkers=workers,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspuse_multiprocessing=use_multiprocessing,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_dict=True)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_dict=True,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp_use_cached_eval_dataset=True)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspval_logs = {'val_' + name: val for name, val in val_logs.items()}
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspepoch_logs.update(val_logs)
+<br>&nbsp
+<br>@@ -1163,7 +1208,6 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# If eval data_hanlder exists, delete it after all epochs are done.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif getattr(self, '_eval_data_handler', None) is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdel self._eval_data_handler
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdel self._fit_frame</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks.on_train_end(logs=training_logs)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn self.history
+<br>&nbsp
+<br>@@ -1197,9 +1241,16 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# Updates stateful loss metrics.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.compiled_loss(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy, y_pred, sample_weight, regularization_losses=self.losses)
+<br><span style="color:red">- </span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.compiled_metrics.update_state(y, y_pred, sample_weight)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn {m.name: m.result() for m in self.metrics}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# Collect metrics to return</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn_metrics = {}</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspfor metric in self.metrics:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspresult = metric.result()</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif isinstance(result, dict):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_metrics.update(result)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_metrics[metric.name] = result</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn return_metrics</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef make_test_function(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Creates a function that executes one step of evaluation.
+<br>@@ -1258,6 +1309,11 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptest_function, experimental_relax_shapes=True)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself.test_function = test_function
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self._cluster_coordinator:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.test_function = lambda iterator: self._cluster_coordinator.schedule(  # pylint: disable=g-long-lambda</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptest_function, args=(iterator,))</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn self.test_function
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef evaluate(self,
+<br>@@ -1271,7 +1327,8 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmax_queue_size=10,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspworkers=1,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspuse_multiprocessing=False,
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_dict=False):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_dict=False,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp**kwargs):</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Returns the loss value & metrics values for the model in test mode.
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspComputation is done in batches (see the `batch_size` arg.)
+<br>@@ -1325,8 +1382,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`max_queue_size` will default to 10.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspworkers: Integer. Used for generator or `keras.utils.Sequence` input
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsponly. Maximum number of processes to spin up when using process-based
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthreading. If unspecified, `workers` will default to 1. If 0, will</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspexecute the generator on the main thread.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthreading. If unspecified, `workers` will default to 1.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspuse_multiprocessing: Boolean. Used for generator or
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`keras.utils.Sequence` input only. If `True`, use process-based
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthreading. If unspecified, `use_multiprocessing` will default to
+<br>@@ -1336,10 +1392,14 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn_dict: If `True`, loss and metric results are returned as a dict,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith each key being the name of the metric. If `False`, they are
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturned as a list.
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp**kwargs: Unused at this time.</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspSee the discussion of `Unpacking behavior for iterator-like inputs` for
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp`Model.fit`.
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp`Model.evaluate` is not yet supported with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspReturns:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspScalar test loss (if the model has a single output and no metrics)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspor list of scalars (if the model has multiple outputs
+<br>@@ -1355,16 +1415,22 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._assert_compile_was_called()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._check_call_args('evaluate')
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp_disallow_inside_tf_function('evaluate')
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspuse_cached_eval_dataset = kwargs.pop('_use_cached_eval_dataset', False)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif kwargs:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise TypeError('Invalid keyword arguments: %s' % (kwargs,))</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self.distribute_strategy._should_use_with_coordinator:  # pylint: disable=protected-access</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._cluster_coordinator = tf.distribute.experimental.coordinator.ClusterCoordinator(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.distribute_strategy)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspwith self.distribute_strategy.scope():
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Use cached evaluation data only when it's called in `Model.fit`
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif (getattr(self, '_fit_frame', None) is not None</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspand tf_inspect.currentframe().f_back is self._fit_frame</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif (use_cached_eval_dataset</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspand getattr(self, '_eval_data_handler', None) is not None):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = self._eval_data_handler
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Creates a `tf.data.Dataset` and handles batch and epoch iteration.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.DataHandler(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.get_data_handler(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx=x,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy=y,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsample_weight=sample_weight,
+<br>@@ -1405,22 +1471,13 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogs = tmp_logs  # No error, now safe to assign to logs.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspend_step = step + data_handler.step_increment
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks.on_test_batch_end(end_step, logs)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogs = tf_utils.to_numpy_or_python_type(logs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogs = tf_utils.sync_to_numpy_or_python_type(logs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks.on_test_end(logs=logs)
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif return_dict:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn logs
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults = []</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor name in self.metrics_names:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif name in logs:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults.append(logs[name])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor key in sorted(logs.keys()):</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif key not in self.metrics_names:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults.append(logs[key])</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif len(results) == 1:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results[0]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn flatten_metrics_in_order(logs, self.metrics_names)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef predict_step(self, data):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""The logic for one inference step.
+<br>@@ -1563,7 +1620,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspworkers: Integer. Used for generator or `keras.utils.Sequence` input
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsponly. Maximum number of processes to spin up when using
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspprocess-based threading. If unspecified, `workers` will default
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspto 1. If 0, will execute the generator on the main thread.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspto 1.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspuse_multiprocessing: Boolean. Used for generator or
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`keras.utils.Sequence` input only. If `True`, use process-based
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthreading. If unspecified, `use_multiprocessing` will default to
+<br>@@ -1576,6 +1633,9 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp`Model.fit` and `Model.evaluate`, so inputs must be unambiguous for all
+<br>&nbsp &nbsp &nbsp &nbsp &nbspthree methods.
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp`Model.predict` is not yet supported with</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp`tf.distribute.experimental.ParameterServerStrategy`.</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspReturns:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspNumpy array(s) of predictions.
+<br>&nbsp
+<br>@@ -1591,6 +1651,10 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspself._check_call_args('predict')
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp_disallow_inside_tf_function('predict')
+<br>&nbsp
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif self.distribute_strategy._should_use_with_coordinator:  # pylint: disable=protected-access</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise NotImplementedError('`model.predict` is not yet supported with '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`ParameterServerStrategy`.')</span>
+<br><span style="color:green">+</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspoutputs = None
+<br>&nbsp &nbsp &nbsp &nbsp &nbspwith self.distribute_strategy.scope():
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Creates a `tf.data.Dataset` and handles batch and epoch iteration.
+<br>@@ -1608,7 +1672,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'AutoShardPolicy.FILE might lead to out-of-order result'
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'. Consider setting it to AutoShardPolicy.DATA.')
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.DataHandler(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspdata_handler = data_adapter.get_data_handler(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx=x,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspbatch_size=batch_size,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsteps_per_epoch=steps,
+<br>@@ -1657,7 +1721,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Expect x to be a non-empty array or dataset.')
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcallbacks.on_predict_end()
+<br>&nbsp &nbsp &nbsp &nbsp &nbspall_outputs = tf.__internal__.nest.map_structure_up_to(batch_outputs, concat, outputs)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn tf_utils.to_numpy_or_python_type(all_outputs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn tf_utils.sync_to_numpy_or_python_type(all_outputs)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef reset_metrics(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Resets the state of all the metrics in the model.
+<br>@@ -1679,7 +1743,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""
+<br>&nbsp &nbsp &nbsp &nbsp &nbspfor m in self.metrics:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspm.reset_states()</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspm.reset_state()</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef train_on_batch(self,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx,
+<br>@@ -1741,14 +1805,11 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif reset_metrics:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.reset_metrics()
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsplogs = tf_utils.to_numpy_or_python_type(logs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsplogs = tf_utils.sync_to_numpy_or_python_type(logs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif return_dict:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn logs
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults = [logs.get(name, None) for name in self.metrics_names]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif len(results) == 1:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results[0]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn flatten_metrics_in_order(logs, self.metrics_names)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef test_on_batch(self,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx,
+<br>@@ -1759,11 +1820,13 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Test the model on a single batch of samples.
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspArgs:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx: Input data. It could be: - A Numpy array (or array-like), or a list</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspof arrays (in case the model has multiple inputs). - A TensorFlow</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptensor, or a list of tensors (in case the model has multiple inputs).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx: Input data. It could be:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A Numpy array (or array-like), or a list of arrays (in case the</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmodel has multiple inputs).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A TensorFlow tensor, or a list of tensors (in case the model has</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmultiple inputs).</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A dict mapping input names to the corresponding array/tensors, if
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthe model has named inputs.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspthe model has named inputs.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspy: Target data. Like the input data `x`, it could be either Numpy
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsparray(s) or TensorFlow tensor(s). It should be consistent with `x`
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(you cannot have Numpy inputs and tensor targets, or inversely).
+<br>@@ -1800,22 +1863,21 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif reset_metrics:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.reset_metrics()
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsplogs = tf_utils.to_numpy_or_python_type(logs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsplogs = tf_utils.sync_to_numpy_or_python_type(logs)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif return_dict:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn logs
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults = [logs.get(name, None) for name in self.metrics_names]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif len(results) == 1:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results[0]</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn results</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn flatten_metrics_in_order(logs, self.metrics_names)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef predict_on_batch(self, x):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Returns predictions for a single batch of samples.
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspArgs:
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx: Input data. It could be: - A Numpy array (or array-like), or a list</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspof arrays (in case the model has multiple inputs). - A TensorFlow</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptensor, or a list of tensors (in case the model has multiple inputs).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspx: Input data. It could be:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A Numpy array (or array-like), or a list of arrays (in case the</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmodel has multiple inputs).</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- A TensorFlow tensor, or a list of tensors (in case the model has</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmultiple inputs).</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp &nbsp &nbspReturns:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspNumpy array(s) of predictions.
+<br>@@ -1831,7 +1893,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspiterator = data_adapter.single_batch_iterator(self.distribute_strategy, x)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself.predict_function = self.make_predict_function()
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoutputs = self.predict_function(iterator)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn tf_utils.to_numpy_or_python_type(outputs)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn tf_utils.sync_to_numpy_or_python_type(outputs)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef fit_generator(self,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspgenerator,
+<br>@@ -2138,19 +2200,9 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsession = None
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsession = backend.get_session()
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspoptimizer = getattr(self, 'optimizer', None)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif (optimizer</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspand not isinstance(optimizer, tf.__internal__.tracking.Trackable)):</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsplogging.warning(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp('This model was compiled with a Keras optimizer (%s) but is being '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'saved in TensorFlow format with `save_weights`. The model\'s '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'weights will be saved, but unlike with TensorFlow optimizers in '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'the TensorFlow format the optimizer\'s state will not be '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'saved.\n\nConsider using a TensorFlow optimizer from `tf.train`.')</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp% (optimizer,))</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._trackable_saver.save(filepath, session=session, options=options)
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Record this checkpoint so it's visible from tf.train.latest_checkpoint.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspcheckpoint_management.update_checkpoint_state_internal(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.__internal__.train.update_checkpoint_state(</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsave_dir=os.path.dirname(filepath),
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspmodel_checkpoint_path=filepath,
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsave_relative_paths=True,
+<br>@@ -2209,7 +2261,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspValueError: If `skip_mismatch` is set to `True` when `by_name` is
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp`False`.
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif dist_utils.is_tpu_strategy(self._distribution_strategy):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif backend.is_tpu_strategy(self._distribution_strategy):</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif (self._distribution_strategy.extended.steps_per_run > 1 and
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp(not saving_utils.is_hdf5_filepath(filepath))):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Load weights is not yet supported with TPUStrategy '
+<br>@@ -2231,26 +2283,32 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsession = backend.get_session()
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Restore existing variables (if any) immediately, and set up a
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# streaming restore for any variables created in the future.
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptrackable_utils.streaming_restore(status=status, session=session)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.__internal__.tracking.streaming_restore(status=status, session=session)</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspstatus.assert_nontrivial_match()
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn status</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif h5py is None:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ImportError(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`load_weights` requires h5py when loading weights from HDF5.')</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif not self._is_graph_network and not self.built:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Unable to load weights saved in HDF5 format into a subclassed '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Model which has not created its variables yet. Call the Model '</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'first, then load the weights.')</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspself._assert_weights_created()</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspwith h5py.File(filepath, 'r') as f:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 'layer_names' not in f.attrs and 'model_weights' in f:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspf = f['model_weights']</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif by_name:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphdf5_format.load_weights_from_hdf5_group_by_name(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspf, self.layers, skip_mismatch=skip_mismatch)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphdf5_format.load_weights_from_hdf5_group(f, self.layers)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspstatus = None</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif h5py is None:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ImportError(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'`load_weights` requires h5py when loading weights from HDF5.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspif not self._is_graph_network and not self.built:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Unable to load weights saved in HDF5 format into a subclassed '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'Model which has not created its variables yet. Call the Model '</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp'first, then load the weights.')</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspself._assert_weights_created()</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspwith h5py.File(filepath, 'r') as f:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif 'layer_names' not in f.attrs and 'model_weights' in f:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspf = f['model_weights']</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspif by_name:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphdf5_format.load_weights_from_hdf5_group_by_name(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspf, self.layers, skip_mismatch=skip_mismatch)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphdf5_format.load_weights_from_hdf5_group(f, self.layers)</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# Perform any layer defined finalization of the layer state.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspfor layer in self.layers:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsplayer.finalize_state()</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn status</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef _updated_config(self):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Util shared between different serialization methods.
+<br>@@ -2274,11 +2332,20 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp
+<br>&nbsp &nbsp &nbsp@classmethod
+<br>&nbsp &nbsp &nbspdef from_config(cls, config, custom_objects=None):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# Since only FunctionalModel produces config, the model can only</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# be constructed for FunctionalModel</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# `from_config` assumes `cls` is either `Functional` or a child class of</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# `Functional`. In the case that `cls` is meant to behave like a child class</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# of `Functional` but only inherits from the `Model` class, we have to call</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# `cls(...)` instead of `Functional.from_config`.</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbspfrom keras.engine import functional  # pylint: disable=g-import-not-at-top
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspreturn functional.Functional.from_config(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspconfig, custom_objects=custom_objects)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspwith generic_utils.SharedObjectLoadingScope():</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspinput_tensors, output_tensors, created_layers = (</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfunctional.reconstruct_from_config(config, custom_objects))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# Initialize a model belonging to `cls`, which can be user-defined or</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# `Functional`.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmodel = cls(inputs=input_tensors, outputs=output_tensors,</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspname=config.get('name'))</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspfunctional.connect_ancillary_layers(model, created_layers)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn model</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspdef to_json(self, **kwargs):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Returns a JSON string containing the network configuration.
+<br>@@ -2442,7 +2509,7 @@ class Model(base_layer.Layer, version_utils.ModelVersionSelector):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('No such layer: ' + name + '.')
+<br>&nbsp &nbsp &nbsp &nbsp &nbspraise ValueError('Provide either a layer name or layer index.')
+<br>&nbsp
+<br><span style="color:red">- &nbsp &nbsp@trackable.no_automatic_dependency_tracking</span>
+<br><span style="color:green">+&nbsp &nbsp@tf.__internal__.tracking.no_automatic_dependency_tracking</span>
+<br>&nbsp &nbsp &nbspdef _set_save_spec(self, inputs):
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif self._saved_model_inputs_spec is not None:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn  # Already set.
+<br>@@ -2708,7 +2775,7 @@ def reduce_per_replica(values, strategy, reduction='first'):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp"""Reduce a single `PerReplica` object."""
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif reduction == 'concat' and _collective_all_reduce_multi_worker(strategy):
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn _multi_worker_concat(v, strategy)
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif not isinstance(v, ds_values.PerReplica):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif not _is_per_replica_instance(v):</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn v
+<br>&nbsp &nbsp &nbsp &nbsp &nbspelif reduction == 'first':
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn strategy.unwrap(v)[0]
+<br>@@ -2731,7 +2798,7 @@ def concat(tensors, axis=0):
+<br>&nbsp
+<br>&nbsp
+<br>&nbspdef _is_tpu_multi_host(strategy):
+<br><span style="color:red">- &nbsp &nbspreturn (dist_utils.is_tpu_strategy(strategy) and</span>
+<br><span style="color:green">+&nbsp &nbspreturn (backend.is_tpu_strategy(strategy) and</span>
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspstrategy.extended.num_hosts > 1)
+<br>&nbsp
+<br>&nbsp
+<br>@@ -2760,24 +2827,19 @@ def _collective_all_reduce_multi_worker(strategy):
+<br>&nbsp# for all strategies
+<br>&nbspdef _multi_worker_concat(v, strategy):
+<br>&nbsp &nbsp &nbsp"""Order PerReplica objects for CollectiveAllReduceStrategy and concat."""
+<br><span style="color:red">- &nbsp &nbspreplicas = strategy.gather(v, axis=0)  # pylint: disable=protected-access</span>
+<br><span style="color:red">- &nbsp &nbsp# TODO(b/170435030): We now need to make sure these run after the iterator</span>
+<br><span style="color:red">- &nbsp &nbsp# GetNext, so that we don't trigger aborting collective ops in the case of</span>
+<br><span style="color:red">- &nbsp &nbsp# EOF. Remove after the issue is fixed.</span>
+<br><span style="color:red">- &nbsp &nbspwith tf.control_dependencies([replicas]):</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp# v might not have the same shape on different replicas</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspif isinstance(v, ds_values.PerReplica):</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspshapes = tf.concat([</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.expand_dims(tf.compat.v1.shape(single_value)[0], axis=0)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor single_value in v.values</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp],</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspaxis=0)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspall_shapes = strategy.gather(shapes, axis=0)</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbspelse:</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp# v is a tensor. This may happen when, say, we have 2x1 multi-worker.</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspall_shapes = strategy.gather(</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.expand_dims(tf.compat.v1.shape(v)[0], axis=0),</span>
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspaxis=0)</span>
+<br><span style="color:green">+&nbsp &nbspreplicas = strategy.gather(v, axis=0)</span>
+<br><span style="color:green">+&nbsp &nbsp# v might not have the same shape on different replicas</span>
+<br><span style="color:green">+&nbsp &nbspif _is_per_replica_instance(v):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspshapes = tf.concat([</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.expand_dims(tf.compat.v1.shape(single_value)[0], axis=0)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspfor single_value in v.values</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp],</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspaxis=0)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspall_shapes = strategy.gather(shapes, axis=0)</span>
+<br><span style="color:green">+&nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp# v is a tensor. This may happen when, say, we have 2x1 multi-worker.</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspall_shapes = strategy.gather(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.expand_dims(tf.compat.v1.shape(v)[0], axis=0), axis=0)</span>
+<br>&nbsp
+<br>&nbsp &nbsp &nbspreplicas = tf.split(
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspreplicas,
+<br>@@ -2797,7 +2859,7 @@ def _is_scalar(x):
+<br>&nbspdef write_scalar_summaries(logs, step):
+<br>&nbsp &nbsp &nbspfor name, value in logs.items():
+<br>&nbsp &nbsp &nbsp &nbsp &nbspif _is_scalar(value):
+<br><span style="color:red">- &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsummary_ops_v2.scalar('batch_' + name, value, step=step)</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.summary.scalar('batch_' + name, value, step=step)</span>
+<br>&nbsp
+<br>&nbsp
+<br>&nbspdef _minimum_control_deps(outputs):
+<br>@@ -2860,3 +2922,32 @@ def _is_readable_tf_checkpoint(filepath):
+<br>&nbsp &nbsp &nbspexcept tf.errors.DataLossError:
+<br>&nbsp &nbsp &nbsp &nbsp &nbsp# The checkpoint is not readable in TensorFlow format.
+<br>&nbsp &nbsp &nbsp &nbsp &nbspreturn False
+<br><span style="color:green">+</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+def flatten_metrics_in_order(logs, metrics_names):</span>
+<br><span style="color:green">+&nbsp &nbsp"""Turns the `logs` dict into a list as per key order of `metrics_names`."""</span>
+<br><span style="color:green">+&nbsp &nbspresults = []</span>
+<br><span style="color:green">+&nbsp &nbspfor name in metrics_names:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif name in logs:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults.append(logs[name])</span>
+<br><span style="color:green">+&nbsp &nbspfor key in sorted(logs.keys()):</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspif key not in metrics_names:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspresults.append(logs[key])</span>
+<br><span style="color:green">+&nbsp &nbspif len(results) == 1:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspreturn results[0]</span>
+<br><span style="color:green">+&nbsp &nbspreturn results</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+def _is_per_replica_instance(obj):</span>
+<br><span style="color:green">+&nbsp &nbspreturn (isinstance(obj, tf.distribute.DistributedValues) and</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspisinstance(obj, tf.__internal__.CompositeTensor))</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+</span>
+<br><span style="color:green">+def saver_with_op_caching(obj):</span>
+<br><span style="color:green">+&nbsp &nbspif tf.executing_eagerly():</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspsaveables_cache = None</span>
+<br><span style="color:green">+&nbsp &nbspelse:</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbspsaveables_cache = object_identity.ObjectIdentityWeakKeyDictionary()</span>
+<br><span style="color:green">+&nbsp &nbspreturn tf.__internal__.tracking.TrackableSaver(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsptf.__internal__.tracking.ObjectGraphView(</span>
+<br><span style="color:green">+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspweakref.ref(obj), saveables_cache=saveables_cache))</span>
+<br></p>
+</div>
+<br><br><br>
+<br>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
