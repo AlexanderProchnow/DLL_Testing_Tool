@@ -1,4 +1,4 @@
-# DLL_Testing_Tool
+# DiffWatch
 A tool designed to aid the developers of Deep Learning Libraries to manage their differential testing by automatically cataloging differential test cases.
 The tool additionally allows developers to monitor changes in external libraries that are relevant to their differential testing.
 
